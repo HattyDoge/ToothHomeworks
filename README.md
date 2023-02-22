@@ -1,3 +1,3 @@
 # MolareToothHomeworks
-const bool MolaraDepresso = true
-Molara Su con la vita
+const bool MolaraDepresso = true,
+Molara su con la vita!
