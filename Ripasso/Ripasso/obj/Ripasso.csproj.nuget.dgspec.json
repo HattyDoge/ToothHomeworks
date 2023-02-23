@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leonardo.frassineti\\source\\repos\\Ripasso\\Ripasso\\Ripasso.csproj": {}
+    "C:\\Users\\leonardo.frassineti\\Desktop\\MolareToothHomeworks\\Ripasso\\Ripasso\\Ripasso.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leonardo.frassineti\\source\\repos\\Ripasso\\Ripasso\\Ripasso.csproj": {
+    "C:\\Users\\leonardo.frassineti\\Desktop\\MolareToothHomeworks\\Ripasso\\Ripasso\\Ripasso.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leonardo.frassineti\\source\\repos\\Ripasso\\Ripasso\\Ripasso.csproj",
+        "projectUniqueName": "C:\\Users\\leonardo.frassineti\\Desktop\\MolareToothHomeworks\\Ripasso\\Ripasso\\Ripasso.csproj",
         "projectName": "Ripasso",
-        "projectPath": "C:\\Users\\leonardo.frassineti\\source\\repos\\Ripasso\\Ripasso\\Ripasso.csproj",
+        "projectPath": "C:\\Users\\leonardo.frassineti\\Desktop\\MolareToothHomeworks\\Ripasso\\Ripasso\\Ripasso.csproj",
         "packagesPath": "C:\\Users\\leonardo.frassineti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leonardo.frassineti\\source\\repos\\Ripasso\\Ripasso\\obj\\",
+        "outputPath": "C:\\Users\\leonardo.frassineti\\Desktop\\MolareToothHomeworks\\Ripasso\\Ripasso\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
