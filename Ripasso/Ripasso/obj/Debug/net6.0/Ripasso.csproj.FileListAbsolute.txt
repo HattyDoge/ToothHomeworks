@@ -1,0 +1,15 @@
+C:\Users\leonardo.frassineti\source\repos\Ripasso\Ripasso\bin\Debug\net6.0\Ripasso.exe
+C:\Users\leonardo.frassineti\source\repos\Ripasso\Ripasso\bin\Debug\net6.0\Ripasso.deps.json
+C:\Users\leonardo.frassineti\source\repos\Ripasso\Ripasso\bin\Debug\net6.0\Ripasso.runtimeconfig.json
+C:\Users\leonardo.frassineti\source\repos\Ripasso\Ripasso\bin\Debug\net6.0\Ripasso.dll
+C:\Users\leonardo.frassineti\source\repos\Ripasso\Ripasso\bin\Debug\net6.0\Ripasso.pdb
+C:\Users\leonardo.frassineti\source\repos\Ripasso\Ripasso\obj\Debug\net6.0\Ripasso.csproj.AssemblyReference.cache
+C:\Users\leonardo.frassineti\source\repos\Ripasso\Ripasso\obj\Debug\net6.0\Ripasso.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leonardo.frassineti\source\repos\Ripasso\Ripasso\obj\Debug\net6.0\Ripasso.AssemblyInfoInputs.cache
+C:\Users\leonardo.frassineti\source\repos\Ripasso\Ripasso\obj\Debug\net6.0\Ripasso.AssemblyInfo.cs
+C:\Users\leonardo.frassineti\source\repos\Ripasso\Ripasso\obj\Debug\net6.0\Ripasso.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.frassineti\source\repos\Ripasso\Ripasso\obj\Debug\net6.0\Ripasso.dll
+C:\Users\leonardo.frassineti\source\repos\Ripasso\Ripasso\obj\Debug\net6.0\refint\Ripasso.dll
+C:\Users\leonardo.frassineti\source\repos\Ripasso\Ripasso\obj\Debug\net6.0\Ripasso.pdb
+C:\Users\leonardo.frassineti\source\repos\Ripasso\Ripasso\obj\Debug\net6.0\Ripasso.genruntimeconfig.cache
+C:\Users\leonardo.frassineti\source\repos\Ripasso\Ripasso\obj\Debug\net6.0\ref\Ripasso.dll

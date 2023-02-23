@@ -1,0 +1,15 @@
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Battaglia_Navale\bin\Debug\net6.0\Battaglia_Navale.exe
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Battaglia_Navale\bin\Debug\net6.0\Battaglia_Navale.deps.json
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Battaglia_Navale\bin\Debug\net6.0\Battaglia_Navale.runtimeconfig.json
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Battaglia_Navale\bin\Debug\net6.0\Battaglia_Navale.dll
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Battaglia_Navale\bin\Debug\net6.0\Battaglia_Navale.pdb
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Battaglia_Navale\obj\Debug\net6.0\Battaglia_Navale.csproj.AssemblyReference.cache
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Battaglia_Navale\obj\Debug\net6.0\Battaglia_Navale.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Battaglia_Navale\obj\Debug\net6.0\Battaglia_Navale.AssemblyInfoInputs.cache
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Battaglia_Navale\obj\Debug\net6.0\Battaglia_Navale.AssemblyInfo.cs
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Battaglia_Navale\obj\Debug\net6.0\Battaglia_Navale.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Battaglia_Navale\obj\Debug\net6.0\Battaglia_Navale.dll
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Battaglia_Navale\obj\Debug\net6.0\refint\Battaglia_Navale.dll
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Battaglia_Navale\obj\Debug\net6.0\Battaglia_Navale.pdb
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Battaglia_Navale\obj\Debug\net6.0\Battaglia_Navale.genruntimeconfig.cache
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Battaglia_Navale\obj\Debug\net6.0\ref\Battaglia_Navale.dll

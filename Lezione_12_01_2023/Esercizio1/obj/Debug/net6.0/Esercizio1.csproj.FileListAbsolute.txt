@@ -1,0 +1,15 @@
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Esercizio1\bin\Debug\net6.0\Esercizio1.exe
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Esercizio1\bin\Debug\net6.0\Esercizio1.deps.json
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Esercizio1\bin\Debug\net6.0\Esercizio1.runtimeconfig.json
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Esercizio1\bin\Debug\net6.0\Esercizio1.dll
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Esercizio1\bin\Debug\net6.0\Esercizio1.pdb
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Esercizio1\obj\Debug\net6.0\Esercizio1.csproj.AssemblyReference.cache
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Esercizio1\obj\Debug\net6.0\Esercizio1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Esercizio1\obj\Debug\net6.0\Esercizio1.AssemblyInfoInputs.cache
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Esercizio1\obj\Debug\net6.0\Esercizio1.AssemblyInfo.cs
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Esercizio1\obj\Debug\net6.0\Esercizio1.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Esercizio1\obj\Debug\net6.0\Esercizio1.dll
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Esercizio1\obj\Debug\net6.0\refint\Esercizio1.dll
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Esercizio1\obj\Debug\net6.0\Esercizio1.pdb
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Esercizio1\obj\Debug\net6.0\Esercizio1.genruntimeconfig.cache
+C:\Users\leonardo.frassineti\source\repos\Lezione_12_01_2023\Esercizio1\obj\Debug\net6.0\ref\Esercizio1.dll

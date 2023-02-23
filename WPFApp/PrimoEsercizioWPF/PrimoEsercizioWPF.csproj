@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1628604481_98_Better-Call-Saul-Stagione-6-Tutto-quello-che-dovresti-sapere.jpg" />
+    <None Remove="SmartSelect_20220228-183653_YouTube.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="1628604481_98_Better-Call-Saul-Stagione-6-Tutto-quello-che-dovresti-sapere.jpg" />
+    <Resource Include="SmartSelect_20220228-183653_YouTube.jpg" />
+  </ItemGroup>
+
+</Project>
