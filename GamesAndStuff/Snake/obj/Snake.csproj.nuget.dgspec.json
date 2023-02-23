@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leonardo.frassineti\\source\\repos\\Lezione_12_01_2023\\Battaglia_Navale\\Battaglia_Navale.csproj": {}
+    "C:\\Users\\leonardo.frassineti\\Desktop\\MolareToothHomeworks\\GamesAndStuff\\Snake\\Snake.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leonardo.frassineti\\source\\repos\\Lezione_12_01_2023\\Battaglia_Navale\\Battaglia_Navale.csproj": {
+    "C:\\Users\\leonardo.frassineti\\Desktop\\MolareToothHomeworks\\GamesAndStuff\\Snake\\Snake.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leonardo.frassineti\\source\\repos\\Lezione_12_01_2023\\Battaglia_Navale\\Battaglia_Navale.csproj",
-        "projectName": "Battaglia_Navale",
-        "projectPath": "C:\\Users\\leonardo.frassineti\\source\\repos\\Lezione_12_01_2023\\Battaglia_Navale\\Battaglia_Navale.csproj",
+        "projectUniqueName": "C:\\Users\\leonardo.frassineti\\Desktop\\MolareToothHomeworks\\GamesAndStuff\\Snake\\Snake.csproj",
+        "projectName": "Snake",
+        "projectPath": "C:\\Users\\leonardo.frassineti\\Desktop\\MolareToothHomeworks\\GamesAndStuff\\Snake\\Snake.csproj",
         "packagesPath": "C:\\Users\\leonardo.frassineti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leonardo.frassineti\\source\\repos\\Lezione_12_01_2023\\Battaglia_Navale\\obj\\",
+        "outputPath": "C:\\Users\\leonardo.frassineti\\Desktop\\MolareToothHomeworks\\GamesAndStuff\\Snake\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
