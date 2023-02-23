@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            bool[,] tabella = new bool[3,2];
         }
     }
 }
