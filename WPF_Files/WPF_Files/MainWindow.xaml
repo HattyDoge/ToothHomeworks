@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Button x:Name="WriteFile" Content="Premi per Inserire i dati in un File" HorizontalAlignment="Center" Height="103" Margin="33,19,0,0" VerticalAlignment="Top" Width="240" VerticalContentAlignment="Center" Click="WriteFile_Click" />
 
     </Grid>
 </Window>
