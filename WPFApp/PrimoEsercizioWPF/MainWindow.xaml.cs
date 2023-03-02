@@ -66,6 +66,7 @@ namespace PrimoEsercizioWPF
             Lbx_AttivitàOut.Items.Clear();
             Lbx_BestRapportoOut.Items.Clear();
             Lbx_WorstRapportoOut.Items.Clear();
+            UncheckAll();
         }
         public void InputHidden()
         {
@@ -158,6 +159,7 @@ namespace PrimoEsercizioWPF
             Txt_Peso.Clear();
             Txt_Nome.Clear();
             Txt_Cognome.Clear();
+            UncheckAll();
             indiceVettore++;
         }
 
@@ -295,23 +297,18 @@ namespace PrimoEsercizioWPF
             {
                 case "RBCommerciante_0":
                     attivitàScelta = (int)attività.Commerciante;
-                    UncheckAll();
                     break;
                 case "RBDipendente_1":
                     attivitàScelta = (int)attività.Dipendente;
-                    UncheckAll();
                     break;
                 case "RBLiberoProfessionista_2":
                     attivitàScelta = (int)attività.LiberoProfessionista;
-                    UncheckAll();
                     break;
                 case "RBArtigiano_3":
                     attivitàScelta = (int)attività.Artigiano;
-                    UncheckAll();
                     break;
                 case "RBImprenditore_4":
                     attivitàScelta = (int)attività.Imprenditore;
-                    UncheckAll();
                     break;
             }
         }
