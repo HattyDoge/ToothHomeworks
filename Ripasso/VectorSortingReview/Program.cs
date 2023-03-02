@@ -21,7 +21,11 @@
         }
         static void BubbleSort(int[] vector)
         {
-
+            for (int i = 0; i < 1-vector.Length; i++)
+            {
+                if (vector[i] > vector[i + 1])
+                    Swap(ref vector[i], ref vector[i + 1]);
+            }
         }
         static void Main(string[] args)
         {
