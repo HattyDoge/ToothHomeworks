@@ -4,7 +4,14 @@
     {
         static void Main(string[] args)
         {
-            bool[,] tabella = new bool[3,2];
+            bool[,] list = new bool[9,9];
+            int snakeLength = 1;
+
         }
+        static void SnakeController()
+        {
+
+        }
+
     }
 }
