@@ -1,0 +1,15 @@
+D:\foto\Visual_Studio_C#_Scuola\MolareToothHomeworks\MolareToothHomeworks\Ripasso\VectorSortingReview\bin\Debug\net6.0\VectorSortingReview.exe
+D:\foto\Visual_Studio_C#_Scuola\MolareToothHomeworks\MolareToothHomeworks\Ripasso\VectorSortingReview\bin\Debug\net6.0\VectorSortingReview.deps.json
+D:\foto\Visual_Studio_C#_Scuola\MolareToothHomeworks\MolareToothHomeworks\Ripasso\VectorSortingReview\bin\Debug\net6.0\VectorSortingReview.runtimeconfig.json
+D:\foto\Visual_Studio_C#_Scuola\MolareToothHomeworks\MolareToothHomeworks\Ripasso\VectorSortingReview\bin\Debug\net6.0\VectorSortingReview.dll
+D:\foto\Visual_Studio_C#_Scuola\MolareToothHomeworks\MolareToothHomeworks\Ripasso\VectorSortingReview\bin\Debug\net6.0\VectorSortingReview.pdb
+D:\foto\Visual_Studio_C#_Scuola\MolareToothHomeworks\MolareToothHomeworks\Ripasso\VectorSortingReview\obj\Debug\net6.0\VectorSortingReview.csproj.AssemblyReference.cache
+D:\foto\Visual_Studio_C#_Scuola\MolareToothHomeworks\MolareToothHomeworks\Ripasso\VectorSortingReview\obj\Debug\net6.0\VectorSortingReview.GeneratedMSBuildEditorConfig.editorconfig
+D:\foto\Visual_Studio_C#_Scuola\MolareToothHomeworks\MolareToothHomeworks\Ripasso\VectorSortingReview\obj\Debug\net6.0\VectorSortingReview.AssemblyInfoInputs.cache
+D:\foto\Visual_Studio_C#_Scuola\MolareToothHomeworks\MolareToothHomeworks\Ripasso\VectorSortingReview\obj\Debug\net6.0\VectorSortingReview.AssemblyInfo.cs
+D:\foto\Visual_Studio_C#_Scuola\MolareToothHomeworks\MolareToothHomeworks\Ripasso\VectorSortingReview\obj\Debug\net6.0\VectorSortingReview.csproj.CoreCompileInputs.cache
+D:\foto\Visual_Studio_C#_Scuola\MolareToothHomeworks\MolareToothHomeworks\Ripasso\VectorSortingReview\obj\Debug\net6.0\VectorSortingReview.dll
+D:\foto\Visual_Studio_C#_Scuola\MolareToothHomeworks\MolareToothHomeworks\Ripasso\VectorSortingReview\obj\Debug\net6.0\refint\VectorSortingReview.dll
+D:\foto\Visual_Studio_C#_Scuola\MolareToothHomeworks\MolareToothHomeworks\Ripasso\VectorSortingReview\obj\Debug\net6.0\VectorSortingReview.pdb
+D:\foto\Visual_Studio_C#_Scuola\MolareToothHomeworks\MolareToothHomeworks\Ripasso\VectorSortingReview\obj\Debug\net6.0\VectorSortingReview.genruntimeconfig.cache
+D:\foto\Visual_Studio_C#_Scuola\MolareToothHomeworks\MolareToothHomeworks\Ripasso\VectorSortingReview\obj\Debug\net6.0\ref\VectorSortingReview.dll
