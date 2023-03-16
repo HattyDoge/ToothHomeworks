@@ -73,6 +73,7 @@ namespace WPF_APPLICATION
             peopleIndex++;
             people[peopleIndex].surname = "Pippo111"; people[peopleIndex].name = "Pippo112"; people[peopleIndex].weight = 90; people[peopleIndex].height = 175; people[peopleIndex].age = 58; people[peopleIndex].activity = 0;
             string fileName = "C:\\Users\\leonardo.frassineti\\Desktop\\MolareToothHomeworks\\WPF_APPLICATION\\DataFile.txt";
+
             using (StreamWriter sw = new StreamWriter(fileName))
             {
                 for (int i = 0; i < 12; i++)
@@ -82,6 +83,9 @@ namespace WPF_APPLICATION
                 sw.Close();
             }
             Btn_InsertNewData.Visibility = Visibility.Visible;
+            Btn_File_Output.Visibility = Visibility.Visible;
+            Btn_Order.Visibility = Visibility.Visible;
+            Btn_InitializeFile.Visibility = Visibility.Visible;
         }
         public void UncheckAll()
         {
@@ -118,15 +122,22 @@ namespace WPF_APPLICATION
         {
             Vbx_InputData.Visibility = Visibility.Visible;
             GpBx_Attività.Visibility = Visibility.Visible;
+            
         }
         private void Btn_Order_Click(object sender, RoutedEventArgs e)
         {
 
         }
-
         private void Btn_File_Output_Click(object sender, RoutedEventArgs e)
         {
-
+            using (StreamReader sr = new StreamReader(fileName))
+            {
+                for (int i = 0; i < 12; i++)
+                {
+                    sr
+                }
+                sr.Close();
+            }
         }
     }
 }

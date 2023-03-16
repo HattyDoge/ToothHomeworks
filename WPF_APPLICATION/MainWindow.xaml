@@ -36,7 +36,7 @@
                 <DropShadowEffect Color="Black" Direction="320" ShadowDepth="7" Opacity=".5"/>
             </Button.Effect>
         </Button>
-        <Button x:Name="Btn_File_Output" Content="Stampa da File" HorizontalAlignment="Left" Height="53" Margin="262,10,0,0" VerticalAlignment="Top" Width="247" FontFamily="Bahnschrift" FontSize="20" Click="Btn_File_Output_Click"  >
+        <Button x:Name="Btn_File_Output" Content="Stampa da File" HorizontalAlignment="Left" Height="53" Margin="262,10,0,0" VerticalAlignment="Top" Width="247" FontFamily="Bahnschrift" FontSize="20" Click="Btn_File_Output_Click" Visibility="Hidden"  >
             <Button.Background>
                 <RadialGradientBrush GradientOrigin="0.5,1" SpreadMethod="Pad">
                     <GradientStop Color="White" Offset="0"/>
@@ -47,7 +47,7 @@
                 <DropShadowEffect Color="Black" Direction="320" ShadowDepth="7" Opacity=".5"/>
             </Button.Effect>
         </Button>
-        <Button x:Name="Btn_Order" Content="Inserisci nuove persone" HorizontalAlignment="Left" Height="53" Margin="514,10,0,0" VerticalAlignment="Top" Width="247" FontFamily="Bahnschrift" FontSize="20" >
+        <Button x:Name="Btn_Order" Content="Ordina i vettori" HorizontalAlignment="Left" Height="53" Margin="514,10,0,0" VerticalAlignment="Top" Width="247" FontFamily="Bahnschrift" FontSize="20" Visibility="Hidden" >
             <Button.Background>
                 <RadialGradientBrush GradientOrigin="0.5,1" SpreadMethod="Pad">
                     <GradientStop Color="White" Offset="0"/>
