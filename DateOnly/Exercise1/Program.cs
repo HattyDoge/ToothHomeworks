@@ -34,12 +34,13 @@ public static class Program
 	{
 		int smallI = 0;
 		int smallJ = 0;
-		TimeSpan smallGape = new TimeSpan(0, 0, 0);
-		for (int i = 0; i < dates.Length; i++)
+		TimeSpan diff = dates[0].Subtract(dates[1]);
+		TimeSpan smallGape = diff;
+		for (int i = 0; i < dates.Length - 1; i++)
 			for (int j = i + 1; j < dates.Length; j++)
 			{
-				TimeSpan diff = dates[i].Subtract(dates[j]);
-				if (Math.Abs(diff.TotalSeconds) < smallGape.TotalSeconds)
+				diff = dates[i].Subtract(dates[j]);
+				if (Math.Abs(diff.TotalSeconds) < Math.Abs(smallGape.TotalSeconds))
 				{
 					smallGape = diff;
 					smallI = i;
@@ -51,9 +52,9 @@ public static class Program
 
 	public static void Main()
 	{
-		//	DateOnly date1 = DateOnly.Parse(Console.ReadLine());
-		//	DateOnly date2 = DateOnly.Parse(Console.ReadLine());
-		//	DateDifference(date1, date2);
+		DateOnly date1 = DateOnly.Parse(Console.ReadLine());
+		DateOnly date2 = DateOnly.Parse(Console.ReadLine());
+		DateDifference(date1, date2);
 		Console.WriteLine("Tempo");
 		TimeOnly tempo = TimeOnly.Parse(Console.ReadLine());
 		InternExtern(tempo);

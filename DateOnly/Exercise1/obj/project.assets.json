@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\File foto e video\\Github\\MolareToothHomeworks\\DateOnly\\Exercise1\\Excercise1.csproj",
-      "projectName": "Excercise1",
-      "projectPath": "F:\\File foto e video\\Github\\MolareToothHomeworks\\DateOnly\\Exercise1\\Excercise1.csproj",
+      "projectUniqueName": "F:\\File foto e video\\Github\\MolareToothHomeworks\\DateOnly\\Exercise1\\Exercise1.csproj",
+      "projectName": "Exercise1",
+      "projectPath": "F:\\File foto e video\\Github\\MolareToothHomeworks\\DateOnly\\Exercise1\\Exercise1.csproj",
       "packagesPath": "C:\\Users\\leodo\\.nuget\\packages\\",
       "outputPath": "F:\\File foto e video\\Github\\MolareToothHomeworks\\DateOnly\\Exercise1\\obj\\",
       "projectStyle": "PackageReference",
