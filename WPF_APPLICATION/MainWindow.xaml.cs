@@ -17,10 +17,11 @@ using System.Windows.Shapes;
 
 namespace WPF_APPLICATION
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    struct People
+    
+	/// <summary>
+	/// Interaction logic for MainWindow.xaml
+	/// </summary>
+	public struct People
     {
         public string name;
         public string surname;
@@ -29,7 +30,8 @@ namespace WPF_APPLICATION
         public int weight;
         public int activity;
     }
-    public enum attività
+
+	public enum attività
     {
         Commerciante = 0,
         Dipendente,
@@ -39,16 +41,21 @@ namespace WPF_APPLICATION
     }
     public partial class MainWindow : Window
     {
-        public int attivitàScelta;
+		
+		public string fileName = "F:\\File foto e video\\Github\\MolareToothHomeworks\\WPF_APPLICATION\\DataFile.txt";
+		public int attivitàScelta;
         public MainWindow()
         {
             InitializeComponent();
         }
         public int peopleIndex;
-        private void Btn_InitializeFile_Click(object sender, RoutedEventArgs e)
+		public People[] people;
+		private void Btn_InitializeFile_Click(object sender, RoutedEventArgs e)
         {
-            peopleIndex = 0;
-            People[] people = new People[50];
+
+			people = new People[50];
+			peopleIndex = 0;
+            
             people[peopleIndex].surname = "Pippo01"; people[peopleIndex].name = "Pippo02"; people[peopleIndex].weight = 80; people[peopleIndex].height = 190; people[peopleIndex].age = 46; people[peopleIndex].activity = 0;
             peopleIndex++;
             people[peopleIndex].surname = "Pippo11"; people[peopleIndex].name = "Pippo12"; people[peopleIndex].weight = 50; people[peopleIndex].height = 160; people[peopleIndex].age = 35; people[peopleIndex].activity = 0;
@@ -72,11 +79,10 @@ namespace WPF_APPLICATION
             people[peopleIndex].surname = "Pippo101"; people[peopleIndex].name = "Pippo102"; people[peopleIndex].weight = 84; people[peopleIndex].height = 168; people[peopleIndex].age = 25; people[peopleIndex].activity = 0;
             peopleIndex++;
             people[peopleIndex].surname = "Pippo111"; people[peopleIndex].name = "Pippo112"; people[peopleIndex].weight = 90; people[peopleIndex].height = 175; people[peopleIndex].age = 58; people[peopleIndex].activity = 0;
-            string fileName = "C:\\Users\\leonardo.frassineti\\Desktop\\MolareToothHomeworks\\WPF_APPLICATION\\DataFile.txt";
 
             using (StreamWriter sw = new StreamWriter(fileName))
             {
-                for (int i = 0; i < 12; i++)
+                for (int i = 0; i < peopleIndex; i++)
                 {
                     sw.WriteLine($"{people[i].surname}|{people[i].name}|{people[i].weight}|{people[i].height}|{people[i].age}");
                 }
@@ -86,8 +92,9 @@ namespace WPF_APPLICATION
             Btn_File_Output.Visibility = Visibility.Visible;
             Btn_Order.Visibility = Visibility.Visible;
             Btn_InitializeFile.Visibility = Visibility.Visible;
-        }
-        public void UncheckAll()
+		    Btn_TransferToFile.Visibility = Visibility.Visible;
+		}
+		public void UncheckAll()
         {
             RBCommerciante_0.IsChecked = false;
             RBDipendente_1.IsChecked = false;
@@ -120,25 +127,97 @@ namespace WPF_APPLICATION
         }
         private void Btn_InsertNewData_Click(object sender, RoutedEventArgs e)
         {
-            Vbx_InputData.Visibility = Visibility.Visible;
-            GpBx_Attività.Visibility = Visibility.Visible;
-            
-        }
-        private void Btn_Order_Click(object sender, RoutedEventArgs e)
-        {
+            peopleIndex++;
 
-        }
-        private void Btn_File_Output_Click(object sender, RoutedEventArgs e)
-        {
-            string fileName = "F:\\File foto e video\\Github\\MolareToothHomeworks\\WPF_APPLICATION\\DataFile.txt";
-            using (StreamReader sr = new StreamReader(fileName))
+            Vbx_Output.Visibility = Visibility.Hidden;
+            Vbx_InputData.Visibility = Visibility.Visible;
+
+            GpBx_Attività.Visibility = Visibility.Visible;
+            bool retry = true;
+            people[peopleIndex].surname = Tbx_Surname.Text;
+            people[peopleIndex].name = Tbx_Name.Text;
+            retry = int.TryParse(Tbx_Age.Text, out people[peopleIndex].age);
+            retry = int.TryParse(Tbx_Weight.Text, out people[peopleIndex].weight);
+            people[peopleIndex].activity = attivitàScelta;
+            if (!retry)
             {
-                for (int i = 0; i < 12; i++)
+                peopleIndex--;
+            }
+            Tbx_Age.Clear();
+            Tbx_Surname.Clear();
+            Tbx_Name.Clear();
+            Tbx_Weight.Clear();
+            UncheckAll();
+        }
+		private void Btn_Order_Click(object sender, RoutedEventArgs e)
+        {
+            Vbx_InputData.Visibility = Visibility.Hidden;
+			Vbx_Output.Visibility = Visibility.Hidden;
+			GpBx_Attività.Visibility = Visibility.Hidden;
+
+            SelectionSort();
+		}
+
+		private void Swap(int index, int index2)
+		{
+            int temp = people[index2].weight;
+            people[index2].weight = people[index].weight;
+            people[index].weight = temp;
+
+			temp = people[index2].height;
+			people[index2].height = people[index].weight;
+			people[index].weight = temp;
+		}
+		private void SelectionSort()
+		{
+			for (int i = 0; i < peopleIndex - 1; i++)
+			{
+				int jMin = i;
+				for (int j = 0; j < people.Length; j++)
+					if (-1 == people[jMin].name.CompareTo(people[j].name))
+						jMin = j;
+
+				Swap(i, jMin);
+			}
+		}
+		private void Btn_File_Output_Click(object sender, RoutedEventArgs e)
+        {
+            Lbx_Activity_Output.Items.Clear();
+			Lbx_Weight_Output.Items.Clear();
+			Lbx_Age_Output.Items.Clear();
+            Lbx_Surname_Output.Items.Clear();
+            Lbx_Name_Output.Items.Clear();
+
+			Vbx_Output.Visibility = Visibility.Visible;
+            Vbx_InputData.Visibility = Visibility.Hidden;
+			GpBx_Attività.Visibility = Visibility.Hidden;
+
+			using (StreamReader sr = new StreamReader(fileName))
+            {
+                while (!sr.EndOfStream)
                 {
-                    sr
+                    string linea = sr.ReadLine();
+                    string[] splittedLine = linea.Split("|");
+					Lbx_Name_Output.Items.Add(splittedLine[0]);
+					Lbx_Surname_Output.Items.Add(splittedLine[1]);
+					Lbx_Weight_Output.Items.Add(splittedLine[2]);
+					Lbx_Age_Output.Items.Add(splittedLine[3]);
+                    Lbx_Activity_Output.Items.Add(splittedLine[4]);
                 }
-                sr.Close();
+			    sr.Close();
             }
         }
-    }
+
+		private void Btn_TransferToFile_Click(object sender, RoutedEventArgs e)
+		{
+			using (StreamWriter sw = new StreamWriter(fileName))
+			{
+				for (int i = 0; i < peopleIndex; i++)
+				{
+					sw.WriteLine($"{people[i].surname}|{people[i].name}|{people[i].weight}|{people[i].height}|{people[i].age}");
+				}
+				sw.Close();
+			}
+		}
+	}
 }

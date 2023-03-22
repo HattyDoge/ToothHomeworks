@@ -40,3 +40,24 @@ C:\Users\leonardo.frassineti\Desktop\MolareToothHomeworks\WPFApp\PrimoEsercizioW
 C:\Users\leonardo.frassineti\Desktop\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\obj\Debug\net6.0-windows\PrimoEsercizioWPF.pdb
 C:\Users\leonardo.frassineti\Desktop\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\obj\Debug\net6.0-windows\PrimoEsercizioWPF.genruntimeconfig.cache
 C:\Users\leonardo.frassineti\Desktop\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\obj\Debug\net6.0-windows\ref\PrimoEsercizioWPF.dll
+F:\File foto e video\Github\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\bin\Debug\net6.0-windows\PrimoEsercizioWPF.exe
+F:\File foto e video\Github\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\bin\Debug\net6.0-windows\PrimoEsercizioWPF.deps.json
+F:\File foto e video\Github\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\bin\Debug\net6.0-windows\PrimoEsercizioWPF.runtimeconfig.json
+F:\File foto e video\Github\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\bin\Debug\net6.0-windows\PrimoEsercizioWPF.dll
+F:\File foto e video\Github\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\bin\Debug\net6.0-windows\PrimoEsercizioWPF.pdb
+F:\File foto e video\Github\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\obj\Debug\net6.0-windows\PrimoEsercizioWPF.csproj.AssemblyReference.cache
+F:\File foto e video\Github\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\obj\Debug\net6.0-windows\MainWindow.g.cs
+F:\File foto e video\Github\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\obj\Debug\net6.0-windows\App.g.cs
+F:\File foto e video\Github\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\obj\Debug\net6.0-windows\PrimoEsercizioWPF_MarkupCompile.cache
+F:\File foto e video\Github\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\obj\Debug\net6.0-windows\PrimoEsercizioWPF_MarkupCompile.lref
+F:\File foto e video\Github\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\obj\Debug\net6.0-windows\MainWindow.baml
+F:\File foto e video\Github\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\obj\Debug\net6.0-windows\PrimoEsercizioWPF.g.resources
+F:\File foto e video\Github\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\obj\Debug\net6.0-windows\PrimoEsercizioWPF.GeneratedMSBuildEditorConfig.editorconfig
+F:\File foto e video\Github\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\obj\Debug\net6.0-windows\PrimoEsercizioWPF.AssemblyInfoInputs.cache
+F:\File foto e video\Github\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\obj\Debug\net6.0-windows\PrimoEsercizioWPF.AssemblyInfo.cs
+F:\File foto e video\Github\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\obj\Debug\net6.0-windows\PrimoEsercizioWPF.csproj.CoreCompileInputs.cache
+F:\File foto e video\Github\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\obj\Debug\net6.0-windows\PrimoEsercizioWPF.dll
+F:\File foto e video\Github\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\obj\Debug\net6.0-windows\refint\PrimoEsercizioWPF.dll
+F:\File foto e video\Github\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\obj\Debug\net6.0-windows\PrimoEsercizioWPF.pdb
+F:\File foto e video\Github\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\obj\Debug\net6.0-windows\PrimoEsercizioWPF.genruntimeconfig.cache
+F:\File foto e video\Github\MolareToothHomeworks\WPFApp\PrimoEsercizioWPF\obj\Debug\net6.0-windows\ref\PrimoEsercizioWPF.dll

@@ -27,3 +27,16 @@ F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.
 F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.dll
 F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\refint\WPF_APPLICATION.dll
 F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.pdb
+F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\bin\Debug\net6.0-windows\WPF_APPLICATION.exe
+F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\bin\Debug\net6.0-windows\WPF_APPLICATION.deps.json
+F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\bin\Debug\net6.0-windows\WPF_APPLICATION.runtimeconfig.json
+F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\bin\Debug\net6.0-windows\WPF_APPLICATION.dll
+F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\bin\Debug\net6.0-windows\WPF_APPLICATION.pdb
+F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\MainWindow.baml
+F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.g.resources
+F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.GeneratedMSBuildEditorConfig.editorconfig
+F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.AssemblyInfoInputs.cache
+F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.AssemblyInfo.cs
+F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.csproj.CoreCompileInputs.cache
+F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.genruntimeconfig.cache
+F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\ref\WPF_APPLICATION.dll
