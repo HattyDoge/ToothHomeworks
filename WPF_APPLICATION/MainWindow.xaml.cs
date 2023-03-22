@@ -130,6 +130,7 @@ namespace WPF_APPLICATION
         }
         private void Btn_File_Output_Click(object sender, RoutedEventArgs e)
         {
+            string fileName = "F:\\File foto e video\\Github\\MolareToothHomeworks\\WPF_APPLICATION\\DataFile.txt";
             using (StreamReader sr = new StreamReader(fileName))
             {
                 for (int i = 0; i < 12; i++)

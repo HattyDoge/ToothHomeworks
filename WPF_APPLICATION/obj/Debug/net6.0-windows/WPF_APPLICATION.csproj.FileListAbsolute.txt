@@ -19,3 +19,11 @@ C:\Users\leonardo.frassineti\Desktop\MolareToothHomeworks\WPF_APPLICATION\obj\De
 C:\Users\leonardo.frassineti\Desktop\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.pdb
 C:\Users\leonardo.frassineti\Desktop\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.genruntimeconfig.cache
 C:\Users\leonardo.frassineti\Desktop\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\ref\WPF_APPLICATION.dll
+F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.csproj.AssemblyReference.cache
+F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\MainWindow.g.cs
+F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\App.g.cs
+F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION_MarkupCompile.cache
+F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION_MarkupCompile.lref
+F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.dll
+F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\refint\WPF_APPLICATION.dll
+F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.pdb
