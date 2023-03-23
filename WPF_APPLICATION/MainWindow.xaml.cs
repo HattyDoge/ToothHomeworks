@@ -66,25 +66,25 @@ namespace WPF_APPLICATION
             peopleIndex++;
             people[peopleIndex].surname = "Pippo41"; people[peopleIndex].name = "Pippo42"; people[peopleIndex].weight = 50; people[peopleIndex].height = 160; people[peopleIndex].age = 32; people[peopleIndex].activity = 0;
             peopleIndex++;
-            people[peopleIndex].surname = "Pippo51"; people[peopleIndex].name = "Pippo52"; people[peopleIndex].weight = 78; people[peopleIndex].height = 175; people[peopleIndex].age = 25; people[peopleIndex].activity = 0;
+            people[peopleIndex].surname = "Pippo51"; people[peopleIndex].name = "Pippo52"; people[peopleIndex].weight = 78; people[peopleIndex].height = 175; people[peopleIndex].age = 25; people[peopleIndex].activity = 4;
             peopleIndex++;
-            people[peopleIndex].surname = "Pippo61"; people[peopleIndex].name = "Pippo62"; people[peopleIndex].weight = 95; people[peopleIndex].height = 190; people[peopleIndex].age = 38; people[peopleIndex].activity = 0;
+            people[peopleIndex].surname = "Pippo61"; people[peopleIndex].name = "Pippo62"; people[peopleIndex].weight = 95; people[peopleIndex].height = 190; people[peopleIndex].age = 38; people[peopleIndex].activity = 2;
             peopleIndex++;
-            people[peopleIndex].surname = "Pippo71"; people[peopleIndex].name = "Pippo72"; people[peopleIndex].weight = 90; people[peopleIndex].height = 180; people[peopleIndex].age = 47; people[peopleIndex].activity = 0;
+            people[peopleIndex].surname = "Pippo71"; people[peopleIndex].name = "Pippo72"; people[peopleIndex].weight = 90; people[peopleIndex].height = 180; people[peopleIndex].age = 47; people[peopleIndex].activity = 1;
             peopleIndex++;
-            people[peopleIndex].surname = "Pippo81"; people[peopleIndex].name = "Pippo82"; people[peopleIndex].weight = 100; people[peopleIndex].height = 190; people[peopleIndex].age = 25; people[peopleIndex].activity = 0;
+            people[peopleIndex].surname = "Pippo81"; people[peopleIndex].name = "Pippo82"; people[peopleIndex].weight = 100; people[peopleIndex].height = 190; people[peopleIndex].age = 25; people[peopleIndex].activity = 3;
             peopleIndex++;
-            people[peopleIndex].surname = "Pippo91"; people[peopleIndex].name = "Pippo92"; people[peopleIndex].weight = 97; people[peopleIndex].height = 190; people[peopleIndex].age = 42; people[peopleIndex].activity = 0;
+            people[peopleIndex].surname = "Pippo91"; people[peopleIndex].name = "Pippo92"; people[peopleIndex].weight = 97; people[peopleIndex].height = 190; people[peopleIndex].age = 42; people[peopleIndex].activity = 2;
             peopleIndex++;
-            people[peopleIndex].surname = "Pippo101"; people[peopleIndex].name = "Pippo102"; people[peopleIndex].weight = 84; people[peopleIndex].height = 168; people[peopleIndex].age = 25; people[peopleIndex].activity = 0;
+            people[peopleIndex].surname = "Pippo101"; people[peopleIndex].name = "Pippo102"; people[peopleIndex].weight = 84; people[peopleIndex].height = 168; people[peopleIndex].age = 25; people[peopleIndex].activity = 3;
             peopleIndex++;
-            people[peopleIndex].surname = "Pippo111"; people[peopleIndex].name = "Pippo112"; people[peopleIndex].weight = 90; people[peopleIndex].height = 175; people[peopleIndex].age = 58; people[peopleIndex].activity = 0;
+            people[peopleIndex].surname = "Pippo111"; people[peopleIndex].name = "Pippo112"; people[peopleIndex].weight = 90; people[peopleIndex].height = 175; people[peopleIndex].age = 58; people[peopleIndex].activity = 4;
 
             using (StreamWriter sw = new StreamWriter(fileName))
             {
                 for (int i = 0; i < peopleIndex; i++)
                 {
-                    sw.WriteLine($"{people[i].surname}|{people[i].name}|{people[i].weight}|{people[i].height}|{people[i].age}");
+                    sw.WriteLine($"{people[i].surname}|{people[i].name}|{people[i].weight}|{people[i].height}|{people[i].age}|{people[i].activity}");
                 }
                 sw.Close();
             }
@@ -148,6 +148,7 @@ namespace WPF_APPLICATION
             Tbx_Surname.Clear();
             Tbx_Name.Clear();
             Tbx_Weight.Clear();
+            Tbx_Height.Clear();
             UncheckAll();
         }
 		private void Btn_Order_Click(object sender, RoutedEventArgs e)
@@ -166,9 +167,26 @@ namespace WPF_APPLICATION
             people[index].weight = temp;
 
 			temp = people[index2].height;
-			people[index2].height = people[index].weight;
-			people[index].weight = temp;
-		}
+			people[index2].height = people[index].height;
+			people[index].height = temp;
+
+            temp = people[index2].age;
+            people[index2].age = people[index].age;
+            people[index].age = temp;
+
+            temp = people[index2].activity;
+            people[index2].activity = people[index].activity;
+            people[index].activity = temp;
+
+            string temp1 = people[index2].name;
+            people[index2].name = people[index].name;
+            people[index].name = temp1;
+
+            temp1 = people[index2].surname;
+            people[index2].surname = people[index].surname;
+            people[index].surname = temp1;
+
+        }
 		private void SelectionSort()
 		{
 			for (int i = 0; i < peopleIndex - 1; i++)
@@ -188,6 +206,7 @@ namespace WPF_APPLICATION
 			Lbx_Age_Output.Items.Clear();
             Lbx_Surname_Output.Items.Clear();
             Lbx_Name_Output.Items.Clear();
+            Lbx_Height_Output.Items.Clear();
 
 			Vbx_Output.Visibility = Visibility.Visible;
             Vbx_InputData.Visibility = Visibility.Hidden;
@@ -202,8 +221,9 @@ namespace WPF_APPLICATION
 					Lbx_Name_Output.Items.Add(splittedLine[0]);
 					Lbx_Surname_Output.Items.Add(splittedLine[1]);
 					Lbx_Weight_Output.Items.Add(splittedLine[2]);
-					Lbx_Age_Output.Items.Add(splittedLine[3]);
-                    Lbx_Activity_Output.Items.Add(splittedLine[4]);
+                    Lbx_Height_Output.Items.Add(splittedLine[3]);
+                    Lbx_Age_Output.Items.Add(splittedLine[4]);
+                    Lbx_Activity_Output.Items.Add(splittedLine[5]);
                 }
 			    sr.Close();
             }
@@ -215,7 +235,7 @@ namespace WPF_APPLICATION
 			{
 				for (int i = 0; i < peopleIndex; i++)
 				{
-					sw.WriteLine($"{people[i].surname}|{people[i].name}|{people[i].weight}|{people[i].height}|{people[i].age}");
+                    sw.WriteLine($"{people[i].surname}|{people[i].name}|{people[i].weight}|{people[i].height}|{people[i].age}|{people[i].activity}");
 				}
 				sw.Close();
 			}
