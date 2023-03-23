@@ -189,13 +189,16 @@ namespace WPF_APPLICATION
         }
 		private void SelectionSort()
 		{
-			for (int i = 0; i < peopleIndex - 1; i++)
+			for (int i = 0; i < peopleIndex; i++)
 			{
 				int jMin = i;
-				for (int j = 0; j < people.Length; j++)
-					if (-1 == people[jMin].name.CompareTo(people[j].name))
-						jMin = j;
-
+                for (int j = i + 1; j < people.Length; j++)
+                {
+                    string name1 = people[jMin].name;
+                    string name2 = people[j].name;
+                    if (-1 == name1.CompareTo(name2))
+                        jMin = j;
+                }
 				Swap(i, jMin);
 			}
 		}
@@ -233,7 +236,7 @@ namespace WPF_APPLICATION
 		{
 			using (StreamWriter sw = new StreamWriter(fileName))
 			{
-				for (int i = 0; i < peopleIndex; i++)
+				for (int i = 0; i <= peopleIndex; i++)
 				{
                     sw.WriteLine($"{people[i].surname}|{people[i].name}|{people[i].weight}|{people[i].height}|{people[i].age}|{people[i].activity}");
 				}

@@ -47,7 +47,7 @@
                 <DropShadowEffect Color="Black" Direction="320" ShadowDepth="7" Opacity=".5"/>
             </Button.Effect>
         </Button>
-        <Button x:Name="Btn_Order" Content="Ordina i vettori" HorizontalAlignment="Left" Height="53" Margin="514,10,0,0" VerticalAlignment="Top" Width="247" FontFamily="Bahnschrift" FontSize="20" Visibility="Hidden" >
+        <Button x:Name="Btn_Order" Content="Ordina i vettori" HorizontalAlignment="Left" Height="53" Margin="514,10,0,0" VerticalAlignment="Top" Width="247" FontFamily="Bahnschrift" FontSize="20" Visibility="Hidden" Click="Btn_Order_Click" >
             <Button.Background>
                 <RadialGradientBrush GradientOrigin="0.5,1" SpreadMethod="Pad">
                     <GradientStop Color="White" Offset="0"/>
@@ -127,7 +127,7 @@
                         </LinearGradientBrush>
                     </Label.BorderBrush>
                 </Label>
-                <Label x:Name="Lbl_Height" Content="Peso" HorizontalAlignment="Left" Height="46" Margin="0,189,0,0" VerticalAlignment="Top" Width="121" FontFamily="Bahnschrift" BorderThickness="1,1,1,1" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <Label x:Name="Lbl_Height" Content="Altezza" HorizontalAlignment="Left" Height="46" Margin="0,189,0,0" VerticalAlignment="Top" Width="121" FontFamily="Bahnschrift" BorderThickness="1,1,1,1" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
                     <Label.Background>
                         <RadialGradientBrush>
                             <GradientStop Color="Black" Offset="1"/>
