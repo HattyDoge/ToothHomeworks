@@ -9,4 +9,3 @@ Pippo71|Pippo72|90|180|47
 Pippo81|Pippo82|100|190|25
 Pippo91|Pippo92|97|190|42
 Pippo101|Pippo102|84|168|25
-Pippo111|Pippo112|90|175|58

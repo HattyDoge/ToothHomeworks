@@ -42,7 +42,7 @@ namespace WPF_APPLICATION
     public partial class MainWindow : Window
     {
 		
-		public string fileName = "F:\\File foto e video\\Github\\MolareToothHomeworks\\WPF_APPLICATION\\DataFile.txt";
+		public string fileName = "..\\..\\..\\DataFile.txt";
 		public int attivitàScelta;
         public MainWindow()
         {
@@ -138,6 +138,7 @@ namespace WPF_APPLICATION
             people[peopleIndex].name = Tbx_Name.Text;
             retry = int.TryParse(Tbx_Age.Text, out people[peopleIndex].age);
             retry = int.TryParse(Tbx_Weight.Text, out people[peopleIndex].weight);
+            retry = int.TryParse(Tbx_Height.Text, out people[peopleIndex].height);
             people[peopleIndex].activity = attivitàScelta;
             if (!retry)
             {
