@@ -37,10 +37,23 @@
 			}
 			Console.WriteLine($"Il numero dei prodotti che {producer} ha sono {producerProductCount}");
 		}
-		static void NameWrite()
+		static void NameWrite(List<Product> productsShop)
 		{
-
-		}
+            Console.WriteLine("Inserire il nome di un prodotto");
+            string name = Console.ReadLine();
+			bool productExist = false;
+            for (int i = 0; i < productsShop.Count; i++)
+            {
+				if (productsShop[i].name == name)
+					productExist = true;
+            }
+			if(productExist)
+			{
+				Console.WriteLine($"Il prodotto {name} è presente");
+				return;
+			}
+			Console.WriteLine($"Il prodotto {name} non è presente");
+        }
 		static void CodeWrite()
 		{
 

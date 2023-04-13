@@ -1,0 +1,15 @@
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\List\List\bin\Debug\net6.0\List.exe
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\List\List\bin\Debug\net6.0\List.deps.json
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\List\List\bin\Debug\net6.0\List.runtimeconfig.json
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\List\List\bin\Debug\net6.0\List.dll
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\List\List\bin\Debug\net6.0\List.pdb
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\List\List\obj\Debug\net6.0\List.csproj.AssemblyReference.cache
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\List\List\obj\Debug\net6.0\List.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\List\List\obj\Debug\net6.0\List.AssemblyInfoInputs.cache
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\List\List\obj\Debug\net6.0\List.AssemblyInfo.cs
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\List\List\obj\Debug\net6.0\List.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\List\List\obj\Debug\net6.0\List.dll
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\List\List\obj\Debug\net6.0\refint\List.dll
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\List\List\obj\Debug\net6.0\List.pdb
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\List\List\obj\Debug\net6.0\List.genruntimeconfig.cache
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\List\List\obj\Debug\net6.0\ref\List.dll
