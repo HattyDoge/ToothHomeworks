@@ -187,16 +187,31 @@ namespace WPF_APPLICATION
             people[index].surname = temp1;
 
         }
+        private bool CompareString(string str1, string str2)
+        {
+            if(str1.Length < str2.Length)
+            {
+                string temp = str1;
+                str1 = str2;
+                str2 = temp;
+            }    
+            for(int i = 0; i < str1.Length; i++)
+            {
+                if (str1[i] < str2[i])
+                    return true;
+            }
+            return false;
+        }
         private void SelectionSort()
         {
             for (int i = 0; i < peopleIndex; i++)
             {
                 int jMin = i;
-                for (int j = i + 1; j < people.Length; j++)
+                for (int j = i + 1; j < peopleIndex; j++)
                 {
                     string name1 = people[jMin].name;
                     string name2 = people[j].name;
-                    if (-1 == name1.CompareTo(name2))
+                    if (CompareString(name1, name2))
                         jMin = j;
                 }
                 Swap(i, jMin);
@@ -221,12 +236,15 @@ namespace WPF_APPLICATION
                 {
                     string linea = sr.ReadLine();
                     string[] splittedLine = linea.Split("|");
+                    
                     Lbx_Name_Output.Items.Add(splittedLine[0]);
                     Lbx_Surname_Output.Items.Add(splittedLine[1]);
                     Lbx_Weight_Output.Items.Add(splittedLine[2]);
                     Lbx_Height_Output.Items.Add(splittedLine[3]);
                     Lbx_Age_Output.Items.Add(splittedLine[4]);
                     Lbx_Activity_Output.Items.Add(splittedLine[5]);
+                    
+                    
                 }
                 sr.Close();
             }

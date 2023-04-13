@@ -40,3 +40,24 @@ F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.
 F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.csproj.CoreCompileInputs.cache
 F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.genruntimeconfig.cache
 F:\File foto e video\Github\MolareToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\ref\WPF_APPLICATION.dll
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\WPF_APPLICATION\bin\Debug\net6.0-windows\WPF_APPLICATION.exe
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\WPF_APPLICATION\bin\Debug\net6.0-windows\WPF_APPLICATION.deps.json
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\WPF_APPLICATION\bin\Debug\net6.0-windows\WPF_APPLICATION.runtimeconfig.json
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\WPF_APPLICATION\bin\Debug\net6.0-windows\WPF_APPLICATION.dll
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\WPF_APPLICATION\bin\Debug\net6.0-windows\WPF_APPLICATION.pdb
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.csproj.AssemblyReference.cache
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION_MarkupCompile.cache
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION_MarkupCompile.lref
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.g.resources
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.AssemblyInfoInputs.cache
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.AssemblyInfo.cs
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.dll
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\refint\WPF_APPLICATION.dll
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.pdb
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\WPF_APPLICATION.genruntimeconfig.cache
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\WPF_APPLICATION\obj\Debug\net6.0-windows\ref\WPF_APPLICATION.dll
