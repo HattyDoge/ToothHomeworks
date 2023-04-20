@@ -165,7 +165,7 @@
         </Viewbox>
         <Viewbox x:Name="Vbx_Output" HorizontalAlignment="Center" Height="207" Stretch="Fill" VerticalAlignment="Top" Width="816" Margin="0,195,0,0" Visibility="Hidden">
             <Grid Height="207" Width="943">
-                <Label x:Name="Lbl_Name_Output" Content="Nomi" HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="164" FontFamily="Bahnschrift" BorderThickness="1,1,1,1" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <Label x:Name="Lbl_Name_Output" Content="Nomi" HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="164" FontFamily="Bahnschrift" BorderThickness="1,1,1,1" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Visibility="Hidden">
                     <Label.Background>
                         <RadialGradientBrush>
                             <GradientStop Color="Black" Offset="1"/>
@@ -179,7 +179,7 @@
                         </LinearGradientBrush>
                     </Label.BorderBrush>
                 </Label>
-                <Label x:Name="Lbl_Age_Output" Content="Età" HorizontalAlignment="Left" Height="46" Margin="507,0,0,0" VerticalAlignment="Top" Width="164" FontFamily="Bahnschrift" BorderThickness="1,1,1,1" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <Label x:Name="Lbl_Age_Output" Content="Età" HorizontalAlignment="Left" Height="46" Margin="507,0,0,0" VerticalAlignment="Top" Width="164" FontFamily="Bahnschrift" BorderThickness="1,1,1,1" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Visibility="Hidden">
                     <Label.Background>
                         <RadialGradientBrush>
                             <GradientStop Color="Black" Offset="1"/>
@@ -193,7 +193,7 @@
                         </LinearGradientBrush>
                     </Label.BorderBrush>
                 </Label>
-                <Label x:Name="Lbl_Surname_Output" Content="Cognome" HorizontalAlignment="Left" Height="46" Margin="169,0,0,0" VerticalAlignment="Top" Width="164" FontFamily="Bahnschrift" BorderThickness="1,1,1,1" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <Label x:Name="Lbl_Surname_Output" Content="Cognome" HorizontalAlignment="Left" Height="46" Margin="169,0,0,0" VerticalAlignment="Top" Width="164" FontFamily="Bahnschrift" BorderThickness="1,1,1,1" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Visibility="Hidden">
                     <Label.Background>
                         <RadialGradientBrush>
                             <GradientStop Color="Black" Offset="1"/>
@@ -207,7 +207,7 @@
                         </LinearGradientBrush>
                     </Label.BorderBrush>
                 </Label>
-                <Label x:Name="Lbl_Weight_Output" Content="Peso" HorizontalAlignment="Left" Height="46" Margin="338,0,0,0" VerticalAlignment="Top" Width="164" FontFamily="Bahnschrift" BorderThickness="1,1,1,1" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <Label x:Name="Lbl_Weight_Output" Content="Peso" HorizontalAlignment="Left" Height="46" Margin="338,0,0,0" VerticalAlignment="Top" Width="164" FontFamily="Bahnschrift" BorderThickness="1,1,1,1" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Visibility="Hidden">
                     <Label.Background>
                         <RadialGradientBrush>
                             <GradientStop Color="Black" Offset="1"/>
@@ -221,7 +221,7 @@
                         </LinearGradientBrush>
                     </Label.BorderBrush>
                 </Label>
-                <Label x:Name="Lbl_Activity_Output" Content="Attività" HorizontalAlignment="Left" Height="46" Margin="676,0,0,0" VerticalAlignment="Top" Width="98" FontFamily="Bahnschrift" BorderThickness="1,1,1,1" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <Label x:Name="Lbl_Activity_Output" Content="Attività" HorizontalAlignment="Left" Height="46" Margin="676,0,0,0" VerticalAlignment="Top" Width="98" FontFamily="Bahnschrift" BorderThickness="1,1,1,1" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Visibility="Hidden">
                     <Label.Background>
                         <RadialGradientBrush>
                             <GradientStop Color="Black" Offset="1"/>
@@ -235,7 +235,7 @@
                         </LinearGradientBrush>
                     </Label.BorderBrush>
                 </Label>
-                <Label x:Name="Lbl_Height_Output" Content="Età" HorizontalAlignment="Left" Height="46" Margin="779,0,0,0" VerticalAlignment="Top" Width="164" FontFamily="Bahnschrift" BorderThickness="1,1,1,1" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <Label x:Name="Lbl_Height_Output" Content="Età" HorizontalAlignment="Left" Height="46" Margin="779,0,0,0" VerticalAlignment="Top" Width="164" FontFamily="Bahnschrift" BorderThickness="1,1,1,1" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Visibility="Hidden">
                     <Label.Background>
                         <RadialGradientBrush>
                             <GradientStop Color="Black" Offset="1"/>
@@ -249,131 +249,45 @@
                         </LinearGradientBrush>
                     </Label.BorderBrush>
                 </Label>
-                <ListBox x:Name="Lbx_Name_Output" HorizontalAlignment="Left" Height="161" Margin="0,46,0,0" FontFamily="Bahnschrift" Background="#FF6660B1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="164" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-                <ListBox x:Name="Lbx_Weight_Output" HorizontalAlignment="Left" Height="161" Margin="338,46,0,0" FontFamily="Bahnschrift" Background="#FF6660B1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="164" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-                <ListBox x:Name="Lbx_Surname_Output" HorizontalAlignment="Left" Height="161" Margin="169,46,0,0" FontFamily="Bahnschrift" Background="#FF6660B1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="164" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-                <ListBox x:Name="Lbx_Age_Output" HorizontalAlignment="Left" Height="161" Margin="507,46,0,0" FontFamily="Bahnschrift" Background="#FF6660B1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="164" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-                <ListBox x:Name="Lbx_Activity_Output" HorizontalAlignment="Left" Height="161" Margin="676,46,0,0" FontFamily="Bahnschrift" Background="#FF6660B1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="98" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-                <ListBox x:Name="Lbx_Height_Output" HorizontalAlignment="Left" Height="161" Margin="779,46,0,0" FontFamily="Bahnschrift" Background="#FF6660B1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="164" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+                <ListBox x:Name="Lbx_Name_Output" HorizontalAlignment="Left" Height="161" Margin="0,46,0,0" FontFamily="Bahnschrift" Background="#FF6660B1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="164" d:ItemsSource="{d:SampleData ItemCount=5}" Visibility="Hidden"/>
+                <ListBox x:Name="Lbx_Weight_Output" HorizontalAlignment="Left" Height="161" Margin="338,46,0,0" FontFamily="Bahnschrift" Background="#FF6660B1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="164" d:ItemsSource="{d:SampleData ItemCount=5}" Visibility="Hidden"/>
+                <ListBox x:Name="Lbx_Surname_Output" HorizontalAlignment="Left" Height="161" Margin="169,46,0,0" FontFamily="Bahnschrift" Background="#FF6660B1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="164" d:ItemsSource="{d:SampleData ItemCount=5}" Visibility="Hidden"/>
+                <ListBox x:Name="Lbx_Age_Output" HorizontalAlignment="Left" Height="161" Margin="507,46,0,0" FontFamily="Bahnschrift" Background="#FF6660B1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="164" d:ItemsSource="{d:SampleData ItemCount=5}" Visibility="Hidden"/>
+                <ListBox x:Name="Lbx_Activity_Output" HorizontalAlignment="Left" Height="161" Margin="676,46,0,0" FontFamily="Bahnschrift" Background="#FF6660B1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="98" d:ItemsSource="{d:SampleData ItemCount=5}" Visibility="Hidden"/>
+                <ListBox x:Name="Lbx_Height_Output" HorizontalAlignment="Left" Height="161" Margin="779,46,0,0" FontFamily="Bahnschrift" Background="#FF6660B1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="164" d:ItemsSource="{d:SampleData ItemCount=5}" Visibility="Hidden"/>
+                <DataGrid x:Name="Dg_Out" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,53,0,-103" Foreground="Black" FontFamily="Bahnschrift" FontSize="18">
+                    <DataGrid.RowBackground>
+                        <RadialGradientBrush GradientOrigin="0.5,1">
+                            <GradientStop Color="#FFD24949" Offset="1"/>
+                            <GradientStop Color="White" Offset="0"/>
+                        </RadialGradientBrush>
+                    </DataGrid.RowBackground>
+                    <DataGrid.BorderBrush>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF940808" Offset="0.255"/>
+                            <GradientStop Color="#FF350C0C" Offset="0.988"/>
+                            <GradientStop Color="#FF541010" Offset="0.598"/>
+                        </LinearGradientBrush>
+                    </DataGrid.BorderBrush>
+                    <DataGrid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF940808" Offset="0.255"/>
+                            <GradientStop Color="#FF350C0C" Offset="0.988"/>
+                            <GradientStop Color="#FF541010" Offset="0.598"/>
+                        </LinearGradientBrush>
+                    </DataGrid.Background>
+
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Surname}"  Header="Cognome"/>
+                        <DataGridTextColumn Binding="{Binding Name}"  Header="Nome"/>
+                        <DataGridTextColumn Binding="{Binding Weight}" Header="Peso"/>
+                        <DataGridTextColumn Binding="{Binding Height}"  Header="Altezza"/>
+                        <DataGridTextColumn Binding="{Binding Age}"  Header="Età"/>
+                        <DataGridTextColumn Binding="{Binding Activity}"  Header="Codice Attività"/>
+                        <DataGridTextColumn Binding="{Binding Des_Activity}"  Header="Descrizione Codice Attività"/>
+                    </DataGrid.Columns>
+                </DataGrid>
             </Grid>
         </Viewbox>
-        <DataGrid x:Name="Dg_Out" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="16,298,16,40" Foreground="Black" FontFamily="Bahnschrift" FontSize="18" Visibility="Hidden">
-            <DataGrid.BorderBrush>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF940808" Offset="0.255"/>
-                    <GradientStop Color="#FF350C0C" Offset="0.988"/>
-                    <GradientStop Color="#FF541010" Offset="0.598"/>
-                </LinearGradientBrush>
-            </DataGrid.BorderBrush>
-            <DataGrid.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF940808" Offset="0.255"/>
-                    <GradientStop Color="#FF350C0C" Offset="0.988"/>
-                    <GradientStop Color="#FF541010" Offset="0.598"/>
-                </LinearGradientBrush>
-            </DataGrid.Background>
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Nome" CanUserResize="False">
-                    <DataGridTextColumn.Foreground>
-                        <RadialGradientBrush GradientOrigin="0.5,1" SpreadMethod="Pad">
-                            <GradientStop Color="White" Offset="0"/>
-                            <GradientStop Color="#FFD24949" Offset="1"/>
-                        </RadialGradientBrush>
-                    </DataGridTextColumn.Foreground>
-                </DataGridTextColumn>
-                <DataGridTextColumn Header="Cognome" CanUserResize="False">
-                    <DataGridTextColumn.Foreground>
-                        <RadialGradientBrush GradientOrigin="0.5,1" SpreadMethod="Pad">
-                            <GradientStop Color="White" Offset="0"/>
-                            <GradientStop Color="#FFD24949" Offset="1"/>
-                        </RadialGradientBrush>
-                    </DataGridTextColumn.Foreground>
-                </DataGridTextColumn>
-                <DataGridTextColumn Header="Peso" CanUserResize="False">
-                    <DataGridTextColumn.Foreground>
-                        <RadialGradientBrush GradientOrigin="0.5,1" SpreadMethod="Pad">
-                            <GradientStop Color="White" Offset="0"/>
-                            <GradientStop Color="#FFD24949" Offset="1"/>
-                        </RadialGradientBrush>
-                    </DataGridTextColumn.Foreground>
-                </DataGridTextColumn>
-                <DataGridTextColumn Header="Altezza">
-                    <DataGridTextColumn.Foreground>
-                        <RadialGradientBrush GradientOrigin="0.5,1" SpreadMethod="Pad">
-                            <GradientStop Color="White" Offset="0"/>
-                            <GradientStop Color="#FFD24949" Offset="1"/>
-                        </RadialGradientBrush>
-                    </DataGridTextColumn.Foreground>
-                </DataGridTextColumn>
-                <DataGridTextColumn Header="Età" CanUserResize="False">
-                    <DataGridTextColumn.Foreground>
-                        <RadialGradientBrush GradientOrigin="0.5,1" SpreadMethod="Pad">
-                            <GradientStop Color="White" Offset="0"/>
-                            <GradientStop Color="#FFD24949" Offset="1"/>
-                        </RadialGradientBrush>
-                    </DataGridTextColumn.Foreground>
-                </DataGridTextColumn>
-                <DataGridTextColumn Header="Codice Attività" CanUserResize="False">
-                    <DataGridTextColumn.Foreground>
-                        <RadialGradientBrush GradientOrigin="0.5,1" SpreadMethod="Pad">
-                            <GradientStop Color="White" Offset="0"/>
-                            <GradientStop Color="#FFD24949" Offset="1"/>
-                        </RadialGradientBrush>
-                    </DataGridTextColumn.Foreground>
-                </DataGridTextColumn>
-                <DataGridTextColumn Header="Info Codice Attività" CanUserResize="False">
-                    <DataGridTextColumn.Foreground>
-                        <RadialGradientBrush GradientOrigin="0.5,1" SpreadMethod="Pad">
-                            <GradientStop Color="White" Offset="0"/>
-                            <GradientStop Color="#FFD24949" Offset="1"/>
-                        </RadialGradientBrush>
-                    </DataGridTextColumn.Foreground>
-                </DataGridTextColumn>
-            </DataGrid.Columns>
-        </DataGrid>
-        <GroupBox x:Name="GpBx_Attività" HorizontalAlignment="Left" Height="216" Header="Informazioni Attività" Margin="602,135,0,0" VerticalAlignment="Top" Width="230" BorderBrush="#FFB76452" Foreground="#FFB76B6B" Visibility="Hidden">
-            <StackPanel Height="347" Margin="10,0,19,0" Visibility="Visible">
-                <RadioButton x:Name="RBCommerciante_0" Content="Commerciante" Height="42" Width="225" Checked="Attività_Checked" BorderBrush="Black" Background="#FFB76B6B" Visibility="Visible" >
-                    <RadioButton.Foreground>
-                        <RadialGradientBrush>
-                            <GradientStop Color="Black" Offset="1"/>
-                            <GradientStop Color="White" Offset="0"/>
-                        </RadialGradientBrush>
-                    </RadioButton.Foreground>
-                </RadioButton>
-                <RadioButton x:Name="RBDipendente_1" Content="Dipendente" Height="42" Width="225" Checked="Attività_Checked" BorderBrush="Black" Background="#FFB76B6B" Visibility="Visible">
-                    <RadioButton.Foreground>
-                        <RadialGradientBrush>
-                            <GradientStop Color="Black" Offset="1"/>
-                            <GradientStop Color="White" Offset="0"/>
-                        </RadialGradientBrush>
-                    </RadioButton.Foreground>
-                </RadioButton>
-                <RadioButton x:Name="RBLiberoProfessionista_2" Content="Libero Professionista" Height="42" Width="225" Checked="Attività_Checked" BorderBrush="Black" Background="#FFB76B6B" Visibility="Visible" >
-                    <RadioButton.Foreground>
-                        <RadialGradientBrush>
-                            <GradientStop Color="Black" Offset="1"/>
-                            <GradientStop Color="White" Offset="0"/>
-                        </RadialGradientBrush>
-                    </RadioButton.Foreground>
-                </RadioButton>
-                <RadioButton x:Name="RBArtigiano_3" Content="Artigiano" Height="42" Width="225" Checked="Attività_Checked" BorderBrush="Black" Background="#FFB76B6B" Visibility="Visible" >
-                    <RadioButton.Foreground>
-                        <RadialGradientBrush>
-                            <GradientStop Color="Black" Offset="1"/>
-                            <GradientStop Color="White" Offset="0"/>
-                        </RadialGradientBrush>
-                    </RadioButton.Foreground>
-                </RadioButton>
-                <RadioButton x:Name="RBImprenditore_4" Content="Imprenditore" Height="42" Width="225" Checked="Attività_Checked" BorderBrush="Black" Background="#FFB76B6B" Visibility="Visible" >
-                    <RadioButton.Foreground>
-                        <RadialGradientBrush>
-                            <GradientStop Color="Black" Offset="1"/>
-                            <GradientStop Color="White" Offset="0"/>
-                        </RadialGradientBrush>
-                    </RadioButton.Foreground>
-                </RadioButton>
-            </StackPanel>
-        </GroupBox>
     </Grid>
 </Window>

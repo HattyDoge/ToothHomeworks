@@ -31,25 +31,26 @@ namespace WPF_APPLICATION
         public int activity;
     }
 
-    public enum attività
-    {
-        Commerciante = 0,
-        Dipendente,
-        LiberoProfessionista,
-        Artigiano,
-        Imprenditore
-    }
+
     public partial class MainWindow : Window
     {
 
         public string fileName = "..\\..\\..\\DataFile.txt";
         public int attivitàScelta;
+        string[] activity = { "Commerciante", "Artigiano", "Dipendente", "LiberoProfessionista","Imprenditore"};
         public MainWindow()
         {
             InitializeComponent();
+
+            Cb_ActivityCode.Items.Add("Commerciante");
+            Cb_ActivityCode.Items.Add("Artigiano");
+            Cb_ActivityCode.Items.Add("Dipendente");
+            Cb_ActivityCode.Items.Add("LiberoProfessionista");
+            Cb_ActivityCode.Items.Add("Imprenditore");
         }
         public int peopleIndex;
         public People[] people;
+
         private void Btn_InitializeFile_Click(object sender, RoutedEventArgs e)
         {
 
@@ -94,35 +95,14 @@ namespace WPF_APPLICATION
             Btn_InitializeFile.Visibility = Visibility.Visible;
             Btn_TransferToFile.Visibility = Visibility.Visible;
         }
-        public void UncheckAll()
+        private void Cb_Input()
         {
-            RBCommerciante_0.IsChecked = false;
-            RBDipendente_1.IsChecked = false;
-            RBLiberoProfessionista_2.IsChecked = false;
-            RBArtigiano_3.IsChecked = false;
-            RBImprenditore_4.IsChecked = false;
-        }
-        private void Attività_Checked(object sender, RoutedEventArgs e)
-        {
-            var radioButton = (RadioButton)sender;
-
-            switch (radioButton.Name)
+            for (int i = 0; i < activity.Length; i++)
             {
-                case "RBCommerciante_0":
-                    attivitàScelta = (int)attività.Commerciante;
-                    break;
-                case "RBDipendente_1":
-                    attivitàScelta = (int)attività.Dipendente;
-                    break;
-                case "RBLiberoProfessionista_2":
-                    attivitàScelta = (int)attività.LiberoProfessionista;
-                    break;
-                case "RBArtigiano_3":
-                    attivitàScelta = (int)attività.Artigiano;
-                    break;
-                case "RBImprenditore_4":
-                    attivitàScelta = (int)attività.Imprenditore;
-                    break;
+                if (Cb_ActivityCode.Text == activity[i])
+                {
+                    attivitàScelta = i;
+                }
             }
         }
         private void Btn_InsertNewData_Click(object sender, RoutedEventArgs e)
@@ -132,13 +112,13 @@ namespace WPF_APPLICATION
             Vbx_Output.Visibility = Visibility.Hidden;
             Vbx_InputData.Visibility = Visibility.Visible;
 
-            GpBx_Attività.Visibility = Visibility.Visible;
             bool retry = true;
             people[peopleIndex].surname = Tbx_Surname.Text;
             people[peopleIndex].name = Tbx_Name.Text;
             retry = int.TryParse(Tbx_Age.Text, out people[peopleIndex].age);
             retry = int.TryParse(Tbx_Weight.Text, out people[peopleIndex].weight);
             retry = int.TryParse(Tbx_Height.Text, out people[peopleIndex].height);
+            Cb_Input();
             people[peopleIndex].activity = attivitàScelta;
             if (!retry)
             {
@@ -149,13 +129,12 @@ namespace WPF_APPLICATION
             Tbx_Name.Clear();
             Tbx_Weight.Clear();
             Tbx_Height.Clear();
-            UncheckAll();
+            Cb_ActivityCode.SelectedItem = null;
         }
         private void Btn_Order_Click(object sender, RoutedEventArgs e)
         {
             Vbx_InputData.Visibility = Visibility.Hidden;
             Vbx_Output.Visibility = Visibility.Hidden;
-            GpBx_Attività.Visibility = Visibility.Hidden;
 
             SelectionSort();
         }
@@ -189,13 +168,12 @@ namespace WPF_APPLICATION
         }
         private bool CompareString(string str1, string str2)
         {
-            if(str1.Length > str2.Length)
+            int length = str1.Length;
+            if (str1.Length > str2.Length)
             {
-                string temp = str1;
-                str1 = str2;
-                str2 = temp;
+                length = str2.Length;
             }    
-            for(int i = 0; i < str1.Length; i++)
+            for(int i = 0; i < length; i++)
             {
 				if (str1[i] < str2[i])
 					return false;
@@ -210,18 +188,18 @@ namespace WPF_APPLICATION
             for (int i = 0; i < peopleIndex; i++)
             {
                 int jMin = i;
-                for (int j = i + 1; j < peopleIndex; j++)
+                for (int j = i + 1; j <= peopleIndex; j++)
                 {
-                    string name1 = people[jMin].name;
-                    string name2 = people[j].name;
-                    if (CompareString(name1, name2))
+                    if (people[jMin].name.CompareTo(people[j].name) == 1)
                         jMin = j;
                 }
                 Swap(i, jMin);
             }
         }
+
         private void Btn_File_Output_Click(object sender, RoutedEventArgs e)
         {
+            Dg_Out.Items.Clear();
             Lbx_Activity_Output.Items.Clear();
             Lbx_Weight_Output.Items.Clear();
             Lbx_Age_Output.Items.Clear();
@@ -230,8 +208,8 @@ namespace WPF_APPLICATION
             Lbx_Height_Output.Items.Clear();
 
             Vbx_Output.Visibility = Visibility.Visible;
+            Dg_Out.Visibility = Visibility.Visible;
             Vbx_InputData.Visibility = Visibility.Hidden;
-            GpBx_Attività.Visibility = Visibility.Hidden;
 
             using (StreamReader sr = new StreamReader(fileName))
             {
@@ -239,15 +217,16 @@ namespace WPF_APPLICATION
                 {
                     string linea = sr.ReadLine();
                     string[] splittedLine = linea.Split("|");
-                    
-                    Lbx_Name_Output.Items.Add(splittedLine[0]);
-                    Lbx_Surname_Output.Items.Add(splittedLine[1]);
-                    Lbx_Weight_Output.Items.Add(splittedLine[2]);
-                    Lbx_Height_Output.Items.Add(splittedLine[3]);
-                    Lbx_Age_Output.Items.Add(splittedLine[4]);
-                    Lbx_Activity_Output.Items.Add(splittedLine[5]);
-                    
-                    
+                    Dg_Out.Items.Add(new
+                    {
+                        Name = splittedLine[0],
+                        Surname = splittedLine[1],
+                        Weight = splittedLine[2],
+                        Height = splittedLine[3],
+                        Age = splittedLine[4],
+                        Activity = splittedLine[5],
+                        Des_Activity = activity[int.Parse(splittedLine[5])]
+                    });
                 }
                 sr.Close();
             }
