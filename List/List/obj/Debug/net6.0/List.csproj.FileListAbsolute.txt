@@ -13,3 +13,18 @@ C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\List\List\obj\Debug\net6.0\r
 C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\List\List\obj\Debug\net6.0\List.pdb
 C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\List\List\obj\Debug\net6.0\List.genruntimeconfig.cache
 C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\List\List\obj\Debug\net6.0\ref\List.dll
+F:\File foto e video\Github\MolareToothHomeworks\List\List\bin\Debug\net6.0\List.exe
+F:\File foto e video\Github\MolareToothHomeworks\List\List\bin\Debug\net6.0\List.deps.json
+F:\File foto e video\Github\MolareToothHomeworks\List\List\bin\Debug\net6.0\List.runtimeconfig.json
+F:\File foto e video\Github\MolareToothHomeworks\List\List\bin\Debug\net6.0\List.dll
+F:\File foto e video\Github\MolareToothHomeworks\List\List\bin\Debug\net6.0\List.pdb
+F:\File foto e video\Github\MolareToothHomeworks\List\List\obj\Debug\net6.0\List.csproj.AssemblyReference.cache
+F:\File foto e video\Github\MolareToothHomeworks\List\List\obj\Debug\net6.0\List.GeneratedMSBuildEditorConfig.editorconfig
+F:\File foto e video\Github\MolareToothHomeworks\List\List\obj\Debug\net6.0\List.AssemblyInfoInputs.cache
+F:\File foto e video\Github\MolareToothHomeworks\List\List\obj\Debug\net6.0\List.AssemblyInfo.cs
+F:\File foto e video\Github\MolareToothHomeworks\List\List\obj\Debug\net6.0\List.csproj.CoreCompileInputs.cache
+F:\File foto e video\Github\MolareToothHomeworks\List\List\obj\Debug\net6.0\List.dll
+F:\File foto e video\Github\MolareToothHomeworks\List\List\obj\Debug\net6.0\refint\List.dll
+F:\File foto e video\Github\MolareToothHomeworks\List\List\obj\Debug\net6.0\List.pdb
+F:\File foto e video\Github\MolareToothHomeworks\List\List\obj\Debug\net6.0\List.genruntimeconfig.cache
+F:\File foto e video\Github\MolareToothHomeworks\List\List\obj\Debug\net6.0\ref\List.dll

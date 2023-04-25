@@ -8,24 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\leonardo.frassineti\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\leodo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leonardo.frassineti\\Desktop\\ToothHomeworks\\List\\SimpleList\\SimpleList.csproj",
+      "projectUniqueName": "F:\\File foto e video\\Github\\MolareToothHomeworks\\List\\SimpleList\\SimpleList.csproj",
       "projectName": "SimpleList",
-      "projectPath": "C:\\Users\\leonardo.frassineti\\Desktop\\ToothHomeworks\\List\\SimpleList\\SimpleList.csproj",
-      "packagesPath": "C:\\Users\\leonardo.frassineti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leonardo.frassineti\\Desktop\\ToothHomeworks\\List\\SimpleList\\obj\\",
+      "projectPath": "F:\\File foto e video\\Github\\MolareToothHomeworks\\List\\SimpleList\\SimpleList.csproj",
+      "packagesPath": "C:\\Users\\leodo\\.nuget\\packages\\",
+      "outputPath": "F:\\File foto e video\\Github\\MolareToothHomeworks\\List\\SimpleList\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\leonardo.frassineti\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\leodo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,7 +28,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -67,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
