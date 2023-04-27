@@ -73,26 +73,54 @@ namespace TunaAndSharks
 		}
 		static void EatTuna(int xShark, int yShark, int xTuna, int yTuna)
 		{
-
+			map[xTuna, yTuna] = map[xShark, yShark];
+			map[xShark, yShark] = null;
 		}
-
 		static void PrintMap()
 		{
 
 		}
-		static Cell[] CreateMap(int xSize, int ySize)
+		static int Sonar(int sight, int x, int y)
+		{
+			int rangeHighY = sight - y;
+			int rangeHighX = sight - x;
+			int rangeLowX = sight + x;
+			int rangeLowY = sight + y;
+			int entity = 0;
+			for (int i = rangeLowY; i < rangeHighY; i++)
+				for (int j = rangeLowX; j < rangeHighX; j++)
+					if (map[j, i] != null)
+						if (map[j, i].type == Specimen.tuna)
+							entity = 1;
+						else if (map[j, i].type == Specimen.shark)
+							entity = -1;
+			return entity;
+		}
+		static Cell[] CreateMap(int xSize, int ySize, int numberOfCreatures)
 		{
 			map = new Cell[xSize, ySize];
+			Random random = new Random();
+			int[,] creaturesPosition = new int[2,numberOfCreatures];
+			for (int i = 0; i < creaturesPosition.GetLength(0); i++)
+			{
+				for (int j = 0; j < creaturesPosition.GetLength(1); j++)
+				{
+
+				}
+			}
 			return null;
 		}
 		static void Turn()
 		{
 			for (int i = 0; i < map.GetLength(0); i++)
-				for (int j = 0; i < map.GetLength(0); j++)
+				for (int j = 0; i < map.GetLength(1); j++)
 				{
 					if (map[i, j] != null)
 					{
-
+						if (map[i, j].type == Specimen.tuna)
+							Sonar(TunaShark.tunaSight, i, j);
+						else if (map[i, j].type == Specimen.shark)
+							Sonar(TunaShark.sharkSight, i, j);
 					}
 				}
 		}
@@ -107,8 +135,6 @@ namespace TunaAndSharks
 			TunaShark.sharkSight = 3;
 			TunaShark.tunaReproductionLowerRange = 6;
 			TunaShark.tunaReproductionBiggerRange = 10;
-
-
 		}
 	}
 }

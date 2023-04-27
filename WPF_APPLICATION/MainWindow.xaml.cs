@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -185,7 +186,7 @@ namespace WPF_APPLICATION
         }
         private void SelectionSort()
         {
-            for (int i = 0; i < peopleIndex; i++)
+			for (int i = 0; i < peopleIndex; i++)
             {
                 int jMin = i;
                 for (int j = i + 1; j <= peopleIndex; j++)
@@ -195,8 +196,7 @@ namespace WPF_APPLICATION
                 }
                 Swap(i, jMin);
             }
-        }
-
+		}
         private void Btn_File_Output_Click(object sender, RoutedEventArgs e)
         {
             Dg_Out.Items.Clear();
@@ -219,8 +219,8 @@ namespace WPF_APPLICATION
                     string[] splittedLine = linea.Split("|");
                     Dg_Out.Items.Add(new
                     {
-                        Name = splittedLine[0],
-                        Surname = splittedLine[1],
+                        Name = splittedLine[1],
+                        Surname = splittedLine[0],
                         Weight = splittedLine[2],
                         Height = splittedLine[3],
                         Age = splittedLine[4],
