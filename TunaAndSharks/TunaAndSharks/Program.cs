@@ -41,6 +41,11 @@ namespace TunaAndSharks
 			public Shark shark;
 			public Tuna tuna;
 		}
+		struct Coordinates
+		{
+			public int x;
+			public int y;
+		}
 
 		static Cell CreateShark()
 		{
@@ -80,20 +85,32 @@ namespace TunaAndSharks
 		{
 
 		}
-		static int Sonar(int sight, int x, int y)
+		static bool SharkSonar(int sight, Coordinates x_y)
 		{
-			int rangeHighY = sight - y;
-			int rangeHighX = sight - x;
-			int rangeLowX = sight + x;
-			int rangeLowY = sight + y;
-			int entity = 0;
+			int rangeHighY = sight - x_y.y;
+			int rangeHighX = sight - x_y.x;
+			int rangeLowX = sight + x_y.x;
+			int rangeLowY = sight + x_y.y;
+			bool entity = false;
+			for (int i = rangeLowY; i < rangeHighY; i++)
+				for (int j = rangeLowX; j < rangeHighX; j++)
+					if (map[j, i] != null)
+						if (map[j, i].type == Specimen.shark)
+							entity = true;
+			return entity;
+		}
+		static bool TunaSonar(int sight, Coordinates x_y)
+		{
+			int rangeHighY = sight - x_y.y;
+			int rangeHighX = sight - x_y.x;
+			int rangeLowX = sight + x_y.x;
+			int rangeLowY = sight + x_y.y;
+			bool entity = false;
 			for (int i = rangeLowY; i < rangeHighY; i++)
 				for (int j = rangeLowX; j < rangeHighX; j++)
 					if (map[j, i] != null)
 						if (map[j, i].type == Specimen.tuna)
-							entity = 1;
-						else if (map[j, i].type == Specimen.shark)
-							entity = -1;
+							entity = true;
 			return entity;
 		}
 		static Cell[] CreateMap(int xSize, int ySize, int numberOfCreatures)
@@ -117,10 +134,12 @@ namespace TunaAndSharks
 				{
 					if (map[i, j] != null)
 					{
+						Coordinates coordinate = new Coordinates();
+						coordinate.y = j; coordinate.x = i;
 						if (map[i, j].type == Specimen.tuna)
-							Sonar(TunaShark.tunaSight, i, j);
+							SharkSonar(TunaShark.tunaSight, coordinate);
 						else if (map[i, j].type == Specimen.shark)
-							Sonar(TunaShark.sharkSight, i, j);
+							TunaSonar(TunaShark.sharkSight, coordinate);
 					}
 				}
 		}
