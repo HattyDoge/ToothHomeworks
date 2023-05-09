@@ -76,20 +76,22 @@ namespace ProcessorEmulator
 						break;
 
 					case 2: // push
-						regs[ToRegister(op1)] = LeggiOperando(op2);
+						stack.Add(LeggiOperando(op1));
 						break;
 
 					case 3: // pop
+						if (stack.Count == 0)
+							throw new Exception($"Errore stack vuoto linea {PC}");
 						regs[ToRegister(op1)] = stack.Last();
 						stack.Remove(stack.Last());
 						break;
 
 					case 4: // eq
-						op1 = (LeggiOperando(op2) == LeggiOperando(op3) ? 1 : 0);
+						regs[ToRegister(op1)] = (LeggiOperando(op2) == LeggiOperando(op3) ? 1 : 0);
 						break;
 
 					case 5: // gt
-						op1 = (LeggiOperando(op2) > LeggiOperando(op3) ? 1 : 0);
+						regs[ToRegister(op1)] = (LeggiOperando(op2) > LeggiOperando(op3) ? 1 : 0);
 						break;
 
 					case 6: // jump
@@ -135,7 +137,7 @@ namespace ProcessorEmulator
 						break;
 
 					case 16: // wmem
-						RAM[op1] = LeggiOperando(op2);
+						RAM[LeggiOperando(op1)] = LeggiOperando(op2);
 						break;
 
 					case 17: // call
