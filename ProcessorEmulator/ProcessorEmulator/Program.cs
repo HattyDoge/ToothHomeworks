@@ -42,11 +42,9 @@ namespace ProcessorEmulator
 				{
 					string linea = sr.ReadLine();
 					RAM[index++]= int.Parse(linea);
-
 				}
 				sr.Close();
 			}
-
 			// loop infinito del processore
 			while (true)
 			{
@@ -83,7 +81,7 @@ namespace ProcessorEmulator
 						if (stack.Count == 0)
 							throw new Exception($"Errore stack vuoto linea {PC}");
 						regs[ToRegister(op1)] = stack.Last();
-						stack.Remove(stack.Last());
+						stack.RemoveAt(stack.LastIndexOf(stack.Last()));
 						break;
 
 					case 4: // eq
@@ -109,11 +107,11 @@ namespace ProcessorEmulator
 						break;
 
 					case 9: // add
-						regs[ToRegister(op1)] = LeggiOperando(op2) + LeggiOperando(op3);
+						regs[ToRegister(op1)] = (LeggiOperando(op2) + LeggiOperando(op3)) & 0x7FFF;
 						break;
 
 					case 10: // mult
-						regs[ToRegister(op1)] = LeggiOperando(op2) * LeggiOperando(op3);
+						regs[ToRegister(op1)] = (LeggiOperando(op2) * LeggiOperando(op3)) & 0x7FFF;
 						break;
 
 					case 11: // mod
@@ -129,26 +127,28 @@ namespace ProcessorEmulator
 						break;
 
 					case 14: // not
-						regs[ToRegister(op1)] = ~LeggiOperando(op2);
+						regs[ToRegister(op1)] = (~LeggiOperando(op2)) & 0x7FFF;
 						break;
 
-					case 15: // rmem
+					case 15:
 						regs[ToRegister(op1)] = RAM[LeggiOperando(op2)];
 						break;
-
-					case 16: // wmem
+					case 16:
 						RAM[LeggiOperando(op1)] = LeggiOperando(op2);
 						break;
-
-					case 17: // call
-						PC = op1;
-						stack.Add(op1);
+					case 17:
+						stack.Add(PC);
+						PC = LeggiOperando(op1);
 						break;
-
-					case 18: // ret
+					case 18:
+						if (stack.Count == 0)
+						{
+							throw new Exception($"Errore, stack vuoto!");
+						}
 						PC = stack.Last();
-						stack.Remove(stack.Last());
+						stack.RemoveAt(stack.LastIndexOf(stack.Last()));
 						break;
+
 
 					case 19: // out op1
 						Console.Write((char)LeggiOperando(op1));
