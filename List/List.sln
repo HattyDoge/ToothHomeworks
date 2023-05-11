@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "List", "List\List.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleList", "SimpleList\SimpleList.csproj", "{D3DE09F0-E408-42F0-AC17-0E822D7B1F60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreesAndLists", "Tree\TreesAndLists.csproj", "{840EF74B-C013-451F-B865-FCA763895E08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TreesAndLists", "Tree\TreesAndLists.csproj", "{840EF74B-C013-451F-B865-FCA763895E08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlberiListe", "AlberiListe\AlberiListe.csproj", "{708EC093-2533-474B-B8DC-5013CF2C7ABC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{840EF74B-C013-451F-B865-FCA763895E08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{840EF74B-C013-451F-B865-FCA763895E08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{840EF74B-C013-451F-B865-FCA763895E08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{708EC093-2533-474B-B8DC-5013CF2C7ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{708EC093-2533-474B-B8DC-5013CF2C7ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{708EC093-2533-474B-B8DC-5013CF2C7ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{708EC093-2533-474B-B8DC-5013CF2C7ABC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

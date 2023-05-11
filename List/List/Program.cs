@@ -64,7 +64,10 @@
 		}
 		static void WriteInFile()
 		{
-
+			string fileOut = "..\\..\\..\\fileOut.txt";
+			using (StreamWriter sw = new StreamWriter(fileOut))
+			{
+			}
 		}
 		static void ReadFromFile() 
 		{
@@ -93,8 +96,6 @@
 				}
 				sr.Close();
 			}
-			
-
 		}
 	}
 }

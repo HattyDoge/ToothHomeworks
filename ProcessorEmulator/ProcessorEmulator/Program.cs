@@ -130,17 +130,18 @@ namespace ProcessorEmulator
 						regs[ToRegister(op1)] = (~LeggiOperando(op2)) & 0x7FFF;
 						break;
 
-					case 15:
+					case 15: // rmem
 						regs[ToRegister(op1)] = RAM[LeggiOperando(op2)];
 						break;
-					case 16:
+					case 16: //wmem
 						RAM[LeggiOperando(op1)] = LeggiOperando(op2);
 						break;
-					case 17:
+					case 17: // 
 						stack.Add(PC);
 						PC = LeggiOperando(op1);
 						break;
-					case 18:
+
+					case 18: // ret
 						if (stack.Count == 0)
 						{
 							throw new Exception($"Errore, stack vuoto!");

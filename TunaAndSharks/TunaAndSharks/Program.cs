@@ -113,17 +113,17 @@ namespace TunaAndSharks
 							entity = true;
 			return entity;
 		}
-		static Cell[] CreateMap(int xSize, int ySize, int numberOfCreatures)
+		static Cell[] CreateMap(int xSize, int ySize, int numberOfSharks, int numberOfTunas)
 		{
 			map = new Cell[xSize, ySize];
 			Random random = new Random();
-			int[,] creaturesPosition = new int[2,numberOfCreatures];
-			for (int i = 0; i < creaturesPosition.GetLength(0); i++)
+			for (int i = 0; i < numberOfSharks; i++)
 			{
-				for (int j = 0; j < creaturesPosition.GetLength(1); j++)
-				{
 
-				}
+			}
+			for (int j = 0; j < numberOfTunas; j++)
+			{
+
 			}
 			return null;
 		}
