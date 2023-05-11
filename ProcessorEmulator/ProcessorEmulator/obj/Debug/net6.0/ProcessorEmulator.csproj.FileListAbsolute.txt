@@ -13,3 +13,18 @@ F:\File foto e video\Github\MolareToothHomeworks\ProcessorEmulator\ProcessorEmul
 F:\File foto e video\Github\MolareToothHomeworks\ProcessorEmulator\ProcessorEmulator\obj\Debug\net6.0\ProcessorEmulator.pdb
 F:\File foto e video\Github\MolareToothHomeworks\ProcessorEmulator\ProcessorEmulator\obj\Debug\net6.0\ProcessorEmulator.genruntimeconfig.cache
 F:\File foto e video\Github\MolareToothHomeworks\ProcessorEmulator\ProcessorEmulator\obj\Debug\net6.0\ref\ProcessorEmulator.dll
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\ProcessorEmulator\ProcessorEmulator\bin\Debug\net6.0\ProcessorEmulator.exe
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\ProcessorEmulator\ProcessorEmulator\bin\Debug\net6.0\ProcessorEmulator.deps.json
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\ProcessorEmulator\ProcessorEmulator\bin\Debug\net6.0\ProcessorEmulator.runtimeconfig.json
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\ProcessorEmulator\ProcessorEmulator\bin\Debug\net6.0\ProcessorEmulator.dll
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\ProcessorEmulator\ProcessorEmulator\bin\Debug\net6.0\ProcessorEmulator.pdb
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\ProcessorEmulator\ProcessorEmulator\obj\Debug\net6.0\ProcessorEmulator.csproj.AssemblyReference.cache
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\ProcessorEmulator\ProcessorEmulator\obj\Debug\net6.0\ProcessorEmulator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\ProcessorEmulator\ProcessorEmulator\obj\Debug\net6.0\ProcessorEmulator.AssemblyInfoInputs.cache
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\ProcessorEmulator\ProcessorEmulator\obj\Debug\net6.0\ProcessorEmulator.AssemblyInfo.cs
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\ProcessorEmulator\ProcessorEmulator\obj\Debug\net6.0\ProcessorEmulator.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\ProcessorEmulator\ProcessorEmulator\obj\Debug\net6.0\ProcessorEmulator.dll
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\ProcessorEmulator\ProcessorEmulator\obj\Debug\net6.0\refint\ProcessorEmulator.dll
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\ProcessorEmulator\ProcessorEmulator\obj\Debug\net6.0\ProcessorEmulator.pdb
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\ProcessorEmulator\ProcessorEmulator\obj\Debug\net6.0\ProcessorEmulator.genruntimeconfig.cache
+C:\Users\leonardo.frassineti\Desktop\ToothHomeworks\ProcessorEmulator\ProcessorEmulator\obj\Debug\net6.0\ref\ProcessorEmulator.dll

@@ -154,9 +154,14 @@ namespace ProcessorEmulator
 						Console.Write((char)LeggiOperando(op1));
 						break;
 					case 20: // in
-						regs[ToRegister(op1)] = (int)Console.Read();
+                        int r = Console.Read();
+						if (r != 13)
+						{
+							regs[ToRegister(op1)] = r;
+							break;
+						}
+						regs[ToRegister(op1)] = Console.Read();
 						break;
-
 					case 21: // nop
 						break;
 				}
