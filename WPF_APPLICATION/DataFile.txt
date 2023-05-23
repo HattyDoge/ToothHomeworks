@@ -1,8 +1,4 @@
-A|A|12|12|12|1
-Z|A|12|12|12|1
 Pippo01|Pippo02|80|190|46|0
-Pippo101|Pippo102|84|168|25|3
-Pippo111|Pippo112|90|175|58|4
 Pippo11|Pippo12|50|160|35|0
 Pippo21|Pippo22|100|190|60|0
 Pippo31|Pippo32|76|187|25|0
@@ -12,3 +8,4 @@ Pippo61|Pippo62|95|190|38|2
 Pippo71|Pippo72|90|180|47|1
 Pippo81|Pippo82|100|190|25|3
 Pippo91|Pippo92|97|190|42|2
+Pippo101|Pippo102|84|168|25|3

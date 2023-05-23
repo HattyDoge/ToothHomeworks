@@ -1,0 +1,28 @@
+﻿<Window x:Class="VideoGameRoulette.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VideoGameRoulette"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+	<Window.Background>
+		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+			<GradientStop Color="#FFAB0000"/>
+			<GradientStop Color="#FF4A0000" Offset="1"/>
+		</LinearGradientBrush>
+	</Window.Background>
+	<Grid>
+		<Grid.Background>
+			<ImageBrush ImageSource="/pngimg.com - curtain_PNG37.png"/>
+		</Grid.Background>
+		<Button Content="Scegli i videogiochi o la categoria" HorizontalAlignment="Center" Height="103" Margin="0,85,0,0" VerticalAlignment="Top" Width="226" BorderBrush="{x:Null}" Click="Button_Click" FontWeight="Bold" FontSize="14" Foreground="#FF880000">
+			<Button.Background>
+				<ImageBrush Stretch="UniformToFill" ImageSource="/1436817546_crabe.jpg"/>
+			</Button.Background>
+		</Button>
+		<ListBox HorizontalAlignment="Center" Height="207" Margin="0,182,0,0" VerticalAlignment="Center" Width="505" d:ItemsSource="{d:SampleData ItemCount=5}" FontFamily="Bahnschrift SemiLight SemiCondensed" BorderBrush="{x:Null}" Background="{x:Null}" HorizontalContentAlignment="Center"/>
+		<ComboBox HorizontalAlignment="Center" Height="137" Margin="0,205,0,0" VerticalAlignment="Top" Width="528" BorderBrush="{x:Null}"/>
+
+	</Grid>
+</Window>

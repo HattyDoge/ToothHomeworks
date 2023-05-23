@@ -83,7 +83,31 @@ namespace TunaAndSharks
 		}
 		static void PrintMap()
 		{
-
+			Console.Clear();
+			Console.WriteLine();
+			Console.BackgroundColor = ConsoleColor.DarkBlue;
+			for (int i = 0; i < map.GetLength(0); i++)
+			{
+				for( int j = 0;  j < map.GetLength(1); j++)
+				{
+					if (map[i, j] == null)
+					{
+						Console.ForegroundColor = ConsoleColor.White;
+						Console.Write(" ");
+					}
+					if (map[i, j].type == Specimen.tuna)
+					{
+						Console.ForegroundColor = ConsoleColor.Green;
+						Console.Write("O");
+					}
+					if (map[i, j].type == Specimen.shark)
+					{
+						Console.ForegroundColor = ConsoleColor.Red;
+						Console.Write("X");
+					}
+				}
+				Console.WriteLine();
+			}
 		}
 		static bool SharkSonar(int sight, Coordinates x_y)
 		{
@@ -113,19 +137,23 @@ namespace TunaAndSharks
 							entity = true;
 			return entity;
 		}
-		static Cell[] CreateMap(int xSize, int ySize, int numberOfSharks, int numberOfTunas)
+		static Cell[,] CreateMap(int xSize, int ySize, int numberOfSharks, int numberOfTunas)
 		{
-			map = new Cell[xSize, ySize];
+			Cell[,] planet = new Cell[xSize, ySize];
 			Random random = new Random();
 			for (int i = 0; i < numberOfSharks; i++)
 			{
-
+				int x = random.Next(xSize);
+				int y = random.Next(ySize);
+				planet[x, y] = CreateShark();
 			}
 			for (int j = 0; j < numberOfTunas; j++)
 			{
-
+				int x = random.Next(xSize);
+				int y = random.Next(ySize);
+				planet[x, y] = CreateTuna();
 			}
-			return null;
+			return planet;
 		}
 		static void Turn()
 		{
@@ -154,6 +182,11 @@ namespace TunaAndSharks
 			TunaShark.sharkSight = 3;
 			TunaShark.tunaReproductionLowerRange = 6;
 			TunaShark.tunaReproductionBiggerRange = 10;
+			map = CreateMap(xSize, ySize, TunaShark.numberOfSharks, TunaShark.numberOfTunas);
+			while(TunaShark.numberOfTunas != 0 || TunaShark.numberOfSharks != 0)
+			{
+				PrintMap();
+			}
 		}
 	}
 }
