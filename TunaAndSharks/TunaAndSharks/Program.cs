@@ -192,13 +192,40 @@ namespace TunaAndSharks
 						coordinate.y = j; coordinate.x = i;
 						if (map[i, j].type == Specimen.tuna)
 						{
-							Coordinates SharkPosition;
-							SharkSonar(TunaShark.tunaSight, coordinate, out SharkPosition);
+							ref Tuna tuna = ref map[i, j].tuna;
+							if (!tuna.reproductionActive)
+							{
+								if (tuna.reproductionWait == 0)
+								{
+									Coordinates SharkPosition;
+									SharkSonar(TunaShark.tunaSight, coordinate, out SharkPosition);
+								}
+							}
 						}
 						else if (map[i, j].type == Specimen.shark)
 						{
-							Coordinates TunaPosition;
-							TunaSonar(TunaShark.sharkSight, coordinate, out TunaPosition); 
+							ref Shark shark = ref map[i, j].shark;
+							if (shark.deathCounter == TunaShark.sharkDeath)
+							{
+								Coordinates sharkPosition = new Coordinates { x = j, y = i};
+								SharkDeath(sharkPosition);
+							}
+							else if (shark.digestion)
+							{
+								shark.digestionCounter--;
+							}
+							else
+							{
+								Coordinates TunaPosition;
+								if(TunaSonar(TunaShark.sharkSight, coordinate, out TunaPosition))
+								{
+									// va nella direzione del tonno
+								}
+								else
+								{
+									// va in una direzione a caso
+								}
+							}
 						}
 					}
 				}
