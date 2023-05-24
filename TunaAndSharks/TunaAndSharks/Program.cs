@@ -76,31 +76,41 @@ namespace TunaAndSharks
 
 			return cell;
 		}
-		static void EatTuna(int xShark, int yShark, int xTuna, int yTuna)
+		static void EatTuna(Coordinates Shark, Coordinates Tuna)
 		{
+			var yShark = Shark.y;
+			var xShark = Shark.x;
+			var yTuna = Tuna.y;
+			var xTuna = Tuna.x;
 			map[xTuna, yTuna] = map[xShark, yShark];
 			map[xShark, yShark] = null;
+		}
+		static void SharkDeath(Coordinates Shark)
+		{
+			map[Shark.x, Shark.y] = null;
 		}
 		static void PrintMap()
 		{
 			Console.Clear();
 			Console.WriteLine();
 			Console.BackgroundColor = ConsoleColor.DarkBlue;
-			for (int i = 0; i < map.GetLength(0); i++)
+			for (int i = 0; i < map.GetLength(1); i++)
 			{
-				for( int j = 0;  j < map.GetLength(1); j++)
+				for( int j = 0;  j < map.GetLength(0); j++)
 				{
-					if (map[i, j] == null)
+					if (map[j, i] == null)
 					{
 						Console.ForegroundColor = ConsoleColor.White;
 						Console.Write(" ");
 					}
-					if (map[i, j].type == Specimen.tuna)
+					else
+					if (map[j, i].type == Specimen.tuna)
 					{
 						Console.ForegroundColor = ConsoleColor.Green;
 						Console.Write("O");
 					}
-					if (map[i, j].type == Specimen.shark)
+					else
+					if (map[j, i].type == Specimen.shark)
 					{
 						Console.ForegroundColor = ConsoleColor.Red;
 						Console.Write("X");
@@ -109,32 +119,42 @@ namespace TunaAndSharks
 				Console.WriteLine();
 			}
 		}
-		static bool SharkSonar(int sight, Coordinates x_y)
+		static bool SharkSonar(int sight, Coordinates x_y, out Coordinates SharkPosition)
 		{
 			int rangeHighY = sight - x_y.y;
 			int rangeHighX = sight - x_y.x;
 			int rangeLowX = sight + x_y.x;
 			int rangeLowY = sight + x_y.y;
 			bool entity = false;
+			SharkPosition = new Coordinates();
 			for (int i = rangeLowY; i < rangeHighY; i++)
 				for (int j = rangeLowX; j < rangeHighX; j++)
 					if (map[j, i] != null)
 						if (map[j, i].type == Specimen.shark)
+						{
 							entity = true;
+							SharkPosition.y = i;
+							SharkPosition.x = j;
+						}
 			return entity;
 		}
-		static bool TunaSonar(int sight, Coordinates x_y)
+		static bool TunaSonar(int sight, Coordinates x_y, out Coordinates TunaPosition)
 		{
 			int rangeHighY = sight - x_y.y;
 			int rangeHighX = sight - x_y.x;
 			int rangeLowX = sight + x_y.x;
 			int rangeLowY = sight + x_y.y;
 			bool entity = false;
+			TunaPosition = new Coordinates();
 			for (int i = rangeLowY; i < rangeHighY; i++)
 				for (int j = rangeLowX; j < rangeHighX; j++)
 					if (map[j, i] != null)
 						if (map[j, i].type == Specimen.tuna)
+						{
 							entity = true;
+							TunaPosition.y = i;
+							TunaPosition.x = j;
+						}
 			return entity;
 		}
 		static Cell[,] CreateMap(int xSize, int ySize, int numberOfSharks, int numberOfTunas)
@@ -145,13 +165,19 @@ namespace TunaAndSharks
 			{
 				int x = random.Next(xSize);
 				int y = random.Next(ySize);
-				planet[x, y] = CreateShark();
+				if (planet[x, y] == null)
+					planet[x, y] = CreateShark();
+				else
+					i--;
 			}
-			for (int j = 0; j < numberOfTunas; j++)
+			for (int i = 0; i < numberOfTunas; i++)
 			{
 				int x = random.Next(xSize);
 				int y = random.Next(ySize);
-				planet[x, y] = CreateTuna();
+				if (planet[x, y] == null)
+					planet[x, y] = CreateTuna();
+				else
+					i--;
 			}
 			return planet;
 		}
@@ -165,15 +191,21 @@ namespace TunaAndSharks
 						Coordinates coordinate = new Coordinates();
 						coordinate.y = j; coordinate.x = i;
 						if (map[i, j].type == Specimen.tuna)
-							SharkSonar(TunaShark.tunaSight, coordinate);
+						{
+							Coordinates SharkPosition;
+							SharkSonar(TunaShark.tunaSight, coordinate, out SharkPosition);
+						}
 						else if (map[i, j].type == Specimen.shark)
-							TunaSonar(TunaShark.sharkSight, coordinate);
+						{
+							Coordinates TunaPosition;
+							TunaSonar(TunaShark.sharkSight, coordinate, out TunaPosition); 
+						}
 					}
 				}
 		}
 		static void Main(string[] args)
 		{
-			int ySize = 100;
+			int ySize = 50;
 			int xSize = 100;
 			TunaShark.numberOfSharks = (ySize * xSize * 5) / 100;
 			TunaShark.numberOfTunas = (ySize * xSize * 10) / 100;
