@@ -89,11 +89,17 @@ namespace TunaAndSharks
 		{
 			map[Shark.x, Shark.y] = null;
 		}
+
 		static void PrintMap()
 		{
 			Console.Clear();
 			Console.WriteLine();
 			Console.BackgroundColor = ConsoleColor.DarkBlue;
+			for (int j = 0; j < map.GetLength(0); j++)
+			{
+				Console.Write("-");
+			}
+			Console.WriteLine();
 			for (int i = 0; i < map.GetLength(1); i++)
 			{
 				for( int j = 0;  j < map.GetLength(0); j++)
@@ -116,7 +122,12 @@ namespace TunaAndSharks
 						Console.Write("X");
 					}
 				}
-				Console.WriteLine();
+				Console.WriteLine("|");
+			}
+			Console.WriteLine();
+			for (int j = 0; j < map.GetLength(0); j++)
+			{
+				Console.Write("-");
 			}
 		}
 		static bool SharkSonar(int sight, Coordinates x_y, out Coordinates SharkPosition)
