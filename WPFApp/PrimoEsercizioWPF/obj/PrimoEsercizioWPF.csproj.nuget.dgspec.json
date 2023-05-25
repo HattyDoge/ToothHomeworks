@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "F:\\File foto e video\\Github\\MolareToothHomeworks\\WPFApp\\PrimoEsercizioWPF\\PrimoEsercizioWPF.csproj": {}
+    "C:\\Users\\leonardo.frassineti\\Documents\\GitHub\\ToothHomeworks\\WPFApp\\PrimoEsercizioWPF\\PrimoEsercizioWPF.csproj": {}
   },
   "projects": {
-    "F:\\File foto e video\\Github\\MolareToothHomeworks\\WPFApp\\PrimoEsercizioWPF\\PrimoEsercizioWPF.csproj": {
+    "C:\\Users\\leonardo.frassineti\\Documents\\GitHub\\ToothHomeworks\\WPFApp\\PrimoEsercizioWPF\\PrimoEsercizioWPF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\File foto e video\\Github\\MolareToothHomeworks\\WPFApp\\PrimoEsercizioWPF\\PrimoEsercizioWPF.csproj",
+        "projectUniqueName": "C:\\Users\\leonardo.frassineti\\Documents\\GitHub\\ToothHomeworks\\WPFApp\\PrimoEsercizioWPF\\PrimoEsercizioWPF.csproj",
         "projectName": "PrimoEsercizioWPF",
-        "projectPath": "F:\\File foto e video\\Github\\MolareToothHomeworks\\WPFApp\\PrimoEsercizioWPF\\PrimoEsercizioWPF.csproj",
-        "packagesPath": "C:\\Users\\leodo\\.nuget\\packages\\",
-        "outputPath": "F:\\File foto e video\\Github\\MolareToothHomeworks\\WPFApp\\PrimoEsercizioWPF\\obj\\",
+        "projectPath": "C:\\Users\\leonardo.frassineti\\Documents\\GitHub\\ToothHomeworks\\WPFApp\\PrimoEsercizioWPF\\PrimoEsercizioWPF.csproj",
+        "packagesPath": "C:\\Users\\leonardo.frassineti\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leonardo.frassineti\\Documents\\GitHub\\ToothHomeworks\\WPFApp\\PrimoEsercizioWPF\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\leodo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\leonardo.frassineti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

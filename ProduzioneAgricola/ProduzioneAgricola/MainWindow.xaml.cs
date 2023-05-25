@@ -41,7 +41,7 @@ namespace ProduzioneAgricola
             }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Btn_CaricaFile_Click(object sender, RoutedEventArgs e)
         {
             produzione = new int[prodotti.Length, anni.Length];
             string fileDir = @"../../../Anno.txt";
@@ -62,17 +62,48 @@ namespace ProduzioneAgricola
 
         private void Btn_Tutto_Click(object sender, RoutedEventArgs e)
         {
-
+            for (int i = 0; i < anni.Length; i++)
+                for(int j = 0; j < prodotti.Length; j++)
+                    Dg_Out.Items.Add(new
+                    {
+                        Year = anni[i],
+                        Product = prodotti[j] ,
+                        Production = produzione[j, i]
+                    });
         }
 
         private void Btn_Prodotto_Click(object sender, RoutedEventArgs e)
         {
-
+            string prodottoInserito = Txt_Prodotto.Text;
+            for (int i = 0; i < prodotti.Length; i++ )
+            {
+                if (prodottoInserito == prodotti[i])
+                {
+                    for (int j = 0; j < anni.Length; j++)
+                    {
+                        Lbx_ProduzioneOut.Items.Add($"{anni[j]} {produzione[i,j]}");
+                    }
+                    break;
+                }
+            }
+            Txt_Prodotto.Clear();
         }
 
         private void Btn_Anno_Click(object sender, RoutedEventArgs e)
         {
-
+            string annoInserito = Txt_Anni.Text;
+            for (int i = 0; i < anni.Length; i++)
+            {
+                if (annoInserito == anni[i])
+                {
+                    for (int j = 0; j < prodotti.Length; j++)
+                    {
+                        Lbx_ProduzioneOut.Items.Add($"{prodotti[j]} {produzione[j, i]}");
+                    }
+                    break;
+                }
+            }
+            Txt_Anni.Clear();
         }
 
         private void Btn_Media_Click(object sender, RoutedEventArgs e)

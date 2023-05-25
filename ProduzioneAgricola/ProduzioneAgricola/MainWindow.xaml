@@ -26,39 +26,88 @@
             <ColumnDefinition Width="342*"/>
             <ColumnDefinition Width="37*"/>
         </Grid.ColumnDefinitions>
-        <DataGrid HorizontalAlignment="Center" Height="220" Margin="0,237,0,0" VerticalAlignment="Top" Width="1002" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Column="1" Grid.Row="2" Grid.RowSpan="2">
-            <DataGrid.RowBackground>
-                <RadialGradientBrush GradientOrigin="0.5,1">
-                    <GradientStop Color="#FFD24949" Offset="1"/>
-                    <GradientStop Color="White" Offset="0"/>
-                </RadialGradientBrush>
-            </DataGrid.RowBackground>
-            <DataGrid.BorderBrush>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF940808" Offset="0.255"/>
-                    <GradientStop Color="#FF350C0C" Offset="0.988"/>
-                    <GradientStop Color="#FF541010" Offset="0.598"/>
-                </LinearGradientBrush>
-            </DataGrid.BorderBrush>
-            <DataGrid.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF940808" Offset="0.255"/>
-                    <GradientStop Color="#FF350C0C" Offset="0.988"/>
-                    <GradientStop Color="#FF541010" Offset="0.598"/>
-                </LinearGradientBrush>
-            </DataGrid.Background>
+        <Viewbox Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="664" Margin="42,35,0,0" Grid.RowSpan="3" Grid.Row="1" Stretch="Fill" VerticalAlignment="Top" Width="1144">
+            <Grid Height="608" Width="1125">
+                <DataGrid x:Name="Dg_Out" HorizontalAlignment="Left" Height="220" Margin="119,388,0,0" VerticalAlignment="Top" Width="1002" d:ItemsSource="{d:SampleData ItemCount=5}">
+                    <DataGrid.RowBackground>
+                        <RadialGradientBrush GradientOrigin="0.5,1">
+                            <GradientStop Color="#FFD24949" Offset="1"/>
+                            <GradientStop Color="White" Offset="0"/>
+                        </RadialGradientBrush>
+                    </DataGrid.RowBackground>
+                    <DataGrid.BorderBrush>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF940808" Offset="0.255"/>
+                            <GradientStop Color="#FF350C0C" Offset="0.988"/>
+                            <GradientStop Color="#FF541010" Offset="0.598"/>
+                        </LinearGradientBrush>
+                    </DataGrid.BorderBrush>
+                    <DataGrid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF940808" Offset="0.255"/>
+                            <GradientStop Color="#FF350C0C" Offset="0.988"/>
+                            <GradientStop Color="#FF541010" Offset="0.598"/>
+                        </LinearGradientBrush>
+                    </DataGrid.Background>
 
-            <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding Surname}"  Header="Cognome"/>
-                <DataGridTextColumn Binding="{Binding Name}"  Header="Nome"/>
-                <DataGridTextColumn Binding="{Binding Weight}" Header="Peso"/>
-                <DataGridTextColumn Binding="{Binding Height}"  Header="Altezza"/>
-                <DataGridTextColumn Binding="{Binding Age}"  Header="Età"/>
-                <DataGridTextColumn Binding="{Binding Activity}"  Header="Codice Attività"/>
-                <DataGridTextColumn Binding="{Binding Des_Activity}"  Header="Descrizione Codice Attività"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <Button x:Name="Btn_Prodotto" Content="Inserito un prodotto visualizza la&#xD;&#xA;produzione di tutti gli anni" HorizontalAlignment="Left" Height="67" Margin="261,2,0,0" VerticalAlignment="Top" Width="246" Grid.Column="1" Grid.Row="1" Click="Btn_Prodotto_Click">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Year}"  Header="Anno"/>
+                        <DataGridTextColumn Binding="{Binding Product}"  Header="Prodotti"/>
+                        <DataGridTextColumn Binding="{Binding Production}" Header="Prodotti Fatti"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Button x:Name="Btn_Prodotto" Content="Inserito un prodotto visualizza la&#xA;produzione di tutti gli anni" HorizontalAlignment="Left" Height="67" Margin="330,0,0,0" VerticalAlignment="Top" Width="246" Click="Btn_Prodotto_Click">
+                    <Button.Background>
+                        <RadialGradientBrush GradientOrigin="0.5,1" SpreadMethod="Pad">
+                            <GradientStop Color="White" Offset="0"/>
+                            <GradientStop Color="#FFD24949" Offset="1"/>
+                        </RadialGradientBrush>
+                    </Button.Background>
+                    <Button.Effect>
+                        <DropShadowEffect Color="Black" Direction="320" ShadowDepth="7" Opacity=".5"/>
+                    </Button.Effect>
+                </Button>
+                <Button x:Name="Btn_Tutto" Content="Visualizza Produzione" HorizontalAlignment="Left" Height="67" Margin="78,0,0,0" VerticalAlignment="Top" Width="246" Click="Btn_Tutto_Click">
+                    <Button.Background>
+                        <RadialGradientBrush GradientOrigin="0.5,1" SpreadMethod="Pad">
+                            <GradientStop Color="White" Offset="0"/>
+                            <GradientStop Color="#FFD24949" Offset="1"/>
+                        </RadialGradientBrush>
+                    </Button.Background>
+                    <Button.Effect>
+                        <DropShadowEffect Color="Black" Direction="320" ShadowDepth="7" Opacity=".5"/>
+                    </Button.Effect>
+                </Button>
+                <Button x:Name="Btn_Media" Content="Visualizza la media in cui si sono verifcate &#xA;le produzioni migliore e peggiore." HorizontalAlignment="Left" Height="67" Margin="833,0,0,0" VerticalAlignment="Top" Width="246" Click="Btn_Media_Click">
+                    <Button.Background>
+                        <RadialGradientBrush GradientOrigin="0.5,1" SpreadMethod="Pad">
+                            <GradientStop Color="White" Offset="0"/>
+                            <GradientStop Color="#FFD24949" Offset="1"/>
+                        </RadialGradientBrush>
+                    </Button.Background>
+                    <Button.Effect>
+                        <DropShadowEffect Color="Black" Direction="320" ShadowDepth="7" Opacity=".5"/>
+                    </Button.Effect>
+                </Button>
+                <Button x:Name="Btn_Anno" Content="Inserito un anno visualizza i prodotti e la&#xA;quantità prodotta" HorizontalAlignment="Left" Height="67" Margin="581,0,0,0" VerticalAlignment="Top" Width="246" Click="Btn_Anno_Click">
+                    <Button.Background>
+                        <RadialGradientBrush GradientOrigin="0.5,1" SpreadMethod="Pad">
+                            <GradientStop Color="White" Offset="0"/>
+                            <GradientStop Color="#FFD24949" Offset="1"/>
+                        </RadialGradientBrush>
+                    </Button.Background>
+                    <Button.Effect>
+                        <DropShadowEffect Color="Black" Direction="320" ShadowDepth="7" Opacity=".5"/>
+                    </Button.Effect>
+                </Button>
+                <ListBox x:Name="Lbx_ProduzioneOut" HorizontalAlignment="Left" Height="193" Margin="622,128,0,0" VerticalAlignment="Top" Width="334" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+                <Label x:Name="Lbl_Prodotto" HorizontalAlignment="Left" Height="80" Margin="0,128,0,0" VerticalAlignment="Top" Width="238" Foreground="#FF900F0F" FontFamily="Tw Cen MT Condensed" FontSize="22" AutomationProperties.Name="Lbl_DataInput" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Inserisci il prodotto" Background="#FFB76B6B"/>
+                <TextBox x:Name="Txt_Prodotto" HorizontalAlignment="Left" Height="80" Margin="238,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" SelectionBrush="#FFD700CF" Background="#FFFF9595" FontSize="36" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Bahnschrift SemiLight Condensed"/>
+                <Label x:Name="Lbl_Anno" HorizontalAlignment="Left" Height="80" Margin="0,224,0,0" VerticalAlignment="Top" Width="238" Foreground="#FF900F0F" FontFamily="Tw Cen MT Condensed" FontSize="22" AutomationProperties.Name="Lbl_DataInput" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Inserisci l'anno" Background="#FFB76B6B"/>
+                <TextBox x:Name="Txt_Anni" HorizontalAlignment="Left" Height="80" Margin="238,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" SelectionBrush="#FFD700CF" Background="#FFFF9595" FontSize="36" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Bahnschrift SemiLight Condensed"/>
+            </Grid>
+        </Viewbox>
+        <Button x:Name="Btn_CaricaFile" Content="Carica da file" HorizontalAlignment="Center" Height="337" Margin="0,10,0,0" VerticalAlignment="Top" Width="522" Grid.Column="1" Grid.Row="2" Grid.RowSpan="2" FontSize="36" Click="Btn_CaricaFile_Click">
             <Button.Background>
                 <RadialGradientBrush GradientOrigin="0.5,1" SpreadMethod="Pad">
                     <GradientStop Color="White" Offset="0"/>
@@ -69,43 +118,6 @@
                 <DropShadowEffect Color="Black" Direction="320" ShadowDepth="7" Opacity=".5"/>
             </Button.Effect>
         </Button>
-        <ListBox HorizontalAlignment="Left" Height="222" Margin="330,101,0,0" VerticalAlignment="Top" Width="182" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2"/>
-        <ListBox HorizontalAlignment="Left" Height="222" Margin="143,101,0,0" VerticalAlignment="Top" Width="182" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2"/>
-        <Button x:Name="Btn_Tutto" Content="Visualizza Produzione" HorizontalAlignment="Left" Height="67" Margin="9,2,0,0" VerticalAlignment="Top" Width="246" Grid.Column="1" Grid.Row="1" Click="Btn_Tutto_Click">
-            <Button.Background>
-                <RadialGradientBrush GradientOrigin="0.5,1" SpreadMethod="Pad">
-                    <GradientStop Color="White" Offset="0"/>
-                    <GradientStop Color="#FFD24949" Offset="1"/>
-                </RadialGradientBrush>
-            </Button.Background>
-            <Button.Effect>
-                <DropShadowEffect Color="Black" Direction="320" ShadowDepth="7" Opacity=".5"/>
-            </Button.Effect>
-        </Button>
-        <Button x:Name="Btn_Media" Content="Visualizza la media in cui si sono verifcate &#xD;&#xA;le produzioni migliore e peggiore." HorizontalAlignment="Left" Height="67" Margin="764,2,0,0" VerticalAlignment="Top" Width="246" Grid.Column="1" Grid.Row="1" Click="Btn_Media_Click">
-            <Button.Background>
-                <RadialGradientBrush GradientOrigin="0.5,1" SpreadMethod="Pad">
-                    <GradientStop Color="White" Offset="0"/>
-                    <GradientStop Color="#FFD24949" Offset="1"/>
-                </RadialGradientBrush>
-            </Button.Background>
-            <Button.Effect>
-                <DropShadowEffect Color="Black" Direction="320" ShadowDepth="7" Opacity=".5"/>
-            </Button.Effect>
-        </Button>
-        <Button x:Name="Btn_Anno" Content="Inserito un anno visualizza i prodotti e la&#xD;&#xA;quantità prodotta" HorizontalAlignment="Left" Height="67" Margin="512,2,0,0" VerticalAlignment="Top" Width="246" Grid.Column="1" Grid.Row="1" Click="Btn_Anno_Click">
-            <Button.Background>
-                <RadialGradientBrush GradientOrigin="0.5,1" SpreadMethod="Pad">
-                    <GradientStop Color="White" Offset="0"/>
-                    <GradientStop Color="#FFD24949" Offset="1"/>
-                </RadialGradientBrush>
-            </Button.Background>
-            <Button.Effect>
-                <DropShadowEffect Color="Black" Direction="320" ShadowDepth="7" Opacity=".5"/>
-            </Button.Effect>
-        </Button>
-        <ListBox HorizontalAlignment="Left" Height="222" Margin="705,101,0,0" VerticalAlignment="Top" Width="182" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2"/>
-        <ListBox HorizontalAlignment="Left" Height="222" Margin="518,101,0,0" VerticalAlignment="Top" Width="182" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2"/>
 
     </Grid>
 </Window>
