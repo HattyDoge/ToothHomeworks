@@ -193,6 +193,8 @@ namespace TunaAndSharks
 			return planet;
 		}
 		static void Turn()
+		// in un turno un tonno deve controllare se è obbligato a riprodursi, deve controllare nelle vicinanze i pericoli in caso non ce ne siano sta fermo e se possibile si riproduce 
+		//
 		{
 			for (int i = 0; i < map.GetLength(0); i++)
 				for (int j = 0; i < map.GetLength(1); j++)
@@ -230,7 +232,7 @@ namespace TunaAndSharks
 								Coordinates TunaPosition;
 								if(TunaSonar(TunaShark.sharkSight, coordinate, out TunaPosition))
 								{
-									// va nella direzione del tonno
+									// va nella direzione del tonno                              
 								}
 								else
 								{
