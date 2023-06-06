@@ -67,10 +67,10 @@ namespace TunaAndSharks
 			cell.type = Specimen.tuna;
 
 			Tuna tuna = new Tuna();
-			tuna.reproductionWait = 1;
+			tuna.reproductionWait = 1; //attesa per la nascita
 			tuna.reproductionAvailable = false;
 			tuna.reproductionActive = false;
-			tuna.reproductionCycle = 1;
+			tuna.reproductionCycle = 1; //attesa per la riproduzione
 
 			cell.tuna = tuna;
 
@@ -205,18 +205,46 @@ namespace TunaAndSharks
 						coordinate.y = j; coordinate.x = i;
 						if (map[i, j].type == Specimen.tuna)
 						{
+							Random random = new Random();
 							ref Tuna tuna = ref map[i, j].tuna;
 							if (!tuna.reproductionActive)
 							{
-								if (tuna.reproductionWait == 0)
+								
+								// controlla in caso si possa riprodurre se ci sono degli squali
+								Coordinates SharkPosition;
+								if (!SharkSonar(TunaShark.tunaSight, coordinate, out SharkPosition))
 								{
-									Coordinates SharkPosition;
-									SharkSonar(TunaShark.tunaSight, coordinate, out SharkPosition);
+									
+									
+									if (tuna.reproductionAvailable)
+									{
+										// si riproduce
+										tuna.reproductionActive = true;
+										tuna.reproductionCycle = 0;
+									}
+									else
+									{
+										
+									}
 								}
+								else
+								{
+									//scappa via nella direzione opposta
+								}
+							}
+							else
+							{
+								if (tuna.reproductionWait == 2)
+								{
+									CreateTuna();
+								}
+								else
+									tuna.reproductionWait++;
 							}
 						}
 						else if (map[i, j].type == Specimen.shark)
 						{
+							Random random = new Random();
 							ref Shark shark = ref map[i, j].shark;
 							if (shark.deathCounter == TunaShark.sharkDeath)
 							{
@@ -232,10 +260,49 @@ namespace TunaAndSharks
 								Coordinates TunaPosition;
 								if(TunaSonar(TunaShark.sharkSight, coordinate, out TunaPosition))
 								{
-									// va nella direzione del tonno                              
+									// va nella direzione del tonno
+									var difX = TunaPosition.x - i;
+									var difY = TunaPosition.y - j;
+									int direction = 0;
+									if (Math.Abs(difY) < Math.Abs(difX))
+									{
+										if (difY > 0)
+											direction = 4;
+										else 
+											direction = 2;
+									}
+									else
+									{
+										if (difX > 0)
+											direction = 1;
+										else
+											direction = 3;
+									}
+									switch (direction)
+									{
+										case 1:// Ovest
+											break;
+										case 2:// Nord
+											break;
+										case 3:// Est
+											break;
+										case 4:// Sud
+											break;
+									}
 								}
 								else
 								{
+									int direction = random.Next(1,4);
+									switch (direction) {
+										case 1:// Ovest
+											break;
+										case 2:// Nord
+											break;
+										case 3:// Est
+											break;
+										case 4:// Sud
+											break;
+									}
 									// va in una direzione a caso
 								}
 							}
