@@ -1,0 +1,15 @@
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Funzioni_Primitivi_Vettori\Funzioni_Primitivi_Vettori\bin\Debug\net6.0\Funzioni_Primitivi_Vettori.exe
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Funzioni_Primitivi_Vettori\Funzioni_Primitivi_Vettori\bin\Debug\net6.0\Funzioni_Primitivi_Vettori.deps.json
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Funzioni_Primitivi_Vettori\Funzioni_Primitivi_Vettori\bin\Debug\net6.0\Funzioni_Primitivi_Vettori.runtimeconfig.json
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Funzioni_Primitivi_Vettori\Funzioni_Primitivi_Vettori\bin\Debug\net6.0\Funzioni_Primitivi_Vettori.dll
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Funzioni_Primitivi_Vettori\Funzioni_Primitivi_Vettori\bin\Debug\net6.0\Funzioni_Primitivi_Vettori.pdb
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Funzioni_Primitivi_Vettori\Funzioni_Primitivi_Vettori\obj\Debug\net6.0\Funzioni_Primitivi_Vettori.csproj.AssemblyReference.cache
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Funzioni_Primitivi_Vettori\Funzioni_Primitivi_Vettori\obj\Debug\net6.0\Funzioni_Primitivi_Vettori.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Funzioni_Primitivi_Vettori\Funzioni_Primitivi_Vettori\obj\Debug\net6.0\Funzioni_Primitivi_Vettori.AssemblyInfoInputs.cache
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Funzioni_Primitivi_Vettori\Funzioni_Primitivi_Vettori\obj\Debug\net6.0\Funzioni_Primitivi_Vettori.AssemblyInfo.cs
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Funzioni_Primitivi_Vettori\Funzioni_Primitivi_Vettori\obj\Debug\net6.0\Funzioni_Primitivi_Vettori.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Funzioni_Primitivi_Vettori\Funzioni_Primitivi_Vettori\obj\Debug\net6.0\Funzioni_Primitivi_Vettori.dll
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Funzioni_Primitivi_Vettori\Funzioni_Primitivi_Vettori\obj\Debug\net6.0\refint\Funzioni_Primitivi_Vettori.dll
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Funzioni_Primitivi_Vettori\Funzioni_Primitivi_Vettori\obj\Debug\net6.0\Funzioni_Primitivi_Vettori.pdb
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Funzioni_Primitivi_Vettori\Funzioni_Primitivi_Vettori\obj\Debug\net6.0\Funzioni_Primitivi_Vettori.genruntimeconfig.cache
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Funzioni_Primitivi_Vettori\Funzioni_Primitivi_Vettori\obj\Debug\net6.0\ref\Funzioni_Primitivi_Vettori.dll
