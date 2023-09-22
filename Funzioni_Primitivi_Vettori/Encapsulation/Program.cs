@@ -2,22 +2,22 @@
 {
     internal class Program
     {
-        struct Vett
+        class Vect
         {
             int[] v;
             int count;                          // senza nulla è private
 
-            public void Vett_Inizialize(int value)
+            public Vect(int value)
             {
-                v = new int[value];             // con this. oppure senza lavora con 
-                this.count = 0;
+                v = new int[value];             // con this. oppure senza lavora con il valore messo dentro dalla chiamata dell'oggetto
+                count = 0;
             }
-            public bool Vett_Add(int value)
+            public bool Add(int value)
             {
-                if (this.count == this.v.Length)  // vettore utilizzato al 100%
-                    return false;
-
-                this.v[this.count++] = value;
+                if (count == v.Length)  // vettore utilizzato al 100%
+                    // ci vorrebbe una politica di riallocazione
+                    v = Realloc(v, v.Length * 2);
+                v[count++] = value;
                 return true;
 
                 /* ^^^ Equivale a:
@@ -26,57 +26,68 @@
                     v_count += 1;
                 */
             }
-            public bool Vett_InsertAt(int index, int value)
+            public bool InsertAt(int index, int value)
             {
                 // Elimina il valore v[index] compattando i valori restanti
                 // NOTA: deve valere che 0 <= index < v_count
-                if (!Vett_ShiftRight(index))
+                if (!ShiftRight(index))
                     return false;
 
                 this.v[index] = value;
                 return true;
             }
-            public void Vett_RemoveAt(int index)
+            public void RemoveAt(int index)
             {
                 // Elimina il valore v[index] compattando i valori restanti
                 // NOTA: deve valere che 0 <= index < v_count
-                Vett_ShiftLeft(index);
+                ShiftLeft(index);
             }
-            private bool Vett_ShiftLeft(int index)
+            public void Print()
+            {
+                for (int i = 0; i < count; ++i)
+                {
+                    Console.Write($"{v[i]} ");
+                }
+            }
+            public void PrintAt(int index)
+            {
+                Console.Write($"{v[index]} ");
+            }
+            private bool ShiftLeft(int index)
             {
                 // Elimina il valore v[index] compattando i valori restanti
                 // NOTA: deve valere che 0 <= index < v_count
 
-                if (index < 0 || this.count <= index)
+                if (index < 0 || count <= index)
                     return false;
 
-                for (int cnt = 0; cnt < this.count - index - 1; ++cnt)
+                for (int cnt = 0; cnt < count - index - 1; ++cnt)
                 {
                     int i = index + cnt;
                     this.v[i] = this.v[i + 1];
                 }
 
-                --this.count;
+                --count;
                 return true;
             }
-            private bool Vett_ShiftRight(int index)
+            private bool ShiftRight(int index)
             {
                 // Elimina il valore v[index] compattando i valori restanti
                 // NOTA: deve valere che 0 <= index < v_count
 
-                if (index < 0 || this.count <= index)
+                if (index < 0 || count <= index)
                     return false;
 
-                for (int cnt = this.count - index - 1; cnt >= 0; --cnt)
+                for (int cnt = count - index - 1; cnt >= 0; --cnt)
                 {
                     int i = index + cnt;
-                    this.v[i + 1] = this.v[i];
+                    v[i + 1] = v[i];
                 }
 
-                ++this.count;
+                ++count;
                 return true;
             }
-            private int[] Vett_Realloc(int[] v, int newLength)
+            private int[] Realloc(int[] v, int newLength)
             {
                 // NOTA: deve valere che newLength >= v.Length
 
@@ -91,22 +102,22 @@
         }
         static void Main(string[] args)
         {
-            Vett vett = new Vett(); // è diventato un oggetto quindi sia dati che codice
-            vett.Vett_Inizialize(1000);
-            vett.Vett_Add(2);
-            vett.Vett_Add(7);
-            vett.Vett_Add(10);
-            vett.Vett_Add(11);
-            vett.Vett_Add(35);
-            vett.Vett_Add(40);
-            vett.Vett_Add(8);
-            vett.Vett_InsertAt(2, 999);
-            vett.Vett_RemoveAt(2);
+            Vect vett = new Vect(1000); // è diventato un oggetto quindi sia dati che codice
+            vett.Add(2);
+            vett.Add(7);
+            vett.Add(10);
+            vett.Add(11);
+            vett.Add(35);
+            vett.Add(40);
+            vett.Add(8);
+            vett.InsertAt(2, 999);
+            vett.RemoveAt(2);
+            vett.Print();
 
-            Vett vettore = new Vett();
-            vettore.Vett_Inizialize(40);
-            vettore.Vett_Add(2);
-            vettore.Vett_Add(54);
+            Vect vettore = new Vect(40);
+            vettore.Add(2);
+            vettore.Add(54);
+            vettore.Print();
         }
     }
 }
