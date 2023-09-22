@@ -68,7 +68,9 @@
             {
                 for(int i = 0; i < count; i++)
                 {
-                    v[v.Length - 1 - i] = v[i];
+                    if (v[v.Length - 1 - i] == 0)
+                        v[v.Length - 1 - i] = v[i];
+                    
                 }
             }
             private void Swap(ref int value1, ref int value2)
@@ -144,6 +146,10 @@
             vettore.Print();
             vettore.InsertAt(2, 10);
             Console.WriteLine($"{vettore.GetAt(2)} ");
+
+            vett.BubbleSort();
+            vett.Append();
+            vett.Print();
         }
     }
 }
