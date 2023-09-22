@@ -5,7 +5,7 @@
         struct Vett
         {
             public int[] v;
-            public int count;
+            public int count;                  // senza nulla è private
         }
         static void Vett_Inizialize(ref Vett vett, int value)
         {
@@ -101,6 +101,11 @@
             Vett_Add(ref vett, 8);
             Vett_InsertAt(ref vett, 2, 999);
             Vett_RemoveAt(ref vett, 2);
+
+            Vett vettore = new Vett();
+            Vett_Inizialize(ref vettore, 40);
+            Vett_Add(ref vettore, 2);
+            Vett_Add(ref vettore, 54);
         }
     }
 }
