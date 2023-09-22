@@ -49,9 +49,33 @@
                     Console.Write($"{v[i]} ");
                 }
             }
-            public void PrintAt(int index)
+            public int GetAt(int index)
             {
-                Console.Write($"{v[index]} ");
+                return v[index];
+            }
+            public void BubbleSort()
+            {
+                for (int i = 0; i < count - 1; i++)
+                {
+                    for (int j = 0; j < 1 - count; j++)
+                    {
+                        if (v[j] > v[j + 1])
+                            Swap(ref v[j], ref v[j + 1]);
+                    }
+                }
+            }
+            public void Append() // Sposta tutti gli elementi del vettore in fondo
+            {
+                for(int i = 0; i < count; i++)
+                {
+                    v[v.Length - 1 - i] = v[i];
+                }
+            }
+            private void Swap(ref int value1, ref int value2)
+            {
+                int temp = value1;
+                value1 = value2;
+                value2 = temp;
             }
             private bool ShiftLeft(int index)
             {
@@ -118,6 +142,8 @@
             vettore.Add(2);
             vettore.Add(54);
             vettore.Print();
+            vettore.InsertAt(2, 10);
+            Console.WriteLine($"{vettore.GetAt(2)} ");
         }
     }
 }
