@@ -13,3 +13,17 @@ C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Funzioni_Primitivi_
 C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Funzioni_Primitivi_Vettori\Encapsulation\obj\Debug\net6.0\Encapsulation.pdb
 C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Funzioni_Primitivi_Vettori\Encapsulation\obj\Debug\net6.0\Encapsulation.genruntimeconfig.cache
 C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Funzioni_Primitivi_Vettori\Encapsulation\obj\Debug\net6.0\ref\Encapsulation.dll
+F:\File foto e video\Github\ToothHomeworks\Funzioni_Primitivi_Vettori\Encapsulation\bin\Debug\net6.0\Encapsulation.exe
+F:\File foto e video\Github\ToothHomeworks\Funzioni_Primitivi_Vettori\Encapsulation\bin\Debug\net6.0\Encapsulation.deps.json
+F:\File foto e video\Github\ToothHomeworks\Funzioni_Primitivi_Vettori\Encapsulation\bin\Debug\net6.0\Encapsulation.runtimeconfig.json
+F:\File foto e video\Github\ToothHomeworks\Funzioni_Primitivi_Vettori\Encapsulation\bin\Debug\net6.0\Encapsulation.dll
+F:\File foto e video\Github\ToothHomeworks\Funzioni_Primitivi_Vettori\Encapsulation\bin\Debug\net6.0\Encapsulation.pdb
+F:\File foto e video\Github\ToothHomeworks\Funzioni_Primitivi_Vettori\Encapsulation\obj\Debug\net6.0\Encapsulation.GeneratedMSBuildEditorConfig.editorconfig
+F:\File foto e video\Github\ToothHomeworks\Funzioni_Primitivi_Vettori\Encapsulation\obj\Debug\net6.0\Encapsulation.AssemblyInfoInputs.cache
+F:\File foto e video\Github\ToothHomeworks\Funzioni_Primitivi_Vettori\Encapsulation\obj\Debug\net6.0\Encapsulation.AssemblyInfo.cs
+F:\File foto e video\Github\ToothHomeworks\Funzioni_Primitivi_Vettori\Encapsulation\obj\Debug\net6.0\Encapsulation.csproj.CoreCompileInputs.cache
+F:\File foto e video\Github\ToothHomeworks\Funzioni_Primitivi_Vettori\Encapsulation\obj\Debug\net6.0\Encapsulation.dll
+F:\File foto e video\Github\ToothHomeworks\Funzioni_Primitivi_Vettori\Encapsulation\obj\Debug\net6.0\refint\Encapsulation.dll
+F:\File foto e video\Github\ToothHomeworks\Funzioni_Primitivi_Vettori\Encapsulation\obj\Debug\net6.0\Encapsulation.pdb
+F:\File foto e video\Github\ToothHomeworks\Funzioni_Primitivi_Vettori\Encapsulation\obj\Debug\net6.0\Encapsulation.genruntimeconfig.cache
+F:\File foto e video\Github\ToothHomeworks\Funzioni_Primitivi_Vettori\Encapsulation\obj\Debug\net6.0\ref\Encapsulation.dll

@@ -5,17 +5,17 @@
         class Vect
         {
             int[] v;
-            int count;                          // senza nulla è private
+            int count;                          // Senza nulla è private
 
             public Vect(int value)
             {
-                v = new int[value];             // con this. oppure senza lavora con il valore messo dentro dalla chiamata dell'oggetto
+                v = new int[value];             // Con this. oppure senza lavora con il valore messo dentro dalla chiamata dell'oggetto
                 count = 0;
             }
             public bool Add(int value)
             {
-                if (count == v.Length)  // vettore utilizzato al 100%
-                    // ci vorrebbe una politica di riallocazione
+                if (count == v.Length)          // Vettore utilizzato al 100%
+                                                // Ci vorrebbe una politica di riallocazione
                     v = Realloc(v, v.Length * 2);
                 v[count++] = value;
                 return true;
@@ -42,7 +42,7 @@
                 // NOTA: deve valere che 0 <= index < v_count
                 ShiftLeft(index);
             }
-            public void Print()
+            public void PrintAll()
             {
                 for (int i = 0; i < count; ++i)
                 {
@@ -57,20 +57,18 @@
             {
                 for (int i = 0; i < count - 1; i++)
                 {
-                    for (int j = 0; j < 1 - count; j++)
+                    for (int j = 0; j < count - 1; j++)
                     {
                         if (v[j] > v[j + 1])
                             Swap(ref v[j], ref v[j + 1]);
                     }
                 }
             }
-            public void Append() // Sposta tutti gli elementi del vettore in fondo
+            public void Append(Vect vect) // Aggiunge tutti i valori di un vettore a un altro vettore
             {
-                for(int i = 0; i < count; i++)
+                for(int i = 0; i < vect.count; i++)
                 {
-                    if (v[v.Length - 1 - i] == 0)
-                        v[v.Length - 1 - i] = v[i];
-                    
+                    Add(vect.v[i]);
                 }
             }
             private void Swap(ref int value1, ref int value2)
@@ -138,18 +136,19 @@
             vett.Add(8);
             vett.InsertAt(2, 999);
             vett.RemoveAt(2);
-            vett.Print();
+            vett.PrintAll();
 
             Vect vettore = new Vect(40);
             vettore.Add(2);
             vettore.Add(54);
-            vettore.Print();
-            vettore.InsertAt(2, 10);
+            vettore.PrintAll();
+            vettore.InsertAt(1, 10);
             Console.WriteLine($"{vettore.GetAt(2)} ");
 
-            vett.BubbleSort();
-            vett.Append();
-            vett.Print();
-        }
-    }
+			vettore.Add(13);
+            vett.Append(vettore);
+			vett.BubbleSort();
+			vett.PrintAll();
+		}
+	}
 }
