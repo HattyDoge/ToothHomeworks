@@ -49,9 +49,15 @@
                     Console.Write($"{v[i]} ");
                 }
             }
-            public int GetAt(int index)
+            public bool GetAt(int index, out int value)
             {
-                return v[index];
+                if( index < 0 || index > count )
+                {
+                    value = v[index];
+                    return true;
+                }
+                value = 0;
+                return false;
             }
             public void BubbleSort()
             {
@@ -66,13 +72,15 @@
             }
             public void Append(Vect vect) // Aggiunge tutti i valori di un vettore a un altro vettore
             {
+                if (count + vect.count > v.Length)
+                    v = Realloc(v, count + vect.count);
+                
                 for(int i = 0; i < vect.count; i++)
-                {
                     Add(vect.v[i]);
-                }
             }
             private void Swap(ref int value1, ref int value2)
             {
+                //Swaps values
                 int temp = value1;
                 value1 = value2;
                 value2 = temp;
@@ -99,7 +107,7 @@
                 // Elimina il valore v[index] compattando i valori restanti
                 // NOTA: deve valere che 0 <= index < v_count
 
-                if (index < 0 || count <= index)
+                if (index < 0 || count < index)
                     return false;
 
                 for (int cnt = count - index - 1; cnt >= 0; --cnt)
@@ -126,7 +134,7 @@
         }
         static void Main(string[] args)
         {
-            Vect vett = new Vect(1000); // è diventato un oggetto quindi sia dati che codice
+            Vect vett = new Vect(1); // è diventato un oggetto quindi sia dati che codice
             vett.Add(2);
             vett.Add(7);
             vett.Add(10);
@@ -135,7 +143,7 @@
             vett.Add(40);
             vett.Add(8);
             vett.InsertAt(2, 999);
-            vett.RemoveAt(2);
+            vett.RemoveAt(1);
             vett.PrintAll();
 
             Vect vettore = new Vect(40);
@@ -143,12 +151,18 @@
             vettore.Add(54);
             vettore.PrintAll();
             vettore.InsertAt(1, 10);
-            Console.WriteLine($"{vettore.GetAt(2)} ");
-
+            int value;
+            vettore.GetAt(2, out value);
+            Console.WriteLine($"{value} ");
 			vettore.Add(13);
+
             vett.Append(vettore);
 			vett.BubbleSort();
 			vett.PrintAll();
-		}
-	}
+            // Da provare
+            vett.Append(vett);
+            vett.BubbleSort();
+            vett.PrintAll();
+        }
+    }
 }
