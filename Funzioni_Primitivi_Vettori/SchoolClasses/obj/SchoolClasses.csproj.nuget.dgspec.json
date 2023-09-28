@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leonardo.frassineti\\Documents\\GitHub\\ToothHomeworks\\Funzioni_Primitivi_Vettori\\Funzioni_Primitivi_Vettori\\Funzioni_Primitivi_Vettori.csproj": {}
+    "C:\\Users\\leonardo.frassineti\\Documents\\GitHub\\ToothHomeworks\\Funzioni_Primitivi_Vettori\\SchoolClasses\\SchoolClasses.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leonardo.frassineti\\Documents\\GitHub\\ToothHomeworks\\Funzioni_Primitivi_Vettori\\Funzioni_Primitivi_Vettori\\Funzioni_Primitivi_Vettori.csproj": {
+    "C:\\Users\\leonardo.frassineti\\Documents\\GitHub\\ToothHomeworks\\Funzioni_Primitivi_Vettori\\SchoolClasses\\SchoolClasses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leonardo.frassineti\\Documents\\GitHub\\ToothHomeworks\\Funzioni_Primitivi_Vettori\\Funzioni_Primitivi_Vettori\\Funzioni_Primitivi_Vettori.csproj",
-        "projectName": "Funzioni_Primitivi_Vettori",
-        "projectPath": "C:\\Users\\leonardo.frassineti\\Documents\\GitHub\\ToothHomeworks\\Funzioni_Primitivi_Vettori\\Funzioni_Primitivi_Vettori\\Funzioni_Primitivi_Vettori.csproj",
+        "projectUniqueName": "C:\\Users\\leonardo.frassineti\\Documents\\GitHub\\ToothHomeworks\\Funzioni_Primitivi_Vettori\\SchoolClasses\\SchoolClasses.csproj",
+        "projectName": "SchoolClasses",
+        "projectPath": "C:\\Users\\leonardo.frassineti\\Documents\\GitHub\\ToothHomeworks\\Funzioni_Primitivi_Vettori\\SchoolClasses\\SchoolClasses.csproj",
         "packagesPath": "C:\\Users\\leonardo.frassineti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leonardo.frassineti\\Documents\\GitHub\\ToothHomeworks\\Funzioni_Primitivi_Vettori\\Funzioni_Primitivi_Vettori\\obj\\",
+        "outputPath": "C:\\Users\\leonardo.frassineti\\Documents\\GitHub\\ToothHomeworks\\Funzioni_Primitivi_Vettori\\SchoolClasses\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -28,6 +28,13 @@
             }
             public bool InsertAt(int index, int value)
             {
+                if (this.count == this.v.Length)  // vettore utilizzato al 100%
+                {
+                    // FIX : TODO : qua ci vorrebbe una "politica di riallocazione"
+                    //              ad esempio dei raddoppi oppure un +10%
+                    int new_length = this.v.Length + 1;
+                    this.v = Realloc(this.v, new_length);
+                }
                 // Elimina il valore v[index] compattando i valori restanti
                 // NOTA: deve valere che 0 <= index < v_count
                 if (!ShiftRight(index))
@@ -72,6 +79,9 @@
             }
             public void Append(Vect vect) // Aggiunge tutti i valori di un vettore a un altro vettore
             {
+                if (this == vect)  // evita la Append() di un vettore su se stesso
+                    return;
+
                 if (count + vect.count > v.Length)
                     v = Realloc(v, count + vect.count);
                 
