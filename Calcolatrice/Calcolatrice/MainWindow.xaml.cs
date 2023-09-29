@@ -27,6 +27,8 @@ namespace Calcolatrice
         public string exp;
         private void Number_Click(object sender, RoutedEventArgs e)
         {
+            if (exp == "0")
+                exp = "";
             Button button = (Button)sender;
             exp += button.Content;
             PrintToLabel();
@@ -46,6 +48,13 @@ namespace Calcolatrice
             if(exp == "")
                 exp = "0";
             Result.Content = exp;
+        }
+        private void Operator_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = (Button)sender;
+            if (exp == "" || exp[exp.Length-1] == "+")
+                return;
+
         }
     }
 }
