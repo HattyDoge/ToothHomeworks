@@ -52,7 +52,7 @@ namespace Calcolatrice
         private void Operator_Click(object sender, RoutedEventArgs e)
         {
             Button button = (Button)sender;
-            if (exp == "" || exp[exp.Length-1] == "+")
+            if (exp == "" || exp[exp.Length-1] == '+' || exp[exp.Length - 1] == '/' || exp[exp.Length - 1] == '-' || exp[exp.Length - 1] == 'x')
                 return;
 
         }
