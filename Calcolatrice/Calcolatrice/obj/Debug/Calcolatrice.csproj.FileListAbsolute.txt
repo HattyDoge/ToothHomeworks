@@ -1,0 +1,16 @@
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice.csproj.AssemblyReference.cache
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice.csproj.SuggestedBindingRedirects.cache
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\MainWindow.g.cs
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\App.g.cs
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice_MarkupCompile.cache
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice_MarkupCompile.lref
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Calcolatrice\Calcolatrice\bin\Debug\Calcolatrice.exe.config
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Calcolatrice\Calcolatrice\bin\Debug\Calcolatrice.exe
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Calcolatrice\Calcolatrice\bin\Debug\Calcolatrice.pdb
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\MainWindow.baml
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice.g.resources
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice.Properties.Resources.resources
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice.csproj.GenerateResource.cache
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice.exe
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice.pdb
