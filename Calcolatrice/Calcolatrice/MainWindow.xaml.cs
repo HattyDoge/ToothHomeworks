@@ -25,6 +25,11 @@ namespace Calcolatrice
             InitializeComponent();
         }
         public string exp;
+        class Expression
+        {
+         //   double
+       //     public Expression(int number)
+        }
         private void Number_Click(object sender, RoutedEventArgs e)
         {
             if (exp == "0")
@@ -33,12 +38,12 @@ namespace Calcolatrice
             exp += button.Content;
             PrintToLabel();
         }
-        private void AC_Click(object sender, RoutedEventArgs e)
+        private void AC_Click(object sender, RoutedEventArgs e) //Cancella tutto
         {
             exp = "0";
             PrintToLabel();
         }
-        private void Delete_Click(object sender, RoutedEventArgs e)
+        private void Delete_Click(object sender, RoutedEventArgs e) //Cancella l'ultimo
         {
             exp = exp.Remove(exp.Length - 1, 1);
             PrintToLabel();
@@ -52,11 +57,19 @@ namespace Calcolatrice
         private void Operator_Click(object sender, RoutedEventArgs e)
         {
             Button button = (Button)sender;
-            if (exp == "" || exp[exp.Length - 1] == '+' || exp[exp.Length - 1] == '/' || exp[exp.Length - 1] == '-' || exp[exp.Length - 1] == 'x')
+            if (exp == "" || exp[exp.Length - 1] == '+' || exp[exp.Length - 1] == '/' || exp[exp.Length - 1] == '-' || exp[exp.Length - 1] == '*')
                 return;
             exp += button.Content;
             PrintToLabel();
+        }
 
+        private void Equals_Click(object sender, RoutedEventArgs e)
+        {
+            bool operation = false;
+            for(int i = 0; i < exp.Length; i++)
+            {
+                //if()
+            }
         }
     }
 }
