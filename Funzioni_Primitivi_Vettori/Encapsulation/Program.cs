@@ -2,17 +2,21 @@
 {
     internal class Program
     {
-        class Vect
+        class Vect<Type>
         {
-            int[] v;
+            Type[] v;
             int count;                          // Senza nulla è private
 
             public Vect(int value)
             {
-                v = new int[value];             // Con this. oppure senza lavora con il valore messo dentro dalla chiamata dell'oggetto
+                v = new Type[value];             // Con this. oppure senza lavora con il valore messo dentro dalla chiamata dell'oggetto
                 count = 0;
             }
-            public bool Add(int value)
+            public int Count { get { return count; } }          //Proprietà che ritorna count
+            public int Capacity { get { return v.Length; } set { v = Realloc(v, value); count = Math.Min(count, value); } }    //Proprietà che ritorna la capacità di memoria del vettore o la setta riallocando il vettore
+            public int RemainingSpace { get { return Capacity - count; } }
+            public Type this [int index] { get { return v[index]; } set { v[index] = value; } }     //è un indicizzatore
+            public bool Add(Type value)
             {
                 if (count == v.Length)          // Vettore utilizzato al 100%
                                                 // Ci vorrebbe una politica di riallocazione
@@ -26,7 +30,7 @@
                     v_count += 1;
                 */
             }
-            public bool InsertAt(int index, int value)
+            public bool InsertAt(int index, Type value)
             {
                 if (this.count == this.v.Length)  // vettore utilizzato al 100%
                 {
@@ -49,16 +53,9 @@
                 // NOTA: deve valere che 0 <= index < v_count
                 ShiftLeft(index);
             }
-            public void PrintAll()
-            {
-                for (int i = 0; i < count; ++i)
-                {
-                    Console.Write($"{v[i]} ");
-                }
-            }
             public bool GetAt(int index, out int value)
             {
-                if( index < 0 || index > count )
+                if (index < 0 || index > count)
                 {
                     value = v[index];
                     return true;
@@ -66,6 +63,14 @@
                 value = 0;
                 return false;
             }
+            public void PrintAll()
+            {
+                for (int i = 0; i < count; ++i)
+                {
+                    Console.Write($"{v[i]} ");
+                }
+            }
+            /*
             public void BubbleSort()
             {
                 for (int i = 0; i < count - 1; i++)
@@ -77,6 +82,7 @@
                     }
                 }
             }
+            */
             public void Append(Vect vect) // Aggiunge tutti i valori di un vettore a un altro vettore
             {
                 if (this == vect)  // evita la Append() di un vettore su se stesso
@@ -132,11 +138,10 @@
             private int[] Realloc(int[] v, int newLength)
             {
                 // NOTA: deve valere che newLength >= v.Length
-
                 int[] newVect = new int[newLength];
 
                 // Copia elemento per elemento
-                for (int i = 0; i < v.Length; i++)
+                for (int i = 0; i < Math.Min(v.Length, newVect.Length); i++)
                     newVect[i] = v[i];
 
                 return newVect;
@@ -169,6 +174,11 @@
             vett.Append(vettore);
 			vett.BubbleSort();
 			vett.PrintAll();
+            Console.WriteLine($"I dati sono {vett.Count} su una capacità di {vett.Capacity}");
+            vett.Capacity = 3;
+            Console.WriteLine($"Nella posizione [2] c'è {vett[2]}");
+            vett[2] = -123;
+            Console.WriteLine($"I dati sono {vett.Count} su una capacità di {vett.Capacity}");
             // Da provare
             vett.Append(vett);
             vett.BubbleSort();

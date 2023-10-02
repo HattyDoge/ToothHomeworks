@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Funzioni_Primitivi_Vettori"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encapsulation", "Encapsulation\Encapsulation.csproj", "{CFD485E9-AA51-457F-A2FE-71A8CC0E26EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolClasses", "SchoolClasses\SchoolClasses.csproj", "{8DB777C4-F398-458A-848A-62AA31829265}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolClasses", "SchoolClasses\SchoolClasses.csproj", "{8DB777C4-F398-458A-848A-62AA31829265}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
