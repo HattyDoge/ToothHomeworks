@@ -8,36 +8,55 @@
         Inglese,
         Letteratura,
         TPSIT,
-        Telecomunicazioni
+        Telecomunicazioni,
+        Count
     }
+    class Scholar
+    {
+
+        int registerNumber;
+        DateOnly birthDate;
+        double[] averageGrade;
+#if false
+#endif
+        Dictionary<Subjects, double> averageGrades;
+        string name;
+        string surname;
+        public Scholar(int registerNumber, string name, string surname, DateOnly birthDate)
+        {
+            int subjectsNum = (int)Subjects.Count;
+            this.registerNumber = registerNumber;
+            this.birthDate = birthDate;
+            this.name = name;
+            this.surname = surname;
+            this.averageGrade = new double[subjectsNum];
+        }
+        public string Name { get { return name; } }
+        public string Surname { get { return surname; } }
+        public DateOnly BirthDate { get { return birthDate; } }
+        public int RegisterNumber { get { return registerNumber; } }
+        public double this [Subjects s] { get { return averageGrade[(int)s]; } set { if (value < 0 || value > 10) { averageGrade[(int)s] = value ; } } }
+    }
+    
     class SchoolClass
     {
-        int subjectsNum = 7;
-        struct Scholar
+        int year;
+        string section;
+        List<Scholar> scholars;
+            
+        SchoolClass(int year, string section, int classSize)
         {
-            public int registerNumber;
-            public DateOnly birthDate;
-            public double[] averageGrade;
-            public string name;
-            public string surname;
-        }
-
-        SchoolClass(int classSize)
-        {
-            Scholar[] scholar = new Scholar[classSize];
-            for(int i = 0; i< scholar.Length; i++)
-                scholar[i].averageGrade = new double[subjectsNum];
-        }
-        public Scholar GetStudentAt()
-        {
+            this.year = year;
+            this.section = section;
+            scholars = new List<Scholar>(classSize);
         }
     }
+    
     internal class Program
     {
 
         static void Main(string[] args)
         {
-            
         }
     }
 }
