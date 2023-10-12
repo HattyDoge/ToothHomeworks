@@ -14,3 +14,18 @@ C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Calcolatrice\Calcol
 C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice.csproj.CoreCompileInputs.cache
 C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice.exe
 C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice.pdb
+F:\File foto e video\Github\ToothHomeworks\Calcolatrice\Calcolatrice\bin\Debug\Calcolatrice.exe.config
+F:\File foto e video\Github\ToothHomeworks\Calcolatrice\Calcolatrice\bin\Debug\Calcolatrice.exe
+F:\File foto e video\Github\ToothHomeworks\Calcolatrice\Calcolatrice\bin\Debug\Calcolatrice.pdb
+F:\File foto e video\Github\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice.csproj.AssemblyReference.cache
+F:\File foto e video\Github\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\MainWindow.g.cs
+F:\File foto e video\Github\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\App.g.cs
+F:\File foto e video\Github\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice_MarkupCompile.cache
+F:\File foto e video\Github\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice_MarkupCompile.lref
+F:\File foto e video\Github\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\MainWindow.baml
+F:\File foto e video\Github\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice.g.resources
+F:\File foto e video\Github\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice.Properties.Resources.resources
+F:\File foto e video\Github\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice.csproj.GenerateResource.cache
+F:\File foto e video\Github\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice.csproj.CoreCompileInputs.cache
+F:\File foto e video\Github\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice.exe
+F:\File foto e video\Github\ToothHomeworks\Calcolatrice\Calcolatrice\obj\Debug\Calcolatrice.pdb

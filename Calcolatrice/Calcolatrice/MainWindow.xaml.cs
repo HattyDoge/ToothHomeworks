@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,11 +26,7 @@ namespace Calcolatrice
             InitializeComponent();
         }
         public string exp;
-        class Expression
-        {
-         //   double
-       //     public Expression(int number)
-        }
+        bool negativeExp = false;
         private void Number_Click(object sender, RoutedEventArgs e)
         {
             if (exp == "0")
@@ -52,10 +49,14 @@ namespace Calcolatrice
         {
             if(exp == "")
                 exp = "0";
-            Result.Content = exp;
+            if (negativeExp)
+                Result.Content = "-(" + exp + ")";
+            else
+                Result.Content = exp;
         }
         private void Operator_Click(object sender, RoutedEventArgs e)
         {
+            bool operation;
             Button button = (Button)sender;
             if (exp == "" || exp[exp.Length - 1] == '+' || exp[exp.Length - 1] == '/' || exp[exp.Length - 1] == '-' || exp[exp.Length - 1] == '*')
                 return;
@@ -65,11 +66,35 @@ namespace Calcolatrice
 
         private void Equals_Click(object sender, RoutedEventArgs e)
         {
-            bool operation = false;
-            for(int i = 0; i < exp.Length; i++)
+            DataTable calc = new DataTable();
+            exp = exp.Replace(',', '.');
+            try
+            { var result = calc.Compute(exp, null);
+                exp = result.ToString();
+                PrintToLabel();
+            }
+            catch
             {
-                //if()
+                exp = "Syntax Error";
+                PrintToLabel();
+                exp = "";
             }
         }
-    }
+        private void Negative_Click(object sender, RoutedEventArgs e)
+        {
+            negativeExp = !negativeExp;
+            PrintToLabel();
+		}
+
+		private void Point_Click(object sender, RoutedEventArgs e)
+		{
+			exp += ".";
+			PrintToLabel();
+		}
+
+		private void Percentage_Click(object sender, RoutedEventArgs e)
+		{
+            Equals_Click(null, null);
+		}
+	}
 }
