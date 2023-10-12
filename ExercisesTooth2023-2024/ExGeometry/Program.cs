@@ -51,7 +51,7 @@
                     else
                         this.larghezza = value; 
                 } 
-            }
+            } //non può essere negativa
             public double Height { get { return this.altezza; }
                 set
                 {
@@ -62,33 +62,33 @@
                     else
                         this.altezza = value;
                 }
-            }
-        class Punto
-        {
-            double x;
-            double y;
-            public Punto(double x, double y)
+            } //non può essere negativa
+            class Punto
             {
-                this.x = x;
-                this.y = y;
-            }
-            public Punto()
-            {
-                this.x = 0;
-                this.y = 0;
-            }
-            public double X { get { return this.x; } set { this.x = value; } }
-            public double Y { get { return this.y;} set { this.y = value; } }
+                double x;
+                double y;
+                public Punto(double x, double y)
+                {
+                    this.x = x;
+                    this.y = y;
+                }
+                public Punto()
+                {
+                    this.x = 0;
+                    this.y = 0;
+                }
+                public double X { get { return this.x; } set { this.x = value; } }
+                public double Y { get { return this.y; } set { this.y = value; } }
 
-            public void Sposta(Vettore v)
-            {
+                public void Sposta(Vettore v)
+                {
 
-            }
-            public Vettore Sottrazione ()
-            {
+                }
+                public Vettore Sottrazione()
+                {
 
+                }
             }
-        }
         class Vettore //Un punto è l'origine perchè i vettori sono liberi di muoversi in un grafico
         {
             double dx;
