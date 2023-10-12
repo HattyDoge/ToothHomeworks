@@ -16,10 +16,11 @@
 
         int registerNumber;
         DateOnly birthDate;
+#if true
         double[] averageGrade;
-#if false
-#endif
+#else
         Dictionary<Subjects, double> averageGrades;
+#endif
         string name;
         string surname;
         public Scholar(int registerNumber, string name, string surname, DateOnly birthDate)
