@@ -4,71 +4,83 @@
     {
         class Rettangolo
         {
-            double x;
-            double y;
-            double larghezza;
-            double altezza;
+            private double x;
+            private double y;
+            private double length;
+            private double height;
             public Rettangolo(double x, double y, double larghezzaX2, double altezzaX1, bool HeightLength)
             {
                 if (HeightLength)
                 {
                     this.x = x;
                     this.y = y;
-                    this.altezza = altezzaX1;
-                    this.larghezza = larghezzaX2;
+                    this.height = altezzaX1;
+                    this.length = larghezzaX2;
                 }
                 else
                 {
                     this.x = x;
                     this.y = y;
-                    altezza = y - altezzaX1;
-                    larghezza = x - larghezzaX2;
+                    height = y - altezzaX1;
+                    length = x - larghezzaX2;
                 }
             }
             public Rettangolo()
             {
                 this.x = 0;
                 this.y = 0;
-                this.altezza = 0;
-                this.larghezza = 0;
+                this.height = 0;
+                this.length = 0;
             }
             public Rettangolo(Point p0, Point p1) // punti agli estremi
             {
                 x = p0.X;
                 y = p0.Y;
-                altezza = y - p1.Y;
-                larghezza = x - p1.X;
+                height = y - p1.Y;
+                length = x - p1.X;
             }
             public double X { get { return this.x; } set { this.x = value; } }
             public double Y { get { return this.y; } set { this.y = value; } }
             public double Length
             {
-                get { return this.larghezza; }
+                get { return this.length; }
                 set
                 {
                     if (value < 0)
                     {
                         x -= value;
-                        this.larghezza = Math.Abs(value);
+                        this.length = Math.Abs(value);
                     }
                     else
-                        this.larghezza = value;
+                        this.length = value;
                 }
             } //non può essere negativa
             public double Height
             {
-                get { return this.altezza; }
+                get { return this.height; }
                 set
                 {
                     if (value < 0)
                     {
                         this.y -= value;
-                        this.altezza = Math.Abs(value);
+                        this.height = Math.Abs(value);
                     }
                     else
-                        this.altezza = value;
+                        this.height = value;
                 }
             } //non può essere negativa
+            public bool Contains(Point p)
+            {
+                if (x < p.X && p.X > x + length && y < p.Y && p.Y > y + height)
+                    return true;
+                return false;
+            }
+            public bool Contains(Rettangolo r)
+            {
+                if (x < r.X && r.X < x + length && y < r.Y && r.Y < y + height && x < r.X + r.Length && r.X + r.Length > x + length && y < r.Y + r.Height && r.Y + r.Height> y + height )
+                        return true;
+                return false;
+            }
 
         }
         class Point
