@@ -71,17 +71,26 @@
             } //non può essere negativa
             public bool Contains(Point p)
             {
-                if (x < p.X && p.X > x + length && y < p.Y && p.Y > y + height)
+                if (x <= p.X && p.X >= x + length && y <= p.Y && p.Y >= y + height)
                     return true;
                 return false;
             }
             public bool Contains(Rettangolo r)
             {
-                if (x < r.X && r.X < x + length && y < r.Y && r.Y < y + height && x < r.X + r.Length && r.X + r.Length > x + length && y < r.Y + r.Height && r.Y + r.Height> y + height )
+                if (this.x <= r.X && r.X <= this.x + this.length && this.y <= r.Y && r.Y <= this.y + this.height && this.x <= r.X + r.Length && r.X + r.Length >= this.x + this.length && this.y <= r.Y + r.Height && r.Y + r.Height >= this.y + this.height )
                         return true;
                 return false;
             }
-
+            public void Sposta(Vectorial v)
+            {
+                x += v.Dx; y += v.Dy;
+            }
+            public bool Sovrapposto(Rettangolo r)
+            {
+                if ((this.x <= r.X && r.X <= this.x + this.length) && (this.y <= r.Y && r.Y <= this.y + this.height) || (this.x <= r.X + r.Length && r.X + r.Length >= this.x + this.length) && (this.y <= r.Y + r.Height && r.Y + r.Height >= this.y + this.height))
+                    return true;
+                return false;
+            }
         }
         class Point
         {
@@ -101,11 +110,11 @@
             public double Y { get { return this.y; } set { this.y = value; } }
             public void Sposta(Vectorial v)
             {
-
+                x += v.Dx; y += v.Dy;
             }
             public Vectorial Sottrazione(Point p)
             {
-                return null;
+                return new Vectorial (this.x - p.X, y - p.Y) ;
             }
         }
         class Vectorial //Un punto è l'origine perchè i vettori sono liberi di muoversi in un grafico
@@ -139,6 +148,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
+
         }
     }
 }
