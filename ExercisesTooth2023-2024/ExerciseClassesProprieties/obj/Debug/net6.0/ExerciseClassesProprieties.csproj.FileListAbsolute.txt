@@ -1,0 +1,15 @@
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExerciseClassesProprieties\bin\Debug\net6.0\ExerciseClassesProprieties.exe
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExerciseClassesProprieties\bin\Debug\net6.0\ExerciseClassesProprieties.deps.json
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExerciseClassesProprieties\bin\Debug\net6.0\ExerciseClassesProprieties.runtimeconfig.json
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExerciseClassesProprieties\bin\Debug\net6.0\ExerciseClassesProprieties.dll
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExerciseClassesProprieties\bin\Debug\net6.0\ExerciseClassesProprieties.pdb
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExerciseClassesProprieties\obj\Debug\net6.0\ExerciseClassesProprieties.csproj.AssemblyReference.cache
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExerciseClassesProprieties\obj\Debug\net6.0\ExerciseClassesProprieties.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExerciseClassesProprieties\obj\Debug\net6.0\ExerciseClassesProprieties.AssemblyInfoInputs.cache
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExerciseClassesProprieties\obj\Debug\net6.0\ExerciseClassesProprieties.AssemblyInfo.cs
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExerciseClassesProprieties\obj\Debug\net6.0\ExerciseClassesProprieties.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExerciseClassesProprieties\obj\Debug\net6.0\ExerciseClassesProprieties.dll
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExerciseClassesProprieties\obj\Debug\net6.0\refint\ExerciseClassesProprieties.dll
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExerciseClassesProprieties\obj\Debug\net6.0\ExerciseClassesProprieties.pdb
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExerciseClassesProprieties\obj\Debug\net6.0\ExerciseClassesProprieties.genruntimeconfig.cache
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExerciseClassesProprieties\obj\Debug\net6.0\ref\ExerciseClassesProprieties.dll
