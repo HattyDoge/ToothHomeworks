@@ -10,7 +10,7 @@
             private double height;
             public Rettangolo(double x, double y, double larghezzaX2, double altezzaX1, bool HeightLength)
             {
-                if (HeightLength)
+                if (!HeightLength)
                 {
                     this.x = x;
                     this.y = y;
@@ -71,13 +71,13 @@
             } //non può essere negativa
             public bool Contains(Point p)
             {
-                if (x <= p.X && p.X >= x + length && y <= p.Y && p.Y >= y + height)
+                if (x <= p.X && p.X <= x + length && y <= p.Y && p.Y <= y + height)
                     return true;
                 return false;
             }
             public bool Contains(Rettangolo r)
             {
-                if (x <= r.X && r.X <= x + length && y <= r.Y && r.Y <= y + height && x <= r.X + r.Length && r.X + r.Length >= x + length && y <= r.Y + r.Height && r.Y + r.Height >= y + height )
+                if (x <= r.x && r.x <= x + length && y <= r.y && r.y <= y + height && x <= r.x + r.Length && r.x + r.Length <= x + length && y <= r.y + r.Height && r.y + r.Height <= y + height )
                         return true;
                 return false;
             }
@@ -87,9 +87,9 @@
             }
             public bool Sovrapposto(Rettangolo r)
             {
-                if ((x <= r.X && r.X <= x + length) && (y <= r.Y && r.Y <= y + height) || (x <= r.X + r.Length && r.X + r.Length >= x + length) && (y <= r.Y + r.Height && r.Y + r.Height >= y + height))
-                    return true;
-                return false;
+                if (x < r.x && r.x < x + length && y < r.y && r.y < y + height && x < r.x + r.Length && r.x + r.Length < x + length && y < r.y + r.Height && r.y + r.Height < y + height)
+                    return false;
+                return true;
             }
         }
         class Point
