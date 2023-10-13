@@ -1,4 +1,5 @@
-﻿using System;
+﻿// Frassineti Leonardo
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -26,7 +27,8 @@ namespace Calcolatrice
             InitializeComponent();
         }
         public string exp;
-        bool negativeExp = false;
+        public bool negativeExp = false;
+        public bool numberComma = false;
         private void Number_Click(object sender, RoutedEventArgs e)
         {
             if (exp == "0")
@@ -42,6 +44,8 @@ namespace Calcolatrice
         }
         private void Delete_Click(object sender, RoutedEventArgs e) //Cancella l'ultimo
         {
+            if (exp[exp.Length - 1] == '.')
+                numberComma = false;
             exp = exp.Remove(exp.Length - 1, 1);
             PrintToLabel();
         }
@@ -58,18 +62,21 @@ namespace Calcolatrice
         {
             bool operation;
             Button button = (Button)sender;
-            if (exp == "" || exp[exp.Length - 1] == '+' || exp[exp.Length - 1] == '/' || exp[exp.Length - 1] == '-' || exp[exp.Length - 1] == '*')
+            if (exp == "" || exp[exp.Length - 1] == '+' || exp[exp.Length - 1] == '/' || exp[exp.Length - 1] == '-' || exp[exp.Length - 1] == '*' || exp[exp.Length - 1] == '%')
                 return;
             exp += button.Content;
+            numberComma = false;
             PrintToLabel();
         }
 
         private void Equals_Click(object sender, RoutedEventArgs e)
         {
             DataTable calc = new DataTable();
-            exp = exp.Replace(',', '.');
             try
-            { var result = calc.Compute(exp, null);
+            {
+                if (exp != null)
+                    exp = exp.Replace(',', '.');
+                var result = calc.Compute(exp, null);
                 exp = result.ToString();
                 PrintToLabel();
             }
@@ -88,13 +95,12 @@ namespace Calcolatrice
 
 		private void Point_Click(object sender, RoutedEventArgs e)
 		{
-			exp += ".";
-			PrintToLabel();
+            if (numberComma == false)
+            {
+                numberComma = true;
+                exp += ".";
+            }
+            PrintToLabel();
 		}
-
-		private void Percentage_Click(object sender, RoutedEventArgs e)
-		{
-            Equals_Click(null, null);
-		}
-	}
+    }
 }
