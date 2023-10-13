@@ -1,0 +1,15 @@
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExGeometry\bin\Debug\net6.0\ExGeometry.exe
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExGeometry\bin\Debug\net6.0\ExGeometry.deps.json
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExGeometry\bin\Debug\net6.0\ExGeometry.runtimeconfig.json
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExGeometry\bin\Debug\net6.0\ExGeometry.dll
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExGeometry\bin\Debug\net6.0\ExGeometry.pdb
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExGeometry\obj\Debug\net6.0\ExGeometry.csproj.AssemblyReference.cache
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExGeometry\obj\Debug\net6.0\ExGeometry.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExGeometry\obj\Debug\net6.0\ExGeometry.AssemblyInfoInputs.cache
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExGeometry\obj\Debug\net6.0\ExGeometry.AssemblyInfo.cs
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExGeometry\obj\Debug\net6.0\ExGeometry.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExGeometry\obj\Debug\net6.0\ExGeometry.dll
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExGeometry\obj\Debug\net6.0\refint\ExGeometry.dll
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExGeometry\obj\Debug\net6.0\ExGeometry.pdb
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExGeometry\obj\Debug\net6.0\ExGeometry.genruntimeconfig.cache
+C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\ExGeometry\obj\Debug\net6.0\ref\ExGeometry.dll

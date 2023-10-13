@@ -77,7 +77,7 @@
             }
             public bool Contains(Rettangolo r)
             {
-                if (this.x <= r.X && r.X <= this.x + this.length && this.y <= r.Y && r.Y <= this.y + this.height && this.x <= r.X + r.Length && r.X + r.Length >= this.x + this.length && this.y <= r.Y + r.Height && r.Y + r.Height >= this.y + this.height )
+                if (x <= r.X && r.X <= x + length && y <= r.Y && r.Y <= y + height && x <= r.X + r.Length && r.X + r.Length >= x + length && y <= r.Y + r.Height && r.Y + r.Height >= y + height )
                         return true;
                 return false;
             }
@@ -87,7 +87,7 @@
             }
             public bool Sovrapposto(Rettangolo r)
             {
-                if ((this.x <= r.X && r.X <= this.x + this.length) && (this.y <= r.Y && r.Y <= this.y + this.height) || (this.x <= r.X + r.Length && r.X + r.Length >= this.x + this.length) && (this.y <= r.Y + r.Height && r.Y + r.Height >= this.y + this.height))
+                if ((x <= r.X && r.X <= x + length) && (y <= r.Y && r.Y <= y + height) || (x <= r.X + r.Length && r.X + r.Length >= x + length) && (y <= r.Y + r.Height && r.Y + r.Height >= y + height))
                     return true;
                 return false;
             }
@@ -138,17 +138,25 @@
             }
             public double Dx { get { return this.dx; } set { this.dx = value; } }
             public double Dy { get { return this.dy; } set { this.dy = value; } }
-
-            public Vectorial Somma()
+            public double Length { get { return Math.Sqrt( Math.Pow(this.dx, 2) * Math.Pow(this.dx, 2)); }}
+            public Vectorial Somma(Vectorial v)
             {
-                return null; 
+                return new Vectorial(dx + v.dx, dy + v.dy);
             }
 
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-
+            Rettangolo A = new Rettangolo(10.0, 10.0, 5.0, 6.0, false);
+            Rettangolo B = new Rettangolo(10.1, 10.1, 4.0, 5.0, false);
+            if (A.Contains(B))
+                Console.WriteLine("A contiene B");
+            if (!B.Contains(A))
+                Console.WriteLine("B non contiene A");
+            if (A.Sovrapposto(B)) Console.WriteLine("B è sovrapposto ad A");
+            B.X = 9.8; B.Y = 9.8;
+            if (A.Sovrapposto(B)) Console.WriteLine("B è sovrapposto ad A");
+            Console.ReadLine();
         }
     }
 }
