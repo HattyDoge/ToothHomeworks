@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciseClassesProprieties"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExGeometry", "ExGeometry\ExGeometry.csproj", "{0B4E816B-17AD-4DBB-AC05-5131CC510EED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operators", "Operators\Operators.csproj", "{3D0F67CA-068F-4565-B80E-22C807E667CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0B4E816B-17AD-4DBB-AC05-5131CC510EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B4E816B-17AD-4DBB-AC05-5131CC510EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B4E816B-17AD-4DBB-AC05-5131CC510EED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D0F67CA-068F-4565-B80E-22C807E667CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D0F67CA-068F-4565-B80E-22C807E667CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D0F67CA-068F-4565-B80E-22C807E667CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0F67CA-068F-4565-B80E-22C807E667CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
