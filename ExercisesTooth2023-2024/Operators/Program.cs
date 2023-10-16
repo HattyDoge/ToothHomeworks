@@ -17,11 +17,8 @@
                 throw new DivideByZeroException();
             this.numerator = numerator;
             this.denominator = denominator;
-            if (this.denominator < 0)   //  Normalizzazione
-            {
-                this.numerator = -numerator;
-                this.denominator = -denominator;
-            }
+
+            Normalize();
         }
         public Rational(int numerator) : this(numerator, 1) { }
         public Rational() : this(0, 1) { }
@@ -34,6 +31,45 @@
         {
             return new Rational(r1.numerator * r1.denominator + r2.numerator * r2.denominator, r1.denominator * r2.denominator);
         }
+        public static Rational operator -(Rational r1, Rational r2) // TODO
+        {
+            return new Rational(r1.numerator * r1.denominator + r2.numerator * r2.denominator, r1.denominator * r2.denominator);
+        }
+        public static Rational operator *(Rational r1, Rational r2)
+        {
+            return new Rational(r1.numerator * r2.numerator, r1.denominator * r2.denominator);
+        }
+        public static Rational operator /(Rational r1, Rational r2) // TODO
+        {
+            return new Rational(r1.numerator * r1.denominator + r2.numerator * r2.denominator, r1.denominator * r2.denominator);
+        }
+        public static explicit operator double (Rational r)
+        {
+            return (double)r.numerator / r.denominator;
+        }
+        void Normalize()
+        {
+            if (this.denominator < 0)   //  Normalizzazione
+            {
+                this.numerator = -numerator;
+                this.denominator = -denominator;
+            }
+
+            int mcd = Euclide(denominator, numerator);
+            numerator /= mcd;
+            denominator /= mcd;
+        }
+        int Euclide(int a, int b) // prototipo della funzione Euclide //
+        {
+            int r;
+            while (b != 0) //ripetere finché non riduciamo a zero
+            {
+                r = a % b;
+                a = b;
+                b = r; //scambiamo il ruolo di a e b
+            }
+            return a; //... e quando b è (o è diventato) 0, il risultato è a
+        }
     }
     internal class Program
     {
@@ -45,6 +81,7 @@
       //    Console.WriteLine(sum);
             Rational sum = A + B;
             Console.WriteLine(sum);
+            Console.WriteLine((double)sum); // (double) <-- explicit ( lo può fare anche implicit )
         }
     }
 }
