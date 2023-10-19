@@ -31,17 +31,17 @@
         {
             return new Rational(r1.numerator * r1.denominator + r2.numerator * r2.denominator, r1.denominator * r2.denominator);
         }
-        public static Rational operator -(Rational r1, Rational r2) // TODO
+        public static Rational operator - (Rational r1, Rational r2)
         {
-            return new Rational(r1.numerator * r1.denominator + r2.numerator * r2.denominator, r1.denominator * r2.denominator);
+            return new Rational(r1.numerator * r1.denominator - r2.numerator * r2.denominator, r1.denominator * r2.denominator);
         }
-        public static Rational operator *(Rational r1, Rational r2)
+        public static Rational operator * (Rational r1, Rational r2)
         {
             return new Rational(r1.numerator * r2.numerator, r1.denominator * r2.denominator);
         }
-        public static Rational operator /(Rational r1, Rational r2) // TODO
+        public static Rational operator / (Rational r1, Rational r2)
         {
-            return new Rational(r1.numerator * r1.denominator + r2.numerator * r2.denominator, r1.denominator * r2.denominator);
+            return new Rational(r1.numerator * r2.denominator, r1.denominator * r2.numerator);
         }
         public static explicit operator double (Rational r)
         {
