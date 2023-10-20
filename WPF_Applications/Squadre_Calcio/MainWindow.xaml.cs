@@ -54,13 +54,12 @@ namespace Squadre_Calcio
         public MainWindow()
         {
             InitializeComponent();
-            Campionato = new List<Team>();
-            Campionato.Add(new Team("Juventus"));
+            Campionato = new List<Team> { new Team("Juventus"), new Team("Cesena") };
             Campionato[0].AddFootBaller("Uomo1", 10);
             Campionato[0].AddFootBaller("Uomo2", 20);
             Campionato[0].AddFootBaller("Uomo3", 30);
             Campionato[0].AddFootBaller("Uomo4", 40);
-            Campionato.Add(new Team("Cesena"));
+
             Campionato[1].AddFootBaller("Donna1", 10);
             Campionato[1].AddFootBaller("Donna2", 20);
             Campionato[1].AddFootBaller("Donna3", 30);
@@ -85,7 +84,7 @@ namespace Squadre_Calcio
                 if (Team_List.SelectedItem.ToString() == Campionato[i].TeamName)
                 {
                     Team team = Campionato[i];
-                    for (int j = 0; i < team.FootballersNumber; i++)
+                    for (int j = 0; j < team.FootballersNumber; i++)
                     {
                         PrintFootballers(team.GetFootballer(i));
                     }
