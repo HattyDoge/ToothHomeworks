@@ -84,9 +84,9 @@ namespace Squadre_Calcio
                 if (Team_List.SelectedItem.ToString() == Campionato[i].TeamName)
                 {
                     Team team = Campionato[i];
-                    for (int j = 0; j < team.FootballersNumber; i++)
+                    for (int j = 0; j < team.FootballersNumber; j++)
                     {
-                        PrintFootballers(team.GetFootballer(i));
+                        PrintFootballers(team.GetFootballer(j));
                     }
                 }
         }
