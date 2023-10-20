@@ -20,14 +20,21 @@ namespace Squadre_Calcio
     /// </summary>
     public partial class MainWindow : Window
     {
+        int teamIndex = 0;
         List<Team> Campionato;
         class Footballer
         {
             string name;
+            string surname;
             int age;
+            public string Surname { get { return surname; } set { name = value; } }
             public string Name { get { return name;} set { name = value; } }
             public int Age { get { return age; } set { age = value; } }
-            public Footballer(string name, int age) { this.age = age; this.name = name; }
+            public Footballer(string name, int age, string surname)
+            {
+                this.age = age; this.name = name;
+                this.surname = surname;
+            }
         }
         class Team
         {
@@ -44,9 +51,9 @@ namespace Squadre_Calcio
             {
                 footballers.Add(footballer);
             }
-            public void AddFootBaller(string footballerName, int footballerAge)
+            public void AddFootBaller(string footballerName, string footballerSurname, int footballerAge)
             {
-                Footballer footballer = new Footballer(footballerName, footballerAge);
+                Footballer footballer = new Footballer(footballerName, footballerAge, footballerSurname);
                 footballers.Add(footballer);
             }
             public Footballer GetFootballer(int index) { return footballers[index]; }
@@ -55,15 +62,15 @@ namespace Squadre_Calcio
         {
             InitializeComponent();
             Campionato = new List<Team> { new Team("Juventus"), new Team("Cesena") };
-            Campionato[0].AddFootBaller("Uomo1", 10);
-            Campionato[0].AddFootBaller("Uomo2", 20);
-            Campionato[0].AddFootBaller("Uomo3", 30);
-            Campionato[0].AddFootBaller("Uomo4", 40);
+            Campionato[0].AddFootBaller("Uomo1", "Giuseppe", 10);
+            Campionato[0].AddFootBaller("Uomo2", "Giuseppe", 20);
+            Campionato[0].AddFootBaller("Uomo3", "Giuseppe", 30);
+            Campionato[0].AddFootBaller("Uomo4", "Giuseppe", 40);
 
-            Campionato[1].AddFootBaller("Donna1", 10);
-            Campionato[1].AddFootBaller("Donna2", 20);
-            Campionato[1].AddFootBaller("Donna3", 30);
-            Campionato[1].AddFootBaller("Donna4", 40);
+            Campionato[1].AddFootBaller("Donna1", "Maria", 10);
+            Campionato[1].AddFootBaller("Donna2", "Maria", 20);
+            Campionato[1].AddFootBaller("Donna3", "Maria", 30);
+            Campionato[1].AddFootBaller("Donna4", "Maria", 40);
 
             for (int i = 0; i < Campionato.Count; i++)
                 PrintTeams(Campionato[i]);
@@ -74,21 +81,31 @@ namespace Squadre_Calcio
         }
         private void PrintFootballers(Footballer footballer)
         {
-            Footballers_List.Items.Add($"{footballer.Name} {footballer.Age}");
+            Footballers_List.Items.Add($"{footballer.Name} {footballer.Surname}");
+        }
+        private void PrintFootballersInfo(Footballer footballer)
+        {
+            Footballers_List.Items.Add($"{footballer.Name} {footballer.Surname}");
+            Footballers_List.Items.Add($"{footballer.Age} anni");
         }
         private void Team_List_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
             Footballers_List.Items.Clear();
             for (int i = 0; i < Campionato.Count; i++)
                 if (Team_List.SelectedItem.ToString() == Campionato[i].TeamName)
                 {
+                    teamIndex = i;
                     Team team = Campionato[i];
                     for (int j = 0; j < team.FootballersNumber; j++)
                     {
                         PrintFootballers(team.GetFootballer(j));
                     }
                 }
+        }
+
+        private void Footballers_List_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
         }
     }
 }
