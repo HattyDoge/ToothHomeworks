@@ -44,9 +44,12 @@ namespace Calcolatrice
         }
         private void Delete_Click(object sender, RoutedEventArgs e) //Cancella l'ultimo
         {
-            if (exp[exp.Length - 1] == '.')
-                numberComma = false;
-            exp = exp.Remove(exp.Length - 1, 1);
+            if (exp.Length != 0)
+            {
+                if (exp[exp.Length - 1] == '.')
+                    numberComma = false;
+                exp = exp.Remove(exp.Length - 1, 1);
+            }
             PrintToLabel();
         }
         private void PrintToLabel()
