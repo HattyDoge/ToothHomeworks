@@ -60,6 +60,11 @@ namespace Squadre_Calcio
             Campionato[0].AddFootBaller("Uomo2", 20);
             Campionato[0].AddFootBaller("Uomo3", 30);
             Campionato[0].AddFootBaller("Uomo4", 40);
+            Campionato.Add(new Team("Cesena"));
+            Campionato[1].AddFootBaller("Donna1", 10);
+            Campionato[1].AddFootBaller("Donna2", 20);
+            Campionato[1].AddFootBaller("Donna3", 30);
+            Campionato[1].AddFootBaller("Donna4", 40);
 
             for (int i = 0; i < Campionato.Count; i++)
                 PrintTeams(Campionato[i]);
@@ -74,9 +79,10 @@ namespace Squadre_Calcio
         }
         private void Team_List_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            
             Footballers_List.Items.Clear();
             for (int i = 0; i < Campionato.Count; i++)
-                if (sender == Campionato[i].TeamName)
+                if (Team_List.SelectedItem.ToString() == Campionato[i].TeamName)
                 {
                     Team team = Campionato[i];
                     for (int j = 0; i < team.FootballersNumber; i++)
