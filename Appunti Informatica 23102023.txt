@@ -1,0 +1,77 @@
+//Appunti Informatica 23/10/2023
+internal class Program
+{
+	class Persona
+	{
+		protected string cognome, nome;
+		protected DateOnly dataNascita;
+		public Persona (string cognome, string nome, DateOnly dataNascita)
+		{
+			this.cognome = cognome;
+			this.nome = nome;
+			this.dataNascita = dataNascita
+		}
+	}
+	class Studente : Persona // non si può accedere a cognome e nome a meno che non è protected ( privato per tutto il codice esterno allla classe )
+	{
+		string classe;
+		public Studente(string cognome, string nome, DateOnly, string classe)
+			:base(cognome, nome, dataNascita)
+		{
+			this.classe = classe;
+		}
+	}
+	class Personale : Persona
+	{
+		string estremiContratto;
+		public Personale(string cognome, string nome, DateOnly, string estremiContratto)
+			: base(cognome, nome, dataNascita)
+		{
+			this.estremiContratto = estremiContratto;
+		}
+	}
+	class ATA : Personale
+	{
+		string livelloContrattuale;
+		public ATA(string cognome, string nome, DateOnly, string estremiContratto)
+			: base(cognome, nome, dataNascita, estremiContratto)
+		{
+			this.livelloContrattuale = livelloContrattuale;
+		}
+	}
+	class Docente : Personale
+	{
+		string materia;
+		public Docente(string cognome, string nome, DateOnly, string materia)
+			: base(cognome, nome, dataNascita, estremiContratto)
+		{
+			this.materia = materia;
+		}
+	}
+	class Dirigente : Docente
+	{
+		int annoPromozione
+		public Docente(string cognome, string nome, DateOnly, string materia, int annoPromozione)
+			: base(cognome, nome, dataNascita, estremiContratto, materia)
+		{
+			this.annoPromozione = annoPromozione;
+		}
+	}
+	static void Main(string[] args)
+	{
+		Persona p = new Persona("Rossi", "Luigi", DateOnly.Parse("12/12/2012"))
+		Persona p2 = p;
+
+		Studente s1 = new Studente("Pieri", "Marco", DateOnly.Parse("23/04/2002"), "3B")
+		Studente s1 = new Studente("Neri", "Paola", DateOnly.Parse("23/04/2002"), "4C")
+
+		Dirigente ds = new Dirigente("Porfirio", "Maurizio", DateOnly.Parse("23/04/2002"), "Prot 1/27/--A/1990", "????", 2018)
+		Persona p3 = ds;
+	//	Dirigente ds2 = p; da il problema perchè Dirigente è una sottoclasse 
+	}
+}
+//	PROGRAMMAZIONE A OGGETTI E IL CONCETTO DI EREDITARIETÀ (pag 147)
+//	mantenere dati di una scuola con studenti e personale
+//	Classe Base / Super Classe
+//	Classe Derivate / Sottoclasse
+//	
