@@ -87,7 +87,11 @@
             }
             public bool Sovrapposto(Rettangolo r)
             {
-                if (x < r.x && r.x < x + length && y < r.y && r.y < y + height && x < r.x + r.Length && r.x + r.Length < x + length && y < r.y + r.Height && r.y + r.Height < y + height)
+                if (x < r.x && r.x < x + length )
+                    return false;
+                if (y < r.y && r.y < y + height)
+                    return false;
+                if (x < r.x + r.Length && r.x + r.Length < x + length && y < r.y + r.Height && r.y + r.Height < y + height)
                     return false;
                 return true;
             }
