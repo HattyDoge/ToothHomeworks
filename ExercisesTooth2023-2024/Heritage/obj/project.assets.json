@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leonardo.frassineti\\Documents\\GitHub\\ToothHomeworks\\ExercisesTooth2023-2024\\Operators\\Operators.csproj",
-      "projectName": "Operators",
-      "projectPath": "C:\\Users\\leonardo.frassineti\\Documents\\GitHub\\ToothHomeworks\\ExercisesTooth2023-2024\\Operators\\Operators.csproj",
+      "projectUniqueName": "C:\\Users\\leonardo.frassineti\\Documents\\GitHub\\ToothHomeworks\\ExercisesTooth2023-2024\\Heritage\\Heritage.csproj",
+      "projectName": "Heritage",
+      "projectPath": "C:\\Users\\leonardo.frassineti\\Documents\\GitHub\\ToothHomeworks\\ExercisesTooth2023-2024\\Heritage\\Heritage.csproj",
       "packagesPath": "C:\\Users\\leonardo.frassineti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leonardo.frassineti\\Documents\\GitHub\\ToothHomeworks\\ExercisesTooth2023-2024\\Operators\\obj\\",
+      "outputPath": "C:\\Users\\leonardo.frassineti\\Documents\\GitHub\\ToothHomeworks\\ExercisesTooth2023-2024\\Heritage\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
