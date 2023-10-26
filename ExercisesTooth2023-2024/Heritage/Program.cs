@@ -10,6 +10,7 @@
             {
                 this.a = a; 
             }
+            public void Stampa() { Console.WriteLine($"Sono A e a = {a}"); }
         }
         class B : A
         {
@@ -19,6 +20,7 @@
             {
                 this.b = b;
             }
+            public void Stampa() { Console.WriteLine($"Sono B e b = {b}"); } // overload funzionerà solamente per l'istanza creata
         }
         class E : B 
         {
