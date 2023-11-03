@@ -7,13 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="213*"/>
+            <ColumnDefinition Width="240*"/>
+            <ColumnDefinition Width="347*"/>
+        </Grid.ColumnDefinitions>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="#FF955CFF"/>
-                <GradientStop Color="#FFD40DEA" Offset="1"/>
+                <GradientStop Color="#FF7B0D17" Offset="1"/>
+                <GradientStop Color="#FFFF9696" Offset="0.02"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <ListBox x:Name="Team_List" HorizontalAlignment="Left" Height="228" Margin="10,64,0,0" VerticalAlignment="Top" Width="199" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="Team_List_SelectionChanged" FontFamily="Bahnschrift" BorderBrush="{x:Null}">
+        <ListBox x:Name="Team_List" HorizontalAlignment="Center" Height="349" Margin="0,64,0,0" VerticalAlignment="Top" Width="198" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="Team_List_SelectionChanged" FontFamily="Bahnschrift" BorderBrush="{x:Null}">
             <ListBox.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF6610D2" Offset="1"/>
@@ -21,16 +27,7 @@
                 </LinearGradientBrush>
             </ListBox.Background>
         </ListBox>
-        <ListBox x:Name="Footballers_List" HorizontalAlignment="Left" Height="228" Margin="214,64,0,0" VerticalAlignment="Top" Width="225" d:ItemsSource="{d:SampleData ItemCount=5}" BorderBrush="{x:Null}" FontFamily="Bahnschrift" SelectionChanged="Footballers_List_SelectionChanged">
-            <ListBox.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF6610D2" Offset="1"/>
-                    <GradientStop Color="#FFAB0A87" Offset="0.543"/>
-                </LinearGradientBrush>
-            </ListBox.Background>
-
-        </ListBox>
-        <ListBox x:Name="FootballersInfo_List" HorizontalAlignment="Left" Height="349" Margin="455,64,0,0" VerticalAlignment="Top" Width="284" d:ItemsSource="{d:SampleData ItemCount=5}" BorderBrush="{x:Null}" FontFamily="Bahnschrift">
+        <ListBox x:Name="Footballers_List" HorizontalAlignment="Center" Height="349" Margin="0,64,0,0" VerticalAlignment="Top" Width="224" d:ItemsSource="{d:SampleData ItemCount=5}" BorderBrush="{x:Null}" FontFamily="Bahnschrift" SelectionChanged="Footballers_List_SelectionChanged" Grid.Column="1">
             <ListBox.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF6610D2" Offset="1"/>
@@ -39,6 +36,17 @@
             </ListBox.Background>
 
         </ListBox>
+        <ListBox x:Name="FootballersInfo_List" HorizontalAlignment="Left" Height="349" Margin="12,64,0,0" VerticalAlignment="Top" Width="284" d:ItemsSource="{d:SampleData ItemCount=5}" BorderBrush="{x:Null}" FontFamily="Bahnschrift" Grid.Column="2">
+            <ListBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF6610D2" Offset="0.993"/>
+                    <GradientStop Color="#FFAB0A87" Offset="0.36"/>
+                </LinearGradientBrush>
+            </ListBox.Background>
 
+        </ListBox>
+        <Label Content="Squadre" HorizontalAlignment="Center" Height="42" Margin="0,22,0,0" VerticalAlignment="Top" Width="198" Background="#FF5F0000"/>
+        <Label Content="Informazioni Membri" HorizontalAlignment="Left" Height="42" Margin="12,22,0,0" VerticalAlignment="Top" Width="284" Background="#FF600000" Grid.Column="2"/>
+        <Label Content="Membri Squadra" HorizontalAlignment="Center" Height="42" Margin="0,22,0,0" VerticalAlignment="Top" Width="224" Background="#FF5F0000" Grid.Column="1"/>
     </Grid>
 </Window>
