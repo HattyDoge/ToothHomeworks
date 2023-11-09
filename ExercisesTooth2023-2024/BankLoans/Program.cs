@@ -76,7 +76,12 @@ namespace BankLoans
             }
             public double SumUppercuts()
             {
-
+                double uppercutSum = 0;
+                for (int i = 0; i < loans.Count; i++)
+                {
+                    uppercutSum += loans[i].Uppercut;
+                }
+                return uppercutSum;
             }
             public override string ToString() 
             { 
