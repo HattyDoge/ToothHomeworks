@@ -11,20 +11,22 @@ namespace BankLoans
             protected DateTime dateStart;
             protected DateTime dateEnd;
             double fee;
-            double uppercut;
-            double lifespan;
-            public virtual double Uppercut { get { uppercut = capital * (interests * lifespan + 1); return uppercut; } set { } }
+            public virtual double Uppercut() 
+            {
+                return capital * (interests * Lifespan + 1); 
+            }
             public double Capital { get { return capital; } set { capital = value; } }
             public double Interests { get { return interests; } set { interests = value; } }
             public DateTime DateStart { get { return dateStart; } set { dateStart = value; } }
             public DateTime DateEnd { get { return dateEnd; } set { dateEnd = value; } }
+            public double Lifespan { get { TimeSpan delta = dateStart - dateEnd; return delta.TotalDays; } }
             public SimpleLoan(double capital, double interests, DateTime dateStart, DateTime dateEnd)
             {
                 this.capital = capital;
                 this.interests = interests;
                 this.dateStart = dateStart;
                 this.dateEnd = dateEnd;
-                uppercut = capital * (interests * lifespan + 1);
+                Uppercut(); 
             }
             public override string ToString()
             {
@@ -33,10 +35,12 @@ namespace BankLoans
         }
         class ComplexLoan : SimpleLoan
         {
-            double uppercut;
-            public ComplexLoan(double uppercut, double capital, double interests, DateTime dateStart, DateTime dateEnd) : base(capital, interests, dateStart, dateEnd)
+            public override double Uppercut()
             {
-                this.uppercut = uppercut;
+                return capital * Math.Pow(1+interests, Lifespan);
+            }
+            public ComplexLoan(double capital, double interests, DateTime dateStart, DateTime dateEnd) : base(capital, interests, dateStart, dateEnd)
+            {
             }
             public override string ToString()
             {
@@ -79,7 +83,7 @@ namespace BankLoans
                 double uppercutSum = 0;
                 for (int i = 0; i < loans.Count; i++)
                 {
-                    uppercutSum += loans[i].Uppercut;
+                    uppercutSum += loans[i].Uppercut();
                 }
                 return uppercutSum;
             }
