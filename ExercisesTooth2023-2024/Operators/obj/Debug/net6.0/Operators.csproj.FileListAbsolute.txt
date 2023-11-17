@@ -13,3 +13,17 @@ C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-
 C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\Operators\obj\Debug\net6.0\Operators.pdb
 C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\Operators\obj\Debug\net6.0\Operators.genruntimeconfig.cache
 C:\Users\leonardo.frassineti\Documents\GitHub\ToothHomeworks\ExercisesTooth2023-2024\Operators\obj\Debug\net6.0\ref\Operators.dll
+F:\File foto e video\Github\ToothHomeworks\ExercisesTooth2023-2024\Operators\bin\Debug\net6.0\Operators.exe
+F:\File foto e video\Github\ToothHomeworks\ExercisesTooth2023-2024\Operators\bin\Debug\net6.0\Operators.deps.json
+F:\File foto e video\Github\ToothHomeworks\ExercisesTooth2023-2024\Operators\bin\Debug\net6.0\Operators.runtimeconfig.json
+F:\File foto e video\Github\ToothHomeworks\ExercisesTooth2023-2024\Operators\bin\Debug\net6.0\Operators.dll
+F:\File foto e video\Github\ToothHomeworks\ExercisesTooth2023-2024\Operators\bin\Debug\net6.0\Operators.pdb
+F:\File foto e video\Github\ToothHomeworks\ExercisesTooth2023-2024\Operators\obj\Debug\net6.0\Operators.GeneratedMSBuildEditorConfig.editorconfig
+F:\File foto e video\Github\ToothHomeworks\ExercisesTooth2023-2024\Operators\obj\Debug\net6.0\Operators.AssemblyInfoInputs.cache
+F:\File foto e video\Github\ToothHomeworks\ExercisesTooth2023-2024\Operators\obj\Debug\net6.0\Operators.AssemblyInfo.cs
+F:\File foto e video\Github\ToothHomeworks\ExercisesTooth2023-2024\Operators\obj\Debug\net6.0\Operators.csproj.CoreCompileInputs.cache
+F:\File foto e video\Github\ToothHomeworks\ExercisesTooth2023-2024\Operators\obj\Debug\net6.0\Operators.dll
+F:\File foto e video\Github\ToothHomeworks\ExercisesTooth2023-2024\Operators\obj\Debug\net6.0\refint\Operators.dll
+F:\File foto e video\Github\ToothHomeworks\ExercisesTooth2023-2024\Operators\obj\Debug\net6.0\Operators.pdb
+F:\File foto e video\Github\ToothHomeworks\ExercisesTooth2023-2024\Operators\obj\Debug\net6.0\Operators.genruntimeconfig.cache
+F:\File foto e video\Github\ToothHomeworks\ExercisesTooth2023-2024\Operators\obj\Debug\net6.0\ref\Operators.dll
