@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/leonardo.frassineti/Documents/GitHub/ToothHomeworks/Pong/Pong/Content/ball.png</File>
+    <File>C:/Users/leonardo.frassineti/Documents/GitHub/ToothHomeworks/Pong/Pong/Content/File.spritefont</File>
+    <File>C:/Users/leonardo.frassineti/Documents/GitHub/ToothHomeworks/Pong/Pong/Content/J._M._Flagg,_I_Want_You_for_U.S._Army_poster_(1917).jpg</File>
+    <File>C:/Users/leonardo.frassineti/Documents/GitHub/ToothHomeworks/Pong/Pong/Content/zioSam.jpg</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

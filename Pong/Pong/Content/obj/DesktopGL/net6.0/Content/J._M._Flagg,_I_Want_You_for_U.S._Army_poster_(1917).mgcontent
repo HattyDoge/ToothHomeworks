@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Users/leonardo.frassineti/Documents/GitHub/ToothHomeworks/Pong/Pong/Content/J._M._Flagg,_I_Want_You_for_U.S._Army_poster_(1917).jpg</SourceFile>
+  <SourceTime>2023-11-17T13:06:44.888146+01:00</SourceTime>
+  <DestFile>C:/Users/leonardo.frassineti/Documents/GitHub/ToothHomeworks/Pong/Pong/Content/bin/DesktopGL/Content/J._M._Flagg,_I_Want_You_for_U.S._Army_poster_(1917).xnb</DestFile>
+  <DestTime>2023-11-17T13:18:41.2929299+01:00</DestTime>
+  <Importer>TextureImporter</Importer>
+  <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
+  <Processor>TextureProcessor</Processor>
+  <ProcessorTime>2022-07-26T13:44:56+02:00</ProcessorTime>
+  <Parameters>
+    <Key>ColorKeyColor</Key>
+    <Value>255,0,255,255</Value>
+  </Parameters>
+  <Parameters>
+    <Key>ColorKeyEnabled</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>GenerateMipmaps</Key>
+    <Value>False</Value>
+  </Parameters>
+  <Parameters>
+    <Key>PremultiplyAlpha</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>ResizeToPowerOfTwo</Key>
+    <Value>False</Value>
+  </Parameters>
+  <Parameters>
+    <Key>MakeSquare</Key>
+    <Value>False</Value>
+  </Parameters>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Color</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
