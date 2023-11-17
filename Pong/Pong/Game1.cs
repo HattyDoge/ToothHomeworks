@@ -17,6 +17,7 @@ namespace Pong
         private Vector2 zioSamPosition;
         private Texture2D zioSamTexture;
         private SpriteFont spriteFont;
+        private const float maxSpeed = 50f;
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -29,7 +30,7 @@ namespace Pong
             // TODO: Add your initialization logic here
             ballPosition = new Vector2(_graphics.PreferredBackBufferWidth / 2, _graphics.PreferredBackBufferHeight / 2);
             zioSamPosition = new Vector2(_graphics.PreferredBackBufferWidth / 2 + 50, _graphics.PreferredBackBufferHeight / 2 + 50);
-            ballSpeed = 100f;
+            ballSpeed = 50f;
             movementY = 0;
             movementX = 0;
             base.Initialize();
@@ -53,7 +54,7 @@ namespace Pong
             var keyboardState = Keyboard.GetState();
 
             // TODO: Add your update logic here
-
+            
             if (keyboardState.IsKeyDown(Keys.Up))
                 movementY -= ballSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
             if (keyboardState.IsKeyDown(Keys.Down))
@@ -62,33 +63,36 @@ namespace Pong
                 movementX += ballSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
             if (keyboardState.IsKeyDown(Keys.Left))
                 movementX -= ballSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
-
-            if(ballPosition.X + movementX < _graphics.PreferredBackBufferWidth - ballTexture.Width && ballPosition.X + movementX > 0 && movementX <= 50)
+            if (movementX > maxSpeed)
+                movementX = maxSpeed;
+            if (ballPosition.X + movementX < _graphics.PreferredBackBufferWidth - ballTexture.Width && ballPosition.X + movementX > 0)
                 ballPosition.X += movementX;
             else
             {
                 movementX = -movementX;
                 ballPosition.X += movementX;
             }
-
-            if (ballPosition.Y + movementY < _graphics.PreferredBackBufferHeight - ballTexture.Height && ballPosition.Y + movementY > 0 && movementY <= 50)
+            if (movementY > maxSpeed)
+                movementY = maxSpeed;
+            if (ballPosition.Y + movementY < _graphics.PreferredBackBufferHeight - ballTexture.Height && ballPosition.Y + movementY > 0)
                 ballPosition.Y += movementY;
             else
             {
                 movementY = -movementY;
                 ballPosition.Y += movementY;
             }
+
             base.Update(gameTime);
         }
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.GreenYellow);
             _spriteBatch.Begin();
             _spriteBatch.Draw(zioSamTexture, zioSamPosition, Color.White);
             _spriteBatch.Draw(ballTexture, ballPosition, Color.White);
 
-            _spriteBatch.DrawString(spriteFont, $"{ballPosition.X} {ballPosition.Y}", new Vector2(0,0), Color.White);
+            _spriteBatch.DrawString(spriteFont, $"X:{(int)ballPosition.X} Y:{(int)ballPosition.Y}", new Vector2(0,0), Color.White);
 
             // TODO: Add your drawing code here
             _spriteBatch.End();
