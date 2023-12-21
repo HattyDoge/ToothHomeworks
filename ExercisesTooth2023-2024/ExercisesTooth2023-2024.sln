@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Heritage", "Heritage\Herita
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RIPASSO1VERIFICA", "RIPASSO1VERIFICA\RIPASSO1VERIFICA.csproj", "{AF811EC5-0A11-4FDA-8D69-FEDA35792656}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneretorFunctions", "GeneretorFunctions\GeneretorFunctions.csproj", "{776AAAE4-CF82-4192-8664-02A5D35F852C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneretorFunctions", "GeneretorFunctions\GeneretorFunctions.csproj", "{776AAAE4-CF82-4192-8664-02A5D35F852C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExpressions", "LambdaExpressions\LambdaExpressions.csproj", "{B2702D8A-6692-4F14-B7B2-F2EBC51C5E2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{776AAAE4-CF82-4192-8664-02A5D35F852C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{776AAAE4-CF82-4192-8664-02A5D35F852C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{776AAAE4-CF82-4192-8664-02A5D35F852C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2702D8A-6692-4F14-B7B2-F2EBC51C5E2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2702D8A-6692-4F14-B7B2-F2EBC51C5E2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2702D8A-6692-4F14-B7B2-F2EBC51C5E2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2702D8A-6692-4F14-B7B2-F2EBC51C5E2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
