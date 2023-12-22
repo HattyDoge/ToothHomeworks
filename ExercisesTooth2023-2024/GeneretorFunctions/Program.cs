@@ -15,9 +15,12 @@
         {
 
         }
-        class Base_B
+        class Base_B : IComparable<Base_B>
         {
-
+            int IComparable<Base_B>.CompareTo(Base_B? obj)
+            {
+                return 0;
+            }
         }
         class Derivata_B : Base_B
         { 
