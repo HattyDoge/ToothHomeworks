@@ -1,0 +1,14 @@
+body{
+    background-color: lightblue;
+}
+h1 {
+    color:white;
+    text-align: center;
+}
+p {
+    font-family: Verdana;
+    font-size: 40px;
+}
+.centrato {
+    text-align: center;
+}
