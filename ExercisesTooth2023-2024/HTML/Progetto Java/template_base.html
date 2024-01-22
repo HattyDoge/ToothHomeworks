@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<title>Warhammer</title>
+	</head>
+	<body>
+		<h1>I'm</h1>
+		<h2>the</h2>
+		<h3>Emperor</h3>
+		<p>Rejoice to praise me</p>
+<!--	<script>document.write("<h4>Titolo di livello 4 scritto con script</h4>")</script>-->
+		<p id="chiave0001">Questo è un segnaposto</p>
+	</body>
+	<!-- DOM -->
+	<noscript>Purtroppo il tuo browser non ha Javascript oppure non è attivo. Attiva Javascript o aggiorna il tuo browser</noscript>
+	<!--AJAX Asynchronous Javascript And Xml, Node.js, JSON--><script>
+//		window.alert("Questa è una prova di alert")
+//		console.log("Questo messaggio andrà nel log della console");	
+//		document.write("Write smthn");
+		
+		function CambiaContenutoTag(chiave,testo) {
+			var el = document.getElementById(chiave);
+			el.innerHTML = testo;
+		}
+		CambiaContenutoTag("chiave0001", "Tutt'altro testo")
+	</script>
+</html>
