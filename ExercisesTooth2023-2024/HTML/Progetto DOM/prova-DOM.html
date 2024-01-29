@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--https://www.w3schools.com/js/js_htmldom_navigation.asp-->
+<html lang="it">
+	<head>
+		<title>Titolo della pagina (va nella caption)</title>
+	</head>
+	<body>
+		<h1 id="chiave2">Titolo</h1>
+		<h2>Titolo</h2>
+		<h3>Titolo</h3>
+		<p id="chiave">Un testo qualunque</p>
+		<ol>
+			<li>Punto uno</li>
+			<li>Punto due</li>
+			<li>Punto tre</li>
+		</ol>
+		<form method="get" action="">
+			<!--
+			<input type="text" name="cognome" id="cognome"/>
+			<input type="reset" value="Pulisci tutto"/>
+			<input type="submit" value="Invio"/>
+			<input type="button" value="Clicca qui"/>-->
+			<button onclick="button_OnClick()"> <!-- qua ci va codice html per mostrare il button-->Big button <h1>2</h1> </button>
+			<!--<label for="cognome"> Cognome: </label>-->
+		</form>
+	</body>
+	<noscript>Purtroppo il tuo browser non ha Javascript oppure non attivo.
+		Attiva Javascript o aggiorna il tuo brower</noscript>
+	<script>
+
+		var el = document.getElementById("chiave");
+		console.log(el.tagName + "enis");
+		console.log(el.innerHTML)
+		el.innerHTML = "Un testo <b>formattato</b> a piacere";
+		function button_OnClick() {var el = document.getElementById('chiave'); el.innerHTML = Date();}
+		/*
+		var el = document.documentElement;
+		console.log(el.tagName);
+
+		el = document.childNodes[2];
+		console.log(el.tagName)
+		
+		el = document.childNodes[7];
+		console.log(el.tagName)*/
+	/*	for (var el = el.firstChild; el != null; el = el.nextSibling)
+		{
+			console.log(el.tagName);
+		}*/
+	</script>
+</html>
