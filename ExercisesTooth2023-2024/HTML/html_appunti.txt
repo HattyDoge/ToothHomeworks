@@ -1,0 +1,123 @@
+Sistemazione del programma "Tic Tac Toe" in HTLP+CSS+Javascript che era come esercizio per casa.
+Tag di tipo "block" e tag di tipo "inline". Il box model (Cap. 7, sez. 7.7)
+Ricapitolazione degli argomenti del libro sinora trattati. HTML: tutto il cap 6, escluso 6.5 CSS: cap. 7 fino a 7.6
+Navigazione del DOM: proprietà firstChild, lastChild, nextSiblings, previousSibling. Eventi standard delle tag. Gestione evento onclick="" per pulsanti di una form.
+Tag < meta > e significato di charset=utf8 Tag < form >, < input type="" > e < label > Funzionamento generale delle forme HTML, differenza fra method GET e POST.
+Javascript: array [] e dizionari {}. Formato JSON.
+Document Object Model (DOM) e struttura della gerarchia di oggetti accessibile via Javascript. Primi programmi in Javascript: windows.alert(), console.log(), definizione di funzioni.
+Cascading StyleSheets (CSS): scopo, selettori (per tag, per id e per class), esempi pratici.
+XML: cenni generali su XML e sull'esistenza di formati XML noti per ambiti particolari (chimica, musica, economia, ecc...). Concetto di inter-operabilità dei dati. HTML: struttura di un documento. Tag, attributi e contenuto di una tag. Tag < !DOCTYPE > < html > < head > < body > 
+Evoluzione del Web dalle origini ad oggi (pagg. 232-235). Primo esempio di files HTML (pagg. 240-242).
+Ripasso (su richiesta della classe): interfaccia IEnumaerable e instruzione yield return, con esempi. Introduzione ad HTML e HTTP.
+
+
+
+linguaggio interpretato, non compilato
+tipizzato dinamicamente
+array liste non omogenee di variabili
+```js
+var value = 12;
+var parola = "ciao";
+var array = [2, "ciao", true];
+var union = array.join("|");
+var favFr = {
+	-3: "orange",
+	-1: "apple",
+	5: "mango",
+	};
+console.log(favFr[-3]);
+
+```
+##### JSON
+JavaScript Simple Object Notation
+formato di salvataggio e scambio dati utilizzante la sintassi del JavaScript
+
+
+
+Prima della standardizzazione dell'html succedeva che ogni tanto alcuni browser si "inventavano" alcuni tag html che non erano compatibili con gli altri competitor.
+
+
+Al CERN avevano bisogno di un metodo per condividere internamente i progressi nei vari progetti.
+Tim Berners-Lee creò al tempo stesso il linguaggio [HTML](XML%20e%20HTML.md) (HyperText Markup Language) e il protocollo HTTP (HyperText Transfer Protocol)
+
+HTTP è un protocollo di livello 7, che si basa su TCP (livello 4) che a sua volta si basa su IP (livello 3) ecc...
+
+Poco dopo, nei browser (tipo Mosaic Netscape) fu integrato un "esecutore" del linguaggio [[JavaScript]], che permette la creazione di pagine interattive.
+
+per poter accedere ad una pagina web dal lato client serve un browser (al giorno d'oggi sono praticamente tutti uguali) e dal lato server un web server che "da" la pagina ai client (come Apache o IIS)
+
+un browser manda una richiesta get al server e il server risponde (anche con codici di errore tipo 404)
+
+LAMP development -> lampada
+```
+LAMP
+ipyh
+nasp
+ucq
+xhl
+ e
+```
+
+## XML
+*eXtensible markup language* --> formato di salvataggio di dati molto versatile
+diviso in tag, gerarchico, "ad albero"
+ne esistono varie versioni e ognuno può crearne una propria versione in quanto il salvataggio avviene su file in plain text
+all'inizio del documento c'è una riga che indica il tipo di documento, ed è obbligatoria in quanto i software che utilizzano file in formato XML necessitano di sapere come interpretarlo
+se c'è un errore di sintassi il software lo segnala e non legge i dati
+## HTML [[Nascita del web e dell'HTML]]
+Il linguaggio HTML è un particolare tipo di file XML utilizzato per descrivere l'aspetto di una pagina web
+di base l'HTML non offre possibilità di "abbellimento grafico" standard e quindi ogni browser, attraverso il proprio interprete, disegna la pagina seguendo le stesse regole generali ma con font e spaziature diverse.
+A differenza dei formati XML standard i browser interpretano l'HTML anche se presenta alcuni errori di sintassi o se manca di alcune informazioni definite dagli standard --> questo perchè è mirato ad una utenza non per forza tecnica
+Ha tantissimi tag
+
+## Evoluzione dell'HTML
+dal far west all'html 3
+la principale differenza tra html4 e html5 è stata l'introduzione della tag video e audio e dei codec per la loro riproduzione
+```html
+<video width="320" height="240" controls>
+	<source src="movie.mp4" type="video/mp4">
+</video>
+```
+Mime types: codifiche utilizzate per comprendere come "interpretare" un file
+es:
+- image/png
+- image/jpeg
+- image/gif
+- text/html
+- text/plain
+- text/xml
+codificati dalla IANA
+indica la tipologia di un dato (text, image) e una variante di essa (png, jpeg, html, xml)
+il modo con cui un server comunica al client il tipo di dato trasmesso e come fare per aprirlo e visualizzarlo
+sono contenuti in un RFC
+MIME : multipurpose Internet Mail Extensions
+
+Con html5 la pagina web è strutturata, ed è quindi possibile organizzare gli elementi senza dover usare una tabella per impaginarli come si vuole.
+
+## CSS
+#### Box model
+Un elemento è, in generale, uno spazio rettangolare che il browser deve decidere dove posizionare
+è diviso in:
+- contenuto: parte che contiene le informazioni
+- un padding che può essere a 0 che si trova tra il contenuto e il bordo dalla parte interna
+- un bordo
+- un margine, distanza tra il bordo di due elementi
+
+[[XML e HTML]] [[Nascita del web e dell'HTML]]
+
+| tag | significato | scopo | parametri |
+| ---- | ---- | ---- | ---- |
+| head |  | parte del documento che include informazioni utili al browser e che di solito non vengono mostrate all'utente (ad eccezione di *title*) tipo riferimenti a file CSS e JS |  |
+| style |  | include alcune istruzioni css per indicare lo stile della pagina o di un suo elemento. sovrascrive eventuali attributi assegnati ai singoli elementi. è dentro la sezione *head* |  |
+| body | corpo del documento | serve a contenere tutti gli elementi che verranno visualizzati dall'utente |  |
+| h*x* | heading | titolo di diverse dimensioni, dal più grande (h1) al più piccolo (h6). rappresentano delle sezioni |  |
+| p | paragraf | creare un paragrafo di testo |  |
+| a | anchor | permette di inserire riferimenti ad altre risorse | href per indicare l'indirizzo della risorsa da linkare |
+| img | image | tag autocontenuta per linkare una immagine locale o dal web | alt per aggiungere un testo in caso di mancato caricamento, src per indicare la sorgente, height, width |
+| ul | unnumbered list | per creare liste puntate |  |
+| ol | ordered list | lista numerata |  |
+| li | list item | elementi di una lista |  |
+| table | tabella | per creare una tabella |  |
+| tr | table row | per creare una riga in una tabella |  |
+| th | table heading | titolo della tabella - intestazione |  |
+| td | table data | valore di una casella | colspan (dimensione in colonne), rowspan(dimensione in righe) |
