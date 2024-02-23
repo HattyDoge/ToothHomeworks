@@ -1,4 +1,4 @@
-//Es 3
+//Es 1
 function DeleteContent(){
     var h1s = document.getElementsByTagName("h1");
     for(var i = 0; i < h1s.length; i++)
@@ -52,18 +52,17 @@ function GenerateTable(){
         for(var j = 0; j < col; j++){
             table.rows[i].insertCell();
             var cell = table.rows[i].cells[j];
-            cell.onclick = function (){
-                if(cell.backgroundColor == "white"){
-                    cell.backgroundColor = "black";
+            cell.addEventListener("click" , function (){
+                if(this.style.backgroundColor == "white"){
+                    this.style.backgroundColor = "black";
                 }
                 else{
-                    cell.backgroundColor = "white";
+                    this.style.backgroundColor = "white";
                 }
-            };
+            })
             cell.style.width = "20px";
             cell.style.height = "20px";
-            cell.style.borderColor = "black";
-            
+            cell.style.border = "1px solid white";
             if((j + i )% 2 == 0){
                 cell.style.backgroundColor = "black"
             }
@@ -73,4 +72,18 @@ function GenerateTable(){
         }
     }
     document.body.appendChild(table)
+}
+
+//Es 4
+function CheckSequence(){
+    var primoInput = document.getElementById("primoInput").value;
+    var secondoInput = document.getElementById("secondoInput").value;
+    if(primoInput.includes(secondoInput)){
+        document.getElementById("risultato").innerText = "La prima sequenza contiene la seconda sequenza";
+        document.getElementById("risultato").style.color = "green"
+    }
+    else{
+        document.getElementById("risultato").innerText = "La prima sequenza non contiene la seconda sequenza";
+        document.getElementById("risultato").style.color = "red"
+    }
 }
