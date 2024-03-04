@@ -126,3 +126,4 @@ Un elemento è, in generale, uno spazio rettangolare che il browser deve decider
 Bootstrap <-- Twitter CDN npm
 React <-- Facebook
 Responsive Bootstrap = 
+npm install
