@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    </head>
+    <body>
+        <input type="number" id="primoInput" >
+        <input type="number" id="secondoInput" >
+        <button id="checkSequence">Recognize sequence</button>
+        <p id="risultato"></p>
+    </body>
+    <script>
+    $(document).ready(
+        function(){
+            $("#checkSequence").click(function(){
+                //Es 4
+                    var primoInput = $("#primoInput").val();
+                    var secondoInput = $("#secondoInput").val();
+                    if(primoInput.includes(secondoInput)){
+                        $("#risultato").text("La prima sequenza contiene la seconda sequenza");
+                        $("#risultato").css("color","green");
+                    }
+                    else{
+                        $("#risultato").text("La prima sequenza non contiene la seconda sequenza");
+                        $("#risultato").css("color","red");
+                    }
+            })})
+    </script>
+</html>

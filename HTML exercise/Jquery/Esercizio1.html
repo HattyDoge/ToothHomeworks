@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    </head>
+    <body>
+        <article>
+            <header>
+                <button id="delContent">Cancella Contenuto</button>
+                <button id="toRed">Cambia Rosso Div</button>
+                <button id="changeABC">Cambia in ABC</button>
+            </header>
+            <section id="Selezione">
+                <h1>Buongiorno</h1>
+                <h1>Malgiorno</h1>
+                <h1>Salve</h1>
+                <div id="primoElementoDiv">
+                    <p>Paragrafo</p>
+                </div>
+                <div id="secondoElementoDiv">
+                    <p>Paragrafo bello</p>
+                </div>
+            </section>
+        </article>
+    </body>
+    <script>//Es 1
+        $(document).ready(function (){
+            $("#delContent").click(function(){
+                $("h1").text("");
+            })
+        })
+
+        $(document).ready(function (){
+            $("#toRed").click(function(){
+            $("#primoElementoDiv").css("color", 'red');
+        })
+        })
+
+        $(document).ready(function (){
+            $("#changeABC").mouseover(function(){
+            $("#secondoElementoDiv").text("abc");
+        })
+        })
+    </script>
+</html>
