@@ -127,3 +127,8 @@ Bootstrap <-- Twitter CDN npm
 React <-- Facebook
 Responsive Bootstrap = 
 npm install
+npm start
+React Component può essere functional e class
+this.props 
+this = istanza oggetto
+props = dictionary con proprietà dell'oggetto
