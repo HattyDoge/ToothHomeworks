@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
-class Book extends Component{
-  //this.props.id -->> l'id del libro da mostrare
-  //this.props.book_db -->> l'intero database dei libri
-  render(){
+
+class Book extends Component {
+  // this.props.id -->>       l'id del libro da mostrare
+  // this.props.book_db -->>  l'intero database dei libri
+  render() {
+//  var libro = this.props.book_db.find(function(el) {return el.id == this.props.id});
     var libro = this.props.book_db.find((el) => el.id == this.props.id);
     return (
       <div className="card" style={{width: '18rem'}}>
@@ -14,7 +16,7 @@ class Book extends Component{
           </div>
       </div>
     );
-  };
+  }
 }
 
 export default Book;
