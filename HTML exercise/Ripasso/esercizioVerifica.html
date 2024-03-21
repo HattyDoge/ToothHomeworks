@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+        .orange{
+            background-color: orange;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .green{
+            background-color: green;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .purple{
+            background-color: purple;
+        }
+        td{
+            width: 10px;
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" onclick="creaTabella()" value="Click for chicks with dicks">
+    <input type="text" id="input_text">
+    <input id="inserisci_seme" type="button" onclick="inserisciSeme()" value="Click for locks with cocks" disabled="true">
+</body>
+<script>
+    var MAX = 12;
+    var MIN = 6;
+    function creaTabella(){
+        var existingTable = document.querySelector('table')
+        if(existingTable)
+        {
+            existingTable.remove();
+        }
+        var col_row = randomColRow(MAX, MIN);
+        var table = document.createElement('table');
+        table.id = "table";
+        for(var i = 0; i < col_row[0]; i++){
+            table.insertRow()
+            var countColor = 0;
+            for(var j = 0; j < col_row[1]; j++){
+                table.rows[i].insertCell();
+                var cell = table.rows[i].cells[j];
+                switch (countColor) {
+                    case 0:
+                        cell.className="red";
+                        countColor++;
+                        break;
+                    case 1:
+                        cell.className="orange";
+                        countColor++;
+                        break;
+                    case 2:
+                        cell.className="yellow";
+                        countColor++;
+                        break;
+                    case 3:
+                        cell.className="green";
+                        countColor++;
+                        break;
+                    case 4:
+                        cell.className="blue";
+                        countColor++;
+                        break;
+                    case 5:
+                        cell.className="purple";
+                        countColor = 0;
+                        break;
+                    default:
+                        countColor = 0;
+                        break;
+                }                
+            }
+        }
+        document.body.appendChild(table)
+        document.getElementById("inserisci_seme").addEventListener("input",()=> button.disabled = "false");
+    }
+    function randomColRow(max, min)
+    {
+        var col = Math.floor(Math.random() * (max - min) ) + min;
+        var row = Math.floor(Math.random() * (max - min) ) + min;
+        return [col, row]
+    }
+    function inserisciSeme()
+    {
+        var table = document.getElementById('table');
+        var col_row = randomColRow(MAX, MIN);
+        for(var i = 0; i < col_row[0]; i++)
+        {
+            for(var j = 0; j < col_row[1]; j++)
+            {
+                
+            }
+        }
+    }
+</script>
+</html>
