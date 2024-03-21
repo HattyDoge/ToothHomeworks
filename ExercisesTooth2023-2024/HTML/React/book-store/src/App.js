@@ -21,7 +21,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavBar />
+        <NavBar/>
 
         <div className="row">
           <Book id = {0} book_db = {this.state.book_db} />

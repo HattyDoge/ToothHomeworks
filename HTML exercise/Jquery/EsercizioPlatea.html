@@ -1,16 +1,79 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esercizio platea</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Esercizio platea</title>
+		<script
+			language="javascript"
+			type="text/javascript"
+			src="http://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+		></script>
+	</head>
+	<body id="onloadgenerateTable">
+		<div id="tableContainer"></div>
+		<p id="seats"></p>
+		<p id="ticketNumber">Numero biglietti venduti: 0</p>
+		<button id="bookSeats">Prenota Ora</button>
+		<div id="ticketList"></div>
+	</body>
+	<script>
+		var countTickets = 0;
+		$(document).ready(function () {
+			var existingTable = $("table");
+			if (existingTable) {
+				existingTable.remove();
+			}
+			var col = 6;
+			var row = 5;
+			var table = document.createElement("table");
+			var count = 1;
+			for (var i = 0; i < row; i++) {
+				table.insertRow();
+				for (var j = 0; j < col; j++) {
+					table.rows[i].insertCell();
+					var cell = table.rows[i].cells[j];
+					cell.style.width = "40px";
+					cell.style.height = "20px";
+					cell.style.border = "1px solid black";
+					cell.style.backgroundColor = "white";
+					if ((1 + j) % col != 0) {
+						cell.innerText = count;
+						count++;
+						cell.addEventListener("click", selectCell);
+						cell.className = "cellPlatea";
+					} else {
+						cell.innerText = "Fila " + (i + 1);
+					}
+				}
+			}
+			table.id = "platea";
+			$("#tableContainer").append(table);
 
-    <script src="scriptPlatea.js"></script>
-</head>
-<body id="onloadgenerateTable">
-    <div id="tableContainer"></div>
-    <p id="seats"></p>
-    <p id="ticketNumber">Numero biglietti venduti: 0</p>
-    <button id="bookSeats">Prenota Ora</button>
-</body>
+			$("#bookSeats").click(function () {
+				var celle = $(".cellPlatea");
+				for (var i = 0; i < celle.length; i++) {
+					if (celle[i].style.backgroundColor == "green") {
+						celle[i].style.backgroundColor = "red";
+						countTickets++;
+					}
+				}
+				$("#ticketNumber").innerText =
+					"Numero biglietti venduti: " + countTickets;
+			});
+		});
+		function selectCell() {
+			if (
+				this.style.backgroundColor == "white" &&
+				this.style.backgroundColor != "red"
+			) {
+				this.style.backgroundColor = "green";
+				var p = document.createElement("p");
+				p.innerText = "Posto " + this.innerText;
+				$("#ticketList").append();
+			} else {
+				this.style.backgroundColor = "white";
+			}
+		}
+	</script>
 </html>
