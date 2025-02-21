@@ -54,6 +54,14 @@ public static class SeedData
                     ReleaseDate = DateTime.Parse("2021-11-16"),
                     Genre = "Sci-Fi",
                     Price = 20M
+                },
+                new Movie
+                {
+                    Title = "When Harry Met Sally",
+                    ReleaseDate = DateTime.Parse("1989-1-11"),
+                    Genre = "Romantic Comedy",
+                    Rating = "R",
+                    Price = 7.99M
                 }
             );
             context.SaveChanges();
